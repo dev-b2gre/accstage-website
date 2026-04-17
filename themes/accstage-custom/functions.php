@@ -61,6 +61,100 @@ function accstage_custom_body_classes(array $classes): array
 add_filter('body_class', 'accstage_custom_body_classes');
 
 /**
+ * Redirecionar formulário de contacto com status e erros.
+ *
+ * @param array<int, string> $error_fields Campos inválidos.
+ * @param string             $status       Estado final.
+ */
+function accstage_custom_contact_form_redirect(array $error_fields = [], string $status = 'error'): void
+{
+    $redirect_url = wp_get_referer();
+    if (! $redirect_url) {
+        $redirect_url = home_url('/');
+    }
+
+    $args = [
+        'acc_contact_status' => sanitize_key($status),
+    ];
+
+    if (! empty($error_fields)) {
+        $sanitized_errors = array_filter(array_map('sanitize_key', $error_fields));
+        $args['acc_contact_errors'] = implode(',', array_unique($sanitized_errors));
+    }
+
+    wp_safe_redirect(add_query_arg($args, $redirect_url));
+    exit;
+}
+
+/**
+ * Processar submissão do formulário de contacto.
+ */
+function accstage_custom_handle_contact_form_submit(): void
+{
+    if (! isset($_POST['accstage_contact_nonce']) || ! wp_verify_nonce(sanitize_text_field(wp_unslash((string) $_POST['accstage_contact_nonce'])), 'accstage_contact_form_submit')) {
+        accstage_custom_contact_form_redirect(['nome', 'email', 'telefone', 'tipo_projeto', 'mensagem']);
+    }
+
+    $nome = isset($_POST['nome']) ? trim(sanitize_text_field(wp_unslash((string) $_POST['nome']))) : '';
+    $email = isset($_POST['email']) ? sanitize_email(wp_unslash((string) $_POST['email'])) : '';
+    $telefone_raw = isset($_POST['telefone']) ? trim(wp_unslash((string) $_POST['telefone'])) : '';
+    $tipo_projeto = isset($_POST['tipo_projeto']) ? trim(sanitize_text_field(wp_unslash((string) $_POST['tipo_projeto']))) : '';
+    $mensagem = isset($_POST['mensagem']) ? trim(sanitize_textarea_field(wp_unslash((string) $_POST['mensagem']))) : '';
+
+    $invalid_fields = [];
+
+    if ($nome === '') {
+        $invalid_fields[] = 'nome';
+    }
+
+    if ($email === '' || ! is_email($email)) {
+        $invalid_fields[] = 'email';
+    }
+
+    if ($telefone_raw === '' || preg_match('/^\d{9}$/', $telefone_raw) !== 1) {
+        $invalid_fields[] = 'telefone';
+    }
+
+    if ($tipo_projeto === '') {
+        $invalid_fields[] = 'tipo_projeto';
+    }
+
+    if ($mensagem === '') {
+        $invalid_fields[] = 'mensagem';
+    }
+
+    if (! empty($invalid_fields)) {
+        accstage_custom_contact_form_redirect($invalid_fields, 'error');
+    }
+
+    $receiver = get_option('admin_email');
+    $subject = sprintf(__('Novo pedido de contacto — %s', 'accstage-custom'), $nome);
+    $body = implode("\n\n", [
+        sprintf(__('Nome: %s', 'accstage-custom'), $nome),
+        sprintf(__('Email: %s', 'accstage-custom'), $email),
+        sprintf(__('Telefone: %s', 'accstage-custom'), $telefone_raw),
+        sprintf(__('Tipo de projeto: %s', 'accstage-custom'), $tipo_projeto),
+        __('Detalhes do pedido:', 'accstage-custom'),
+        $mensagem,
+    ]);
+
+    $headers = [
+        'Content-Type: text/plain; charset=UTF-8',
+        'Reply-To: ' . $email,
+    ];
+
+    $mail_sent = wp_mail($receiver, $subject, $body, $headers);
+
+    if (! $mail_sent) {
+        accstage_custom_contact_form_redirect([], 'error');
+    }
+
+    accstage_custom_contact_form_redirect([], 'success');
+}
+add_action('admin_post_nopriv_accstage_submit_contact_form', 'accstage_custom_handle_contact_form_submit');
+add_action('admin_post_accstage_submit_contact_form', 'accstage_custom_handle_contact_form_submit');
+
+/**
  * Título de fallback para secções editoriais.
  */
 function accstage_custom_page_heading(): string

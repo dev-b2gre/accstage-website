@@ -423,6 +423,56 @@ img {
   gap: 1.25rem;
 }
 
+.acc-contact-form p {
+  margin: 0 0 1rem;
+}
+
+.acc-contact-form__hint {
+  display: block;
+  margin-top: 0.55rem;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8d3a3a;
+}
+
+.acc-contact-form__feedback {
+  margin: 0 0 1.25rem;
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 0.74rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.acc-contact-form__feedback--error {
+  color: #8d3a3a;
+}
+
+.acc-contact-form__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.acc-contact-form__actions .acc-contact-form__feedback--success {
+  margin: 0;
+  color: #1d6f48;
+}
+
+.acc-contact-form .acc-field-error input,
+.acc-contact-form .acc-field-error textarea {
+  border-bottom-color: #8d3a3a;
+}
+
+.acc-contact-form input:focus-visible,
+.acc-contact-form textarea:focus-visible {
+  outline: none;
+  border-bottom-color: var(--acc-muted);
+}
+
 .acc-contact-hero {
   padding-top: clamp(6rem, 12vw, 10rem);
 }
@@ -515,7 +565,7 @@ img {
 }
 
 .acc-contact-form-wrap .acc-button {
-  margin-top: 0.4rem;
+  margin-top: 0;
 }
 
 

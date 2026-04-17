@@ -6,6 +6,19 @@
  */
 
 get_header();
+
+$contact_status = isset($_GET['acc_contact_status']) ? sanitize_key(wp_unslash((string) $_GET['acc_contact_status'])) : '';
+$error_keys_raw = isset($_GET['acc_contact_errors']) ? sanitize_text_field(wp_unslash((string) $_GET['acc_contact_errors'])) : '';
+$error_keys = $error_keys_raw !== '' ? array_filter(array_map('sanitize_key', explode(',', $error_keys_raw))) : [];
+$has_errors = ! empty($error_keys);
+
+$field_errors = [
+    'nome'         => in_array('nome', $error_keys, true),
+    'email'        => in_array('email', $error_keys, true),
+    'telefone'     => in_array('telefone', $error_keys, true),
+    'tipo_projeto' => in_array('tipo_projeto', $error_keys, true),
+    'mensagem'     => in_array('mensagem', $error_keys, true),
+];
 ?>
 <section class="acc-page-hero acc-contact-hero" aria-labelledby="acc-contact-title">
     <div class="acc-wrap">
@@ -57,35 +70,67 @@ get_header();
                 <p class="acc-label"><?php esc_html_e('Formulário', 'accstage-custom'); ?></p>
                 <h3 class="acc-title-md"><?php esc_html_e('Iniciar contacto', 'accstage-custom'); ?></h3>
 
-                <form class="acc-contact-form" method="post" action="#" aria-label="<?php esc_attr_e('Formulário de contacto', 'accstage-custom'); ?>">
+                <form class="acc-contact-form" method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" aria-label="<?php esc_attr_e('Formulário de contacto', 'accstage-custom'); ?>">
+                    <input type="hidden" name="action" value="accstage_submit_contact_form" />
+                    <?php wp_nonce_field('accstage_contact_form_submit', 'accstage_contact_nonce'); ?>
+
+                    <?php if ($has_errors) : ?>
+                        <p class="acc-contact-form__feedback acc-contact-form__feedback--error" role="alert">
+                            <?php esc_html_e('Por favor, valide os campos assinalados para concluir o envio.', 'accstage-custom'); ?>
+                        </p>
+                    <?php endif; ?>
+
                     <div class="acc-grid-2">
-                        <p>
+                        <p class="<?php echo $field_errors['nome'] ? 'acc-field-error' : ''; ?>">
                             <label for="acc-nome"><?php esc_html_e('Nome completo', 'accstage-custom'); ?></label>
-                            <input id="acc-nome" type="text" name="nome" autocomplete="name" required />
+                            <input id="acc-nome" type="text" name="nome" autocomplete="name" required aria-invalid="<?php echo $field_errors['nome'] ? 'true' : 'false'; ?>" />
+                            <?php if ($field_errors['nome']) : ?>
+                                <span class="acc-contact-form__hint"><?php esc_html_e('Indique o nome completo.', 'accstage-custom'); ?></span>
+                            <?php endif; ?>
                         </p>
-                        <p>
+                        <p class="<?php echo $field_errors['email'] ? 'acc-field-error' : ''; ?>">
                             <label for="acc-email"><?php esc_html_e('Email profissional', 'accstage-custom'); ?></label>
-                            <input id="acc-email" type="email" name="email" autocomplete="email" required />
+                            <input id="acc-email" type="email" name="email" autocomplete="email" required aria-invalid="<?php echo $field_errors['email'] ? 'true' : 'false'; ?>" />
+                            <?php if ($field_errors['email']) : ?>
+                                <span class="acc-contact-form__hint"><?php esc_html_e('Introduza um email profissional válido.', 'accstage-custom'); ?></span>
+                            <?php endif; ?>
                         </p>
                     </div>
 
                     <div class="acc-grid-2">
-                        <p>
+                        <p class="<?php echo $field_errors['telefone'] ? 'acc-field-error' : ''; ?>">
                             <label for="acc-telefone"><?php esc_html_e('Telefone', 'accstage-custom'); ?></label>
-                            <input id="acc-telefone" type="tel" name="telefone" autocomplete="tel" />
+                            <input id="acc-telefone" type="tel" name="telefone" autocomplete="tel-national" inputmode="numeric" pattern="[0-9]{9}" minlength="9" maxlength="9" required aria-invalid="<?php echo $field_errors['telefone'] ? 'true' : 'false'; ?>" />
+                            <?php if ($field_errors['telefone']) : ?>
+                                <span class="acc-contact-form__hint"><?php esc_html_e('O telefone deve conter exatamente 9 números.', 'accstage-custom'); ?></span>
+                            <?php endif; ?>
                         </p>
-                        <p>
+                        <p class="<?php echo $field_errors['tipo_projeto'] ? 'acc-field-error' : ''; ?>">
                             <label for="acc-tipo"><?php esc_html_e('Tipo de projeto', 'accstage-custom'); ?></label>
-                            <input id="acc-tipo" type="text" name="tipo_projeto" placeholder="<?php esc_attr_e('Residencial, comercial, cultural...', 'accstage-custom'); ?>" />
+                            <input id="acc-tipo" type="text" name="tipo_projeto" placeholder="<?php esc_attr_e('Residencial, comercial, cultural...', 'accstage-custom'); ?>" required aria-invalid="<?php echo $field_errors['tipo_projeto'] ? 'true' : 'false'; ?>" />
+                            <?php if ($field_errors['tipo_projeto']) : ?>
+                                <span class="acc-contact-form__hint"><?php esc_html_e('Selecione ou descreva o tipo de projeto.', 'accstage-custom'); ?></span>
+                            <?php endif; ?>
                         </p>
                     </div>
 
-                    <p>
+                    <p class="<?php echo $field_errors['mensagem'] ? 'acc-field-error' : ''; ?>">
                         <label for="acc-mensagem"><?php esc_html_e('Detalhes do pedido', 'accstage-custom'); ?></label>
-                        <textarea id="acc-mensagem" name="mensagem" required></textarea>
+                        <textarea id="acc-mensagem" name="mensagem" required aria-invalid="<?php echo $field_errors['mensagem'] ? 'true' : 'false'; ?>"></textarea>
+                        <?php if ($field_errors['mensagem']) : ?>
+                            <span class="acc-contact-form__hint"><?php esc_html_e('Partilhe os detalhes essenciais do pedido.', 'accstage-custom'); ?></span>
+                        <?php endif; ?>
                     </p>
 
-                    <button class="acc-button acc-button--solid" type="submit"><?php esc_html_e('Enviar pedido', 'accstage-custom'); ?></button>
+                    <div class="acc-contact-form__actions">
+                        <button class="acc-button acc-button--solid" type="submit"><?php esc_html_e('Enviar pedido', 'accstage-custom'); ?></button>
+
+                        <?php if ($contact_status === 'success') : ?>
+                            <p class="acc-contact-form__feedback acc-contact-form__feedback--success" role="status">
+                                <?php esc_html_e('Pedido enviado, entraremos em contacto brevemente.', 'accstage-custom'); ?>
+                            </p>
+                        <?php endif; ?>
+                    </div>
                 </form>
             </div>
         </div>
