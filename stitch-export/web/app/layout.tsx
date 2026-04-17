@@ -15,8 +15,8 @@ const body = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "ACCSTAGE | Monolithic Structures",
-  description: "Architecting permanence in an ephemeral world."
+  title: "ACCSTAGE | Estruturas Monolíticas",
+  description: "Arquitetura premium minimalista, editorial e intemporal."
 };
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-PT">
       <body className={`${headline.variable} ${body.variable}`}>
         <SiteHeader />
         <main>{children}</main>

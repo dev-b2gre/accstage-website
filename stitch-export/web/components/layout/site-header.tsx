@@ -1,30 +1,26 @@
-const navItems = [
-  { label: "Projects", href: "#" },
-  { label: "Philosophy", href: "#" },
-  { label: "Studio", href: "#" },
-  { label: "Archive", href: "#" }
-];
+import Link from "next/link";
+import { mainNavigation } from "@/content/navigation";
 
 export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container row">
         <div className="row left-group">
-          <a className="logo" href="#" aria-label="ACCSTAGE home">
+          <Link className="logo" href="/" aria-label="ACCSTAGE início">
             ACCSTAGE
-          </a>
-          <nav className="desktop-nav" aria-label="Main navigation">
-            {navItems.map((item) => (
-              <a key={item.label} href={item.href}>
+          </Link>
+          <nav className="desktop-nav" aria-label="Navegação principal">
+            {mainNavigation.map((item) => (
+              <Link key={item.label} href={item.href}>
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
 
-        <a className="inquire-cta" href="#">
-          Inquire
-        </a>
+        <Link className="inquire-cta" href="/contactos">
+          Contactar
+        </Link>
       </div>
     </header>
   );
