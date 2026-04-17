@@ -9,6 +9,9 @@ if (! defined('ABSPATH')) {
     exit;
 }
 
+
+require_once get_template_directory() . '/template-parts/project-data.php';
+
 if (! function_exists('accstage_custom_setup')) {
     /**
      * Setup principal do tema.
@@ -70,3 +73,27 @@ function accstage_custom_page_heading(): string
 
     return $title ? $title : __('ACCSTAGE', 'accstage-custom');
 }
+
+
+/**
+ * Registar regras para detalhe de projeto em /projetos/{slug}/.
+ */
+function accstage_custom_register_project_rewrite(): void
+{
+    add_rewrite_rule('^projetos/([^/]+)/?$', 'index.php?pagename=projetos&acc_project_slug=$matches[1]', 'top');
+}
+add_action('init', 'accstage_custom_register_project_rewrite');
+
+/**
+ * Permitir query var de detalhe de projeto.
+ *
+ * @param array<int, string> $vars Variáveis permitidas.
+ * @return array<int, string>
+ */
+function accstage_custom_project_query_vars(array $vars): array
+{
+    $vars[] = 'acc_project_slug';
+
+    return $vars;
+}
+add_filter('query_vars', 'accstage_custom_project_query_vars');
