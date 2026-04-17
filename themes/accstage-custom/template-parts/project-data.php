@@ -1,6 +1,6 @@
 <?php
 /**
- * Dados editoriais de projetos ACCSTAGE.
+ * Dados editoriais dos projetos ACCSTAGE.
  *
  * @package accstage-custom
  */
@@ -11,7 +11,7 @@ if (! defined('ABSPATH')) {
 
 if (! function_exists('accstage_custom_get_projects_data')) {
     /**
-     * Devolve a lista base de projetos para listagem e detalhe.
+     * Devolve a lista de projetos para listagem e detalhe.
      *
      * @return array<int, array<string, mixed>>
      */
@@ -19,72 +19,61 @@ if (! function_exists('accstage_custom_get_projects_data')) {
     {
         return [
             [
-                'title' => __('Obsidian House', 'accstage-custom'),
-                'location' => __('Kyoto, Japão', 'accstage-custom'),
-                'type' => __('Residencial', 'accstage-custom'),
-                'year' => '2023',
-                'area' => __('790 m²', 'accstage-custom'),
-                'status' => __('Concluído', 'accstage-custom'),
-                'slug' => 'obsidian-house',
-                'class' => 'acc-project-card acc-project-card--wide',
-                'hero_lead' => __('Um refúgio brutalista esculpido em betão e silêncio.', 'accstage-custom'),
-                'description' => __('Concebido como peça monolítica, o projeto articula luz rasante, matéria crua e uma relação contínua entre interior e paisagem. A linguagem formal permanece contida, com foco na permanência e na escala humana.', 'accstage-custom'),
-                'concept' => __('Peso e permanência', 'accstage-custom'),
-                'cta_title' => __('Agendar conversa sobre um projeto com esta abordagem', 'accstage-custom'),
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuBtektfDe5K5CkWyOeEXcERbPcGhICCwWSD1qMBrmZi4UFEShZjLKPY8HRtwoBVPsSqE80KPA8zaP-V7rwPtI0bMFTUHxtHuPUpOVnX-5yvMiV3Erm4TvaGt1vcP67O0wrHjaUvfPTwOsf_H01aeyVEisyMfoHCjwft9cPK0AhbYfErjWeONLw5Ks1d4d7LBneOZEPy8hhdRkcgUcqgFOb8Kc93PXOaPpdyJcYu8fLuoU8EnMcyi49-Erd_Jda7M2dGP1pLa6eS-6LH',
-                'gallery' => [
-                    'https://lh3.googleusercontent.com/aida-public/AB6AXuDW0BbryO-p-9V3gPHze_GSJqjDUqtRKdna8Uf38_q1Pyk8fy7mm8mYPPjtaMizXF734AF45XU9xaZMrsfdnX3UspLubGJuz_okU59EF9vth57QIlK48fUlH3uCIEVjPFuAekh-PUFb_gLV-MzGDKUCBwu2mjaD_CyTw4_EcdAfhrCs1tqPRnlG49E1Gk7bNPq0ttOOwdNU7Uv3foljxNyP1EP2-xllthbY26DX0QITKAQg8eEDHgRSHVmayL4CkLLKBhWFMVNviG7c',
-                    'https://lh3.googleusercontent.com/aida-public/AB6AXuDWIxKlV2q_6jsxmbyBKWA4PVr7Sq3CUWsHJWpskLu-o76w0FPiQAdj2Hn5xDZSVg0M3ZAVmrXthkeyoZGrxd2CYGJybGLT4LuCZ6GrtZ87_lGE0G-ko25FY2fPKD1PlR9cPblx3BUX65toZ6igGuHFVrQuM9CB7K5dBuyAOBDytd9wxQkkdny51K3sTW7P0bE2xGyFB-dVfoZ2BeLpxWNN3MlFWAL1q2ukIlgvyqH7AoWRC2WcjizrtcSucvnQKpxqAuWj0-5EClWd',
-                    'https://lh3.googleusercontent.com/aida-public/AB6AXuDz_CZJ49tt__GxNLQZjJAx2aHoW8F__MNRa0oIjmyldx0MrGxqsZUhp4k_Wars4EAuaMz0t468XG-BOS9DZvdrQGkJDAgQL3UXrrt0OI8rmRqz0jRfEM0_SnQ8zJU7TIDAl2RB7rJ5Et9RxMGnAysWPcvWVpB9zhfyGEJdLwIFAaI7ZvAF6DobRmq7sFUrjidtl3AAb0OYnXAjLgsloyzpjWJ5IMNrwKhFkEsal3O3mMcvMFOAq-Sy4A5t7opymjHkzPUUUYb5XVdy',
+                'title' => __('2URBA', 'accstage-custom'),
+                'slug' => '2urba',
+                'location' => '',
+                'year' => '',
+                'hero_image' => '',
+                'gallery_images' => ['', '', ''],
+                'description' => [
+                    __('Projeto transversal de duas moradias geminadas para loteamento na cidade de Guimarães. É um projeto dotado de traços minimalistas e modernos, conjugando de uma forma harmoniosa os materiais e o espaço.', 'accstage-custom'),
+                    __('Estas moradias incluem três níveis: rés-do-chão com áreas de lazer, cozinha, lavandaria, instalações sanitárias e sala; o 1º andar com três quartos; cave com garagem para dois veículos por unidade habitacional.', 'accstage-custom'),
                 ],
+                'cta_title' => __('Pretende desenvolver um projeto residencial com esta linguagem?', 'accstage-custom'),
+                'list_tag' => __('Residencial', 'accstage-custom'),
             ],
             [
-                'title' => __('Pavilion X', 'accstage-custom'),
-                'location' => __('Berlim, Alemanha', 'accstage-custom'),
-                'type' => __('Cultural', 'accstage-custom'),
-                'year' => '2024',
-                'area' => __('460 m²', 'accstage-custom'),
-                'status' => __('Em execução', 'accstage-custom'),
-                'slug' => 'pavilion-x',
-                'class' => 'acc-project-card acc-project-card--tall',
-                'hero_lead' => __('Estrutura cívica mínima para arte e encontro.', 'accstage-custom'),
-                'description' => __('Um pavilhão de exposição com circulação fluida e volumes de transição, pensado para acolher instalações imersivas num registo contido, sólido e intemporal.', 'accstage-custom'),
-                'concept' => __('Ritmo espacial', 'accstage-custom'),
-                'cta_title' => __('Explorar colaboração para espaços culturais', 'accstage-custom'),
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuCg3GgLas3E6BoaTmQ1nYtvokBfWXf1xbNe9zkVBo-a4tUjzcpwsj0ZE69FGfKD4N0OF_Z1outNIiwjma_OVmYyUa67eADE00x_w3KLrjfTKjG7IkjQIHLDdBCwbQ1_ZTlQD6IcLmo12r0zFMJCcXaC-NR53VmVjBlkOIo6hjf-slEf59_Gdu-76n0d3ufZJUKqYem3A6CkezEu8xR09vbNyStc8m_oB7PtQtfMktJLEOt4ULBuv-3KF2BRST2zMRL-YBb_QvaQv-uV',
-                'gallery' => [],
+                'title' => __('Projeto Ribeira Verde', 'accstage-custom'),
+                'slug' => 'projeto-ribeira-verde',
+                'location' => __('Guimarães, Portugal', 'accstage-custom'),
+                'year' => '',
+                'hero_image' => '',
+                'gallery_images' => ['', '', ''],
+                'description' => [
+                    __('O edifício Ribeira Verde pretende introduzir na cidade uma forte relação entre construção e natureza. Elementos naturais como a água, as árvores e outros tipos de vegetação, sobressaem no edificado proposto, aumentando a biodiversidade e os níveis de oxigénio do local.', 'accstage-custom'),
+                    __('A valorização da ribeira de couros, que atualmente denota uma presença discreta e sem grande relação com as atividades sociais, representa uma clara mais valia. Este projeto congrega alguns interesses municipais que potencializarão a ligação do parque verde da cidade ao centro histórico.', 'accstage-custom'),
+                    __('Com 33 apartamentos, de áreas amplas e confortáveis e acabamento superiores, este edifício aporta qualidade de vida aos seus utilizadores. Dotado de muitas áreas verdes e equipamentos de lazer, o edifício Ribeira Verde oferece uma resposta ecológica à (pouca) oferta existente no mercado imobiliário da cidade de Guimarães.', 'accstage-custom'),
+                ],
+                'cta_title' => __('Vamos conversar sobre um projeto urbano com impacto positivo?', 'accstage-custom'),
+                'list_tag' => __('Habitação multifamiliar', 'accstage-custom'),
             ],
             [
-                'title' => __('Brutal Form 04', 'accstage-custom'),
-                'location' => __('Londres, Reino Unido', 'accstage-custom'),
-                'type' => __('Comercial', 'accstage-custom'),
-                'year' => '2022',
-                'area' => __('1 120 m²', 'accstage-custom'),
-                'status' => __('Concluído', 'accstage-custom'),
-                'slug' => 'brutal-form-04',
-                'class' => 'acc-project-card acc-project-card--square',
-                'hero_lead' => __('Espaço comercial monolítico com identidade editorial.', 'accstage-custom'),
-                'description' => __('O conjunto trabalha textura, sombra e continuidade material para uma experiência de marca discreta, com foco no produto e na atmosfera arquitetónica.', 'accstage-custom'),
-                'concept' => __('Matéria e contraste', 'accstage-custom'),
-                'cta_title' => __('Falar connosco sobre projetos comerciais', 'accstage-custom'),
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuB8Kf2rhtEZwX1--MvU0UoR0CSoka_lYnk1IZJAyDsjMJfd5IB4MZjutqD_F_4GN1cioDj9bqDm6rUGGEEKljc3QvjW8B2QI86I1icaKAlCx-IqN0iIVFq-d3HzPlrN2apAx5uaTVLTXZfjg7q3KIC2uixj9I8MOUDreST0hQJb0TCc3eRKj6JSCoEx4q4l1lHD-p8ZVEkg5t4tJR-kdACe2kAZZEv20P3emfLt7N5cXx_quSayg7FDLC4u9Iajl5Qvif6tJDBbMCYV',
-                'gallery' => [],
+                'title' => __('Projeto Fábrica Camport', 'accstage-custom'),
+                'slug' => 'projeto-fabrica-camport',
+                'location' => __('Guimarães, Portugal', 'accstage-custom'),
+                'year' => '',
+                'hero_image' => '',
+                'gallery_images' => ['', '', ''],
+                'description' => [
+                    __('O design concilia a funcionalidade à organização e aos pressupostos de uma empresa com marca reconhecida na indústria do calçado. A pureza e força do betão jogam constantemente com o alumínio branco e as suas diversas transparências e texturas.', 'accstage-custom'),
+                    __('A introdução da luz, interior e exterior, constitui um elemento importante no desenvolvimento da proposta. À noite, todas as fachadas assumem novas formas e dinâmicas. A complexidade da geometria presente no alçado principal foi desenvolvida através de um componente básico, o qual possui uma estreita relação com a empresa: a palmilha, que representa conforto.', 'accstage-custom'),
+                ],
+                'cta_title' => __('Procura uma abordagem arquitetónica para um espaço industrial?', 'accstage-custom'),
+                'list_tag' => __('Industrial', 'accstage-custom'),
             ],
             [
-                'title' => __('Gallery Mono', 'accstage-custom'),
-                'location' => __('Nova Iorque, EUA', 'accstage-custom'),
-                'type' => __('Arquivo', 'accstage-custom'),
-                'year' => '2021',
-                'area' => __('640 m²', 'accstage-custom'),
-                'status' => __('Concluído', 'accstage-custom'),
-                'slug' => 'gallery-mono',
-                'class' => 'acc-project-card acc-project-card--panorama',
-                'hero_lead' => __('Galeria de linhas austeras para coleção privada.', 'accstage-custom'),
-                'description' => __('Projeto de arquivo e exposição com um percurso sequencial de luz controlada, proporções rigorosas e linguagem tectónica de baixa expressão ornamental.', 'accstage-custom'),
-                'concept' => __('Luz curada', 'accstage-custom'),
-                'cta_title' => __('Descobrir o próximo projeto do arquivo', 'accstage-custom'),
-                'image' => 'https://lh3.googleusercontent.com/aida-public/AB6AXuAryhy7iU5MeBoCmkCg-z5u39VmVLVJPd4HRm9TRW0-LEcpbGEoeK6WTUS-8mLo7nCkJCh5KzcfxOTFt0_X0DL4C9vhcqvkJ4TptJDgxcgXnQAWg6mPWJl8nMnr0yF5Kb2yT0a6EfPCknD8YdaXCrud77x0uJ4XlqC_kATR4HhaHLR7n05DusMPaPf4lHRlIfT0hGUNMS2tqOCGOjvT-dJSe9REXDCDvW1wmrr1_m-MD6-Ts5ldlzo4TN5mbVys9-ai-EvuJgf8CzKk',
-                'gallery' => [],
+                'title' => __('Quinta do Peixoto', 'accstage-custom'),
+                'slug' => 'maison-quinta-do-peixoto',
+                'location' => __('Mascotelos, Guimarães', 'accstage-custom'),
+                'year' => __('Projeto 2019', 'accstage-custom'),
+                'hero_image' => '',
+                'gallery_images' => ['', '', ''],
+                'description' => [
+                    __('As residências da Quinta do Peixoto situam-se em Mascotelos, Guimarães. Este projeto inclui 13 lotes habitacionais, 78 residências e inúmeros espaços verdes. O ambiente é uma preocupação especial, uma vez que a biodiversidade e a sustentabilidade são duas das prioridades atuais.', 'accstage-custom'),
+                    __('A classe energética A, as centrais elétricas, o conforto térmico e a existência de painéis solares não passam despercebidos. Mais uma vez, o minimalismo de todos os elementos é evidente.', 'accstage-custom'),
+                ],
+                'cta_title' => __('Quer planear um conjunto habitacional com foco em sustentabilidade?', 'accstage-custom'),
+                'list_tag' => __('Masterplan residencial', 'accstage-custom'),
             ],
         ];
     }
