@@ -7,11 +7,14 @@
 
 get_header();
 
-$project_slug = get_query_var('acc_project_slug');
+$project_slug = accstage_custom_resolve_project_slug_from_request();
 $project = $project_slug ? accstage_custom_get_project_by_slug((string) $project_slug) : null;
 
 if ($project_slug && $project) {
+    set_query_var('acc_project_slug', $project_slug);
+    set_query_var('acc_project_detail_data', $project);
     get_template_part('template-parts/project', 'detail');
+    set_query_var('acc_project_detail_data', null);
 } elseif ($project_slug && ! $project) {
     ?>
     <section class="acc-page-hero acc-projects-hero">
