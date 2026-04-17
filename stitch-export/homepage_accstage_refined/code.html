@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ACCSTAGE | Monolithic Structures</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#f9f9f9",
+                      "tertiary-fixed": "#5e5e5e",
+                      "on-primary-fixed-variant": "#e2e2e2",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface-container": "#eeeeee",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#adabaa",
+                      "on-error": "#ffffff",
+                      "inverse-on-surface": "#f1f1f1",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed": "#ffffff",
+                      "primary-container": "#3b3b3b",
+                      "tertiary-container": "#747474",
+                      "surface-container-lowest": "#ffffff",
+                      "tertiary-fixed-dim": "#464747",
+                      "inverse-primary": "#c6c6c6",
+                      "surface-container-high": "#e8e8e8",
+                      "on-primary": "#e2e2e2",
+                      "surface-container-low": "#f3f3f3",
+                      "outline": "#777777",
+                      "primary-fixed": "#5e5e5e",
+                      "secondary-container": "#d6d4d3",
+                      "surface-bright": "#f9f9f9",
+                      "on-tertiary-container": "#ffffff",
+                      "on-secondary-fixed-variant": "#3c3b3b",
+                      "primary": "#000000",
+                      "on-tertiary": "#e3e2e2",
+                      "background": "#f9f9f9",
+                      "on-tertiary-fixed-variant": "#e3e2e2",
+                      "outline-variant": "#c6c6c6",
+                      "on-surface-variant": "#474747",
+                      "error": "#ba1a1a",
+                      "primary-fixed-dim": "#474747",
+                      "surface-tint": "#5e5e5e",
+                      "on-surface": "#1a1c1c",
+                      "on-error-container": "#410002",
+                      "on-primary-container": "#ffffff",
+                      "secondary-fixed": "#c8c6c5",
+                      "tertiary": "#3b3b3c",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "secondary": "#5f5e5e",
+                      "on-secondary-container": "#1c1b1b",
+                      "surface-variant": "#e2e2e2",
+                      "on-background": "#1a1c1c",
+                      "inverse-surface": "#2f3131",
+                      "surface-dim": "#dadada",
+                      "on-primary-fixed": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0",
+                      "lg": "0",
+                      "xl": "0",
+                      "full": "0"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Space Grotesk"
+                      ],
+                      "body": [
+                              "Newsreader"
+                      ],
+                      "label": [
+                              "Space Grotesk"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body { font-family: 'Newsreader', serif; background-color: theme('colors.surface'); color: theme('colors.primary'); margin: 0; padding: 0; }
+        h1, h2, h3, h4, h5, h6, .headline, .label { font-family: 'Space Grotesk', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+      </style>
+</head>
+<body class="bg-surface text-primary antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed full-width top-0 z-50 bg-[#F9F9F9]/80 dark:bg-[#000000]/80 backdrop-blur-xl border-b-[0.5px] border-[#C6C6C6] dark:border-[#3B3B3C] w-full">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[100vw] mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold tracking-tighter text-[#000000] dark:text-[#F9F9F9] font-headline" href="#">ACCSTAGE</a>
+<div class="hidden md:flex gap-8">
+<a class="text-[0.75rem] font-bold uppercase tracking-[0.1rem] font-headline text-[#5F5E5E] dark:text-[#A0A0A0] transition-colors duration-300 hover:text-[#000000] dark:hover:text-[#FFFFFF]" href="#">Projects</a>
+<a class="text-[0.75rem] font-bold uppercase tracking-[0.1rem] font-headline text-[#5F5E5E] dark:text-[#A0A0A0] transition-colors duration-300 hover:text-[#000000] dark:hover:text-[#FFFFFF]" href="#">Philosophy</a>
+<a class="text-[0.75rem] font-bold uppercase tracking-[0.1rem] font-headline text-[#5F5E5E] dark:text-[#A0A0A0] transition-colors duration-300 hover:text-[#000000] dark:hover:text-[#FFFFFF]" href="#">Studio</a>
+<a class="text-[0.75rem] font-bold uppercase tracking-[0.1rem] font-headline text-[#5F5E5E] dark:text-[#A0A0A0] transition-colors duration-300 hover:text-[#000000] dark:hover:text-[#FFFFFF]" href="#">Archive</a>
+</div>
+</div>
+<div class="hidden md:block">
+<a class="text-[0.75rem] font-bold uppercase tracking-[0.1rem] font-headline text-on-primary bg-primary px-6 py-3 hover:bg-primary-fixed transition-colors duration-200" href="#">Inquire</a>
+</div>
+<button class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-24">
+<!-- Hero Section -->
+<section class="relative w-full h-[870px] md:h-[921px] flex items-end pb-12 md:pb-24 px-8" data-alt="Brutalist concrete luxury mansion exterior at dusk with warm interior lighting spilling out" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-zoLVvOBsu6z12Vi-mAs-RXUU2A098HrwPDR66J2lgqhUMJXhUt3MY3rFbjdwy67ZPBPOwYmFfVtRYCuz0176unQqZiY1lJ8HVFKAJHZCPN6m8fFjpPb82PgNsF3j8xXT3g4Bvt-2OaTXdtcEdIx9liwTutLah0uS1gBkczgNp964RPQISVRMPTncIyGbus6rr_cDDXOgW2IQ6Dq89Tz88UQtnQPLox5lxGR8i8U4TUJOwrqqYmNvAHTRtNU9stN3-dB_DBlMVjUL'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-8">
+<h1 class="text-surface font-headline font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.85] tracking-tighter w-full md:w-2/3">
+                    MONOLITHIC<br/>STRUCTURES
+                </h1>
+<div class="w-full md:w-1/3 flex flex-col items-start md:items-end text-surface">
+<p class="font-body text-lg md:text-xl leading-relaxed max-w-sm mb-8 text-surface/80 text-left md:text-right">
+                        Architecting permanence in an ephemeral world. We shape negative space to frame existence.
+                    </p>
+<a class="text-[0.75rem] font-headline uppercase tracking-[0.1rem] font-bold border-b-[0.5px] border-surface pb-1 hover:text-surface-variant transition-colors duration-300" href="#">Discover Our Work</a>
+</div>
+</div>
+</section>
+<!-- Philosophy Section (Asymmetric) -->
+<section class="py-32 px-8 bg-surface-container-low relative">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-8 items-center">
+<div class="md:col-span-5 md:col-start-2">
+<h2 class="font-headline font-bold text-3xl md:text-5xl leading-tight tracking-tight mb-8">
+                        SPACE IS NOT EMPTY.<br/>IT IS A MATERIAL.
+                    </h2>
+<p class="font-body text-lg leading-relaxed text-secondary mb-12">
+                        We reject the disposable nature of modern construction. Our studio focuses on geometric purity, raw materials, and the profound silence created by intentional design. Every structure is a monolith, designed to outlast its creators.
+                    </p>
+<a class="text-[0.75rem] font-headline uppercase tracking-[0.1rem] font-bold text-primary border-b-[0.5px] border-primary pb-1 hover:text-primary-fixed transition-colors duration-300" href="#">Read the Manifesto</a>
+</div>
+<div class="md:col-span-6 flex justify-end">
+<img alt="Abstract interior architectural details of concrete walls intersecting with stark shadows" class="w-full md:w-4/5 object-cover aspect-[3/4] grayscale" data-alt="Abstract black and white architectural photography showing intersecting concrete planes and sharp geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaCRkLDf2Wpmod6htDGD9Cf--g5LoY7I8w1jX-TcOtfCa57zPSvTCUaNPAE_XW11x_xBBsFKuNynLmVswIemVCyaA1rmVnIl5qpPtD1jVFQdmKf2lQmDjC-UF2USP7zRryjKocbSB9ElJauWEpvwVw8SWylgDL2DjXZyMV6fPmziQelEG3evGDqCbijvpiozj3OOsgUhWDmEKVuG8jkQqQvM7WeKkhDUwvaqk4Ccxe24MQUQC9VK447qkYcJW39C65y7OML0ihdLr0"/>
+</div>
+</div>
+</section>
+<!-- Selected Projects (Editorial Grid) -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-24 border-b-[0.5px] border-outline-variant pb-8">
+<h2 class="font-headline font-bold text-4xl tracking-tight">SELECTED ARCHIVE</h2>
+<span class="font-headline text-[0.75rem] uppercase tracking-[0.1rem] text-secondary">2018 — 2024</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-y-24 md:gap-x-8">
+<!-- Project 1 (Large, Left) -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[4/3]">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist modern luxury home exterior with large glass panels and concrete framing surrounded by minimalist landscaping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwA9sB3mT_1DdOe2J-pKj9XqCrPM1VDf6SNPpi4oIiGqMsfc35EsOxCygYp2JXAoFTxMYHKptr-N_PyZWJED5HzXJjShE1YkAyrGvi5xLyWOjShgrCf-Cl5Jxm5wif7sRgN5Kc_rVniWTRltDJfmlud4zlOt3PFCEfA2K31g3kAA72EE_o5NhxELMktAotKwbvmVn1Yl98LisYoo6ywlbwLMNoc02FsUfAbh-ghqsdfhyqzaPqFvB-baFu6mSzX2BWscVj1-i8_Ch7"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div>
+<h3 class="font-headline font-bold text-xl mb-1 group-hover:text-tertiary-fixed transition-colors">RESIDENCE 04</h3>
+<p class="font-body text-secondary italic">Kyoto, Japan</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</div>
+<!-- Project 2 (Small, Right offset) -->
+<div class="md:col-span-4 md:col-start-9 md:mt-48 group cursor-pointer">
+<div class="relative overflow-hidden mb-6 aspect-[3/4]">
+<img alt="Project 2" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Detail shot of raw concrete texture meeting smooth dark glass under harsh directional sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBev21Wi2MHWa0_CI6l_csJVxUyaAsxmP0Lp3SpAKl8mYKWj2h0-ZxTXTvvKX7H-uY7GkIRl3eaoj2b-kyrymrlHe-tr2LZqvpOUYElar4X0kyRmgXcIV_mly4s0_UV02IuHp0aJwZREz7T4tfMEvyo1nMX-uHZG9yXw0OULWQK65MdZpRM9o4YYf3SmVxgpRmS7rwUXdH7Sx2_EdLxfplmqVbD6ce_Xkz4Cnxv623xwmazsdp-oQbDIISic3nbHxnua8INvkLxnhGW"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div>
+<h3 class="font-headline font-bold text-xl mb-1 group-hover:text-tertiary-fixed transition-colors">THE VAULT</h3>
+<p class="font-body text-secondary italic">Berlin, Germany</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</div>
+<!-- Project 3 (Wide, Centered) -->
+<div class="md:col-span-10 md:col-start-2 group cursor-pointer mt-12 md:mt-0">
+<div class="relative overflow-hidden mb-6 aspect-[21/9]">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Wide panoramic view of a brutalist concrete structure integrated into a rugged coastal cliff edge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8_6EQILGRHaifwb1Xi4iBASunvISLnrwtj--tMUFwC207Y46w9jpN-dMg_0CndzdFCTSv3IctFNDs7Eojc-ntJ2whDqh4be0peFV5BvZG0NV3o49qxmjfaGWMvYXQr94fti_xKCiLUvUxWCwpVSJ240OU59A8-YewGKHRC9UuSlhKPkiFNuvJQrRJwS9fWNl-LIsy3Su0YHsZlkoQRWFO5gWx8HX-_tpTIHpKS2xp0aGn10NQrXwxl1ReTdJXwogTlYwI5JlBtAnk"/>
+</div>
+<div class="flex justify-between items-baseline">
+<div>
+<h3 class="font-headline font-bold text-xl mb-1 group-hover:text-tertiary-fixed transition-colors">CLIFF PAVILION</h3>
+<p class="font-body text-secondary italic">Big Sur, California</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Excellence/Values -->
+<section class="py-32 px-8 bg-surface-container-high border-t-[0.5px] border-outline-variant">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-16">
+<div class="w-full md:w-1/3 border-t-[0.5px] border-primary pt-6">
+<span class="font-headline text-4xl font-bold text-outline-variant mb-4 block">01</span>
+<h3 class="font-headline font-bold text-2xl mb-4 tracking-tight">RIGOR</h3>
+<p class="font-body text-secondary leading-relaxed">
+                        Every angle calculated. Every shadow intentional. We employ an uncompromising exactitude in material selection and spatial planning.
+                    </p>
+</div>
+<div class="w-full md:w-1/3 border-t-[0.5px] border-primary pt-6">
+<span class="font-headline text-4xl font-bold text-outline-variant mb-4 block">02</span>
+<h3 class="font-headline font-bold text-2xl mb-4 tracking-tight">PERMANENCE</h3>
+<p class="font-body text-secondary leading-relaxed">
+                        Building for centuries, not decades. We select materials that age with dignity, acquiring patina rather than deterioration.
+                    </p>
+</div>
+<div class="w-full md:w-1/3 border-t-[0.5px] border-primary pt-6">
+<span class="font-headline text-4xl font-bold text-outline-variant mb-4 block">03</span>
+<h3 class="font-headline font-bold text-2xl mb-4 tracking-tight">PRECISION</h3>
+<p class="font-body text-secondary leading-relaxed">
+                        The gap between concept and execution must be zero. Our technical detailing ensures the monolithic vision is realized without compromise.
+                    </p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-48 px-8 bg-primary text-surface text-center flex flex-col items-center justify-center min-h-[614px]">
+<h2 class="font-headline font-bold text-4xl md:text-6xl tracking-tighter mb-8 max-w-3xl">INITIATE COMMISSION</h2>
+<p class="font-body text-xl text-surface/70 mb-12 max-w-2xl">
+                We accept a strictly limited number of private commissions annually to maintain our standard of execution.
+            </p>
+<a class="inline-block bg-surface text-primary font-headline font-bold text-[0.75rem] uppercase tracking-[0.1rem] px-12 py-5 hover:bg-surface-container-highest transition-colors duration-300" href="#">
+                Begin Dialogue
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="full-width relative pb-12 pt-24 bg-[#F9F9F9] dark:bg-[#000000] border-t-[0.5px] border-[#C6C6C6] dark:border-[#3B3B3C]">
+<div class="flex flex-col items-center w-full px-8 max-w-7xl mx-auto">
+<div class="w-full flex justify-between items-end mb-16">
+<div class="flex flex-col md:flex-row gap-8 md:gap-12">
+<a class="text-[0.75rem] uppercase font-headline tracking-widest text-[#5F5E5E] dark:text-[#777777] hover:text-[#000000] dark:hover:text-[#FFFFFF] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Instagram</a>
+<a class="text-[0.75rem] uppercase font-headline tracking-widest text-[#5F5E5E] dark:text-[#777777] hover:text-[#000000] dark:hover:text-[#FFFFFF] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">LinkedIn</a>
+<a class="text-[0.75rem] uppercase font-headline tracking-widest text-[#5F5E5E] dark:text-[#777777] hover:text-[#000000] dark:hover:text-[#FFFFFF] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Contact</a>
+<a class="text-[0.75rem] uppercase font-headline tracking-widest text-[#5F5E5E] dark:text-[#777777] hover:text-[#000000] dark:hover:text-[#FFFFFF] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Privacy</a>
+<a class="text-[0.75rem] uppercase font-headline tracking-widest text-[#5F5E5E] dark:text-[#777777] hover:text-[#000000] dark:hover:text-[#FFFFFF] underline-offset-4 hover:underline transition-all duration-500 ease-in-out" href="#">Terms</a>
+</div>
+<div class="text-right">
+<p class="font-body text-xs text-[#5F5E5E] dark:text-[#777777]">© 2024 ACCSTAGE MONOLITHIC STRUCTURES. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+<div class="w-full overflow-hidden flex justify-center border-t-[0.5px] border-outline-variant pt-8">
+<span class="text-[12vw] font-bold leading-none font-headline tracking-tighter text-[#000000] dark:text-[#F9F9F9] opacity-10">
+                    ACCSTAGE
+                </span>
+</div>
+</div>
+</footer>
+</body></html>

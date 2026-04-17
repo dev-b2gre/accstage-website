@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accstage - Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#1c1b1b",
+                        "on-tertiary-container": "#ffffff",
+                        "primary-container": "#3b3b3b",
+                        "on-secondary-fixed-variant": "#3c3b3b",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#e4e2e1",
+                        "on-background": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#adabaa",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#5f5e5e",
+                        "on-primary-fixed": "#ffffff",
+                        "outline-variant": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#d6d4d3",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#757474",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed": "#c8c6c5",
+                        "on-tertiary-fixed": "#ffffff",
+                        "on-primary": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "outline": "#777777",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary": "#3b3b3b",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#e4e2e1",
+                        "on-primary-container": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#474747",
+                        "primary-fixed": "#5e5e5e",
+                        "tertiary-fixed-dim": "#474747",
+                        "on-error-container": "#410002",
+                        "tertiary-fixed": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Base overrides to enforce zero radius */
+        * { border-radius: 0 !important; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-[0_20px_40px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-3xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline flex items-center gap-4">
+<img alt="Accstage Logo" class="h-8 w-auto object-contain" data-alt="Minimalist, stark black geometric architectural logo on transparent background, sharp edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBrixK7TqU6xej7ZzAYBjfQEZ7uVFHGT7bOupH1RCPuD4Xv39npoUjUYSrXRi4WinO6ZfcAwwqdN845_Jfrzvwi5HoBmVUxX5jB8WHbF88_ELGZgJKpNqcMN8KXFls4-DWW-q0NmHA7e1JQGlkhyWWZcVgXpqt9TKdac0cCuOk28rb96WegXJbI5pRSdCaWk1ZLx9dpJWVk_-BSnWL_96Gx-tnzHGSDgglZvFOlCNnrSAdaeemsn3IbO6FRS-7cdvyh68GHxl22D2e"/>
+                ACCSTAGE
+            </div>
+<div class="hidden md:flex gap-12 font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black dark:text-white">
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">PROJECTS</a>
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 opacity-70 transition-opacity" href="#">SERVICES</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">STUDIO</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">CONTACT</a>
+</div>
+<button class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold bg-primary text-on-primary px-8 py-4 hover:bg-primary-fixed transition-all duration-400">
+                INQUIRE
+            </button>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow pt-[120px]">
+<!-- Hero Section: Editorial Brutalism -->
+<section class="min-h-[819px] flex items-center px-12 md:px-24 bg-surface relative overflow-hidden pb-32">
+<div class="max-w-4xl z-10">
+<p class="font-label text-sm tracking-[0.2em] uppercase mb-8 text-on-surface-variant font-medium">Expertise &amp; Disciplines</p>
+<h1 class="font-headline text-[12vw] leading-[0.85] font-bold tracking-tighter text-primary uppercase mb-12">
+                    Shaping<br/>
+<span class="text-surface-tint">Reality</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl leading-relaxed border-l-2 border-primary pl-8">
+                    We transcend traditional construction, merging visionary design with engineering precision. Our methodology treats every structure as a permanent monolithic anchor.
+                </p>
+</div>
+<!-- Abstract background shape -->
+<div class="absolute right-0 top-1/4 w-[40vw] h-[819px] bg-surface-container-low -z-10 translate-x-1/4 skew-x-[-12deg]"></div>
+</section>
+<!-- Services Loop: Architecture & Design -->
+<section class="bg-surface-container-lowest border-t-[15px] border-surface-container-low relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+<div class="p-12 lg:p-24 flex flex-col justify-center order-2 lg:order-1 bg-surface-container-lowest z-10 relative">
+<span class="material-symbols-outlined text-6xl text-surface-tint mb-8 font-light" style="font-variation-settings: 'wght' 100;">architecture</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-8">Architecture &amp;<br/>Design</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12 leading-relaxed max-w-xl">
+                        Conceptualizing form and function with unapologetic boldness. We craft blueprints that challenge convention while respecting the fundamental laws of structure.
+                    </p>
+<ul class="space-y-6 font-body text-primary text-base md:text-lg border-t border-outline-variant/20 pt-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Conceptual Modeling &amp; Visualization</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Structural Engineering Schematics</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Permitting &amp; Regulatory Compliance</span>
+</li>
+</ul>
+</div>
+<div class="order-1 lg:order-2 h-[512px] lg:h-auto relative bg-surface-container">
+<img alt="Architecture Design" class="w-full h-full object-cover" data-alt="Stark, brutalist concrete interior with dramatic volumetric lighting cutting through sharp shadows, high contrast architectural photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEQdz5Dy5rGd1uGghTuNZknYkuBbGrRjqTOApm_irJMtG1KQCnRs2_S4vijnq4jEi2ovZFZCeBznYZti3yDP73gO2H02Z8c2pnh-OWlzB9yyweX181R8tL09TiStwJu5ZvXv4vKgxxIhgdpCyD1Akkf9sUliNaEweW5ZUKz6lVU4FIIdRR9DVASbnE-rRMfVkXC3d7tHCTfpjSu90RpRAWkYJzDwsGSxgxX6IldenNW0PdwL30yeQHVAIE6DcAo3mff1rkfO5I1w-A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Services Loop: Luxury Construction -->
+<section class="bg-surface relative overflow-hidden border-t-[1px] border-outline-variant/15">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+<div class="h-[512px] lg:h-auto relative bg-surface-container-high">
+<img alt="Luxury Construction" class="w-full h-full object-cover grayscale opacity-90" data-alt="Close up of raw steel beams and dark concrete textures at a construction site, monochromatic, sharp details, industrial luxury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOZWq7imklsoAdRf9e5_74jhglZegt4lGILaqddddFiSv9lfOSF0bU7xoDFOrA4DcE7NmzlbwishrPiebri3Fas5KCP4GvLo6IICnjikUoz7JKbo-1KDoKlSShOpsScqo1DfpFbUA2D0PknE86goHxk6LYnCFZcMSkGzWCA2nimT5ZMUG1mGbiDwAcUmHPz2rh0RgC3TINPW_C9oQIK80WxHQQAr83rd2eiuXTFrBhPVpJhWq4i_EjZr3kIEBuQ1ni4d7LHbKZvUI3"/>
+</div>
+<div class="p-12 lg:p-24 flex flex-col justify-center bg-surface z-10 relative">
+<span class="material-symbols-outlined text-6xl text-surface-tint mb-8 font-light" style="font-variation-settings: 'wght' 100;">foundation</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-8">Luxury<br/>Construction</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12 leading-relaxed max-w-xl">
+                        Execution without compromise. We source premier materials and deploy master craftsmen to manifest our designs into physical permanence.
+                    </p>
+<ul class="space-y-6 font-body text-primary text-base md:text-lg border-t border-outline-variant/20 pt-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Premium Material Sourcing &amp; Procurement</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Bespoke Site Execution &amp; Assembly</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Quality Assurance &amp; Tolerances Protocol</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Services Loop: Renovations -->
+<section class="bg-surface-container-lowest relative overflow-hidden border-t-[1px] border-outline-variant/15">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+<div class="p-12 lg:p-24 flex flex-col justify-center order-2 lg:order-1 bg-surface-container-lowest z-10 relative">
+<span class="material-symbols-outlined text-6xl text-surface-tint mb-8 font-light" style="font-variation-settings: 'wght' 100;">construction</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-8">Structural<br/>Renovations</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12 leading-relaxed max-w-xl">
+                        Reinterpreting existing foundations. We strip back the superfluous to reveal the core, adapting legacy structures for modern utility.
+                    </p>
+<ul class="space-y-6 font-body text-primary text-base md:text-lg border-t border-outline-variant/20 pt-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Core Assessment &amp; Feasibility Studies</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Historical Preservation &amp; Integration</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-sm mt-1">check_box_outline_blank</span>
+<span>Spatial Reconfiguration</span>
+</li>
+</ul>
+</div>
+<div class="order-1 lg:order-2 h-[512px] lg:h-auto relative bg-surface-container">
+<img alt="Renovations" class="w-full h-full object-cover" data-alt="Minimalist architectural facade with sharp geometric shadows and clean lines, monochromatic beige and white tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqpikiBxcsChy6_vIws363VDAtf4jcOU7ULHY4NzqQfBs6V3PcH45NP2P98I2PA36wbIAKHFQWWSPhbnhH0tMtBIt3DeZ8h5HbtL82IyK7f7iF8_YuZeThMxFfKs4ElUoLbLjznuJ8RpqAFGjL8W_xymwxKOwQ4STr4rkHJI0rGDXXgAZpYBjwbED_w3W7DJErdOeKQtffNIL6u5T44PJedSA0OcbUmSjVoBIYTF5I-CpgMTFjEg6nxIr6XqxfDkwi_Ulbha6UhfZr"/>
+</div>
+</div>
+</section>
+<!-- Project Management (Bento Grid Style) -->
+<section class="bg-surface py-32 px-12 md:px-24">
+<div class="max-w-7xl mx-auto">
+<div class="mb-24 max-w-3xl">
+<span class="material-symbols-outlined text-6xl text-surface-tint mb-8 font-light" style="font-variation-settings: 'wght' 100;">timeline</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-primary mb-6">Project<br/>Management</h2>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed">
+                        Absolute control from inception to handover. We oversee every logistical vector to ensure timeline fidelity and resource optimization.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[2px] bg-outline-variant/20">
+<div class="bg-surface-container-lowest p-12 hover:bg-surface-container-high transition-colors duration-500">
+<span class="font-label text-xs tracking-widest text-surface-tint uppercase mb-4 block">Phase 01</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">Resource Allocation</h3>
+<p class="font-body text-on-surface-variant">Strategic deployment of capital, materials, and labor forces synchronized with site demands.</p>
+</div>
+<div class="bg-surface-container-lowest p-12 hover:bg-surface-container-high transition-colors duration-500">
+<span class="font-label text-xs tracking-widest text-surface-tint uppercase mb-4 block">Phase 02</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">Timeline Enforcement</h3>
+<p class="font-body text-on-surface-variant">Rigorous adherence to critical path methodologies, mitigating delays through proactive contingency planning.</p>
+</div>
+<div class="bg-surface-container-lowest p-12 hover:bg-surface-container-high transition-colors duration-500">
+<span class="font-label text-xs tracking-widest text-surface-tint uppercase mb-4 block">Phase 03</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">Stakeholder Reporting</h3>
+<p class="font-body text-on-surface-variant">Transparent, data-driven progress analytics delivered to clients with absolute clarity.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-24 px-12 border-t border-black/5 bg-[#f9f9f9] dark:bg-neutral-950">
+<div class="max-w-screen-3xl mx-auto">
+<span class="text-4xl font-bold tracking-tighter mb-8 block text-black dark:text-white font-headline">ACCSTAGE</span>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 max-w-full font-['Manrope'] text-sm tracking-tight text-black dark:text-white">
+<div>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 block mb-4" href="#">INSTAGRAM</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 block mb-4" href="#">LINKEDIN</a>
+</div>
+<div>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 block mb-4" href="#">PRIVACY POLICY</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 block mb-4" href="#">TERMS OF SERVICE</a>
+</div>
+<div class="md:col-span-2 text-black/60 dark:text-white/60 flex items-end md:justify-end">
+<p>© 2024 ACCSTAGE ARCHITECTURAL SOLUTIONS. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

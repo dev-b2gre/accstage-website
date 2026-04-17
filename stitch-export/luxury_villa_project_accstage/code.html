@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ACCSTAGE | THE OAK RESIDENCE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#1c1b1b",
+                        "on-tertiary-container": "#ffffff",
+                        "primary-container": "#3b3b3b",
+                        "on-secondary-fixed-variant": "#3c3b3b",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#e4e2e1",
+                        "on-background": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#adabaa",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#5f5e5e",
+                        "on-primary-fixed": "#ffffff",
+                        "outline-variant": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#d6d4d3",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#757474",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed": "#c8c6c5",
+                        "on-tertiary-fixed": "#ffffff",
+                        "on-primary": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "outline": "#777777",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary": "#3b3b3b",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#e4e2e1",
+                        "on-primary-container": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#474747",
+                        "primary-fixed": "#5e5e5e",
+                        "tertiary-fixed-dim": "#474747",
+                        "on-error-container": "#410002",
+                        "tertiary-fixed": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#e2e2e2"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Shared Component -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-[0_20px_40px_rgba(0,0,0,0.04)] flex justify-between items-center px-12 py-6 w-full font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black dark:text-white">
+<a class="text-2xl font-bold tracking-tighter text-black dark:text-white" href="#">
+<img alt="ACCSTAGE Logo" class="h-6" data-alt="Minimalist, sharp, geometric black logo on white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1ZLr_r3645nIzDFisJMlztnx-8J_udCG_O88D_5Zxl4hrPR2-2sm_PTo07R8MZMiQR9sjXz-bzYXiZA_IhuT3Qzq1EC3AaLD5Wfqu7lj5rk-ePDQY50Z5aCCJ9Wv1ND_hYUXJpmfLJOel2kVLKofBNB3b3T8vUi0M992uXgDLvBZtk3wI3ZwfIENvJ0IWhPlM9MhRo0q6Z44FcaJw7PxwMMRPkpB5T8k0DJlOgoeeKchoSRfCZ88emZLVu2S6wCoZkP9XTXVLDR4O"/>
+</a>
+<div class="hidden md:flex space-x-12">
+<a class="text-black dark:text-white border-b border-black dark:border-white pb-1 Active: opacity-70 transition-opacity" href="#">PROJECTS</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all duration-400" href="#">SERVICES</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all duration-400" href="#">STUDIO</a>
+<a class="text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-all duration-400" href="#">CONTACT</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 hover:bg-primary-fixed transition-colors duration-400 tracking-widest text-[11px]">
+            INQUIRE
+        </button>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 w-full">
+<!-- Hero Section -->
+<section class="w-full h-[819px] relative">
+<img alt="The Oak Residence Exterior" class="w-full h-full object-cover" data-alt="Modern monolithic luxury residence exterior, twilight lighting, sharp concrete lines, glowing interior, reflection pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvyaNuTEpxhJAX9a46xYTgrqpYvoNls8ikFhn0GQB1m4PdDeiJh30Hj1FsAaFojZNIdcfFL5-JCvMCNUdeidsJ9I4JNzgBgrVIQbq3EYm9rRGaUUwPLY-G_F75RjVTfSgEGVvFoJidnJNzwWWFg-y49hxdJSZ02rzw56K9EPVHi3hLFqOaQhPkf1R8ZApYklFYqEj0qhWdOXOids099SzwJ5TTYp16TzA5ut6Tqq1XYkZta8EgBVeafjD9VGFkhbmAjA1i4TBrPA_q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-16 left-12 md:left-24">
+<h1 class="font-headline text-5xl md:text-8xl font-bold text-on-primary tracking-tighter mb-4">THE OAK<br/>RESIDENCE</h1>
+<p class="font-label text-on-primary-fixed-variant tracking-widest text-sm uppercase">COMPLETED 2024</p>
+</div>
+</section>
+<!-- Project Details Header -->
+<section class="bg-surface-container-low px-12 md:px-24 py-16 grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-outline-variant/15">
+<div>
+<span class="block font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">LOCATION</span>
+<span class="font-headline text-lg font-bold">ASPEN, COLORADO</span>
+</div>
+<div>
+<span class="block font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">YEAR</span>
+<span class="font-headline text-lg font-bold">2024</span>
+</div>
+<div>
+<span class="block font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">CATEGORY</span>
+<span class="font-headline text-lg font-bold">RESIDENTIAL</span>
+</div>
+<div>
+<span class="block font-label text-[10px] tracking-widest text-on-surface-variant uppercase mb-2">SCALE</span>
+<span class="font-headline text-lg font-bold">12,500 SQ FT</span>
+</div>
+</section>
+<!-- Narrative Section (Asymmetric) -->
+<section class="px-12 md:px-24 py-32 grid md:grid-cols-12 gap-16 bg-surface">
+<div class="md:col-span-4">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight mb-8">ENGINEERED<br/>FOR THE<br/>ELEMENTS.</h2>
+<div class="h-[2px] w-16 bg-primary"></div>
+</div>
+<div class="md:col-span-7 md:col-start-6 space-y-8 font-body text-lg text-on-surface-variant leading-relaxed">
+<p>
+                    Set against the harsh, unforgiving topography of the Rocky Mountains, The Oak Residence was conceived not as an intrusion upon the landscape, but as a geological extension of it. The monolithic form prioritizes shelter and permanence.
+                </p>
+<p>
+                    Our primary challenge was executing sheer structural scale without compromising the intimate, tactile experience of the interior. We utilized a radical palette of board-formed concrete, darkened steel, and native oak, creating a spatial narrative that feels simultaneously imposing and protective.
+                </p>
+<div class="pt-8 border-t border-outline-variant/15">
+<p class="font-label text-sm uppercase tracking-widest font-bold text-on-surface">LEAD ARCHITECT: MARCUS VANCE</p>
+</div>
+</div>
+</section>
+<!-- Gallery / Bento Grid -->
+<section class="bg-surface-container-highest p-4 md:p-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Large Feature -->
+<div class="md:col-span-2 md:row-span-2 aspect-square md:aspect-auto">
+<img alt="Interior living space" class="w-full h-full object-cover shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)]" data-alt="Minimalist luxury living room, raw concrete walls, dark oak floors, floor-to-ceiling windows overlooking snow-capped mountains, moody natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkkjOHDiB-gveme0pyTUGyY5GxNcWzTTTzckLSw4eUDYA82DI3ic7PhvbS6EC2hVi6nH0WrJxt9SfKNSWjf2HpUNtYrj2GwJjs70JUTT18MZALXI33G7E27W9uMTDyN-tg-JxECcRHEw6b3UxmkiqwCSf7KgRcvrkU-Rq3Ol0EMVNEDaFOclq97HOzt7jNCUYvlTLf0PCi_Sjgyzz_AizbiJiEzSYoBZpkAIT2Qvdq9sF_O8uA4sC2Z8PwcSeqJi-Z3cViH1dXFqcu"/>
+</div>
+<!-- Stacked Details -->
+<div class="aspect-square">
+<img alt="Staircase detail" class="w-full h-full object-cover shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)]" data-alt="Architectural staircase detail, blackened steel floating treads against raw concrete, stark geometric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxVZ28B3x45F8OJDnKuvH4eY7HzoVL_67Ayur43Uny5l3atLpwbedVlbZiUmZRaXP8lMZNQUojwU2AP2BHczTsvR0dgjeehUTGB8osXWqL_b7_-frej-JAoCHLp-V_URW5NCi8DhxSBvkpfg11dwYo3YOuBPVibqYS3TsJY1oyWi__-9pJBxxQuVzSK38la6srHl5zs5kYCmH9HSojP7Qn1j_19VssZc7FAaub1GarhmCIZtHmo8LFGiWAZ631MDsWANXE685OwDt1"/>
+</div>
+<div class="aspect-square">
+<img alt="Kitchen detail" class="w-full h-full object-cover shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)]" data-alt="High-end minimalist kitchen, dark matte monolithic island, integrated appliances, subtle warm recessed lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7WBcR-GC8-RhMeK4HORKQ04zXXO18qqYlUqgfi9Kwpj5OxKIq4o8jx8hcCdHa5-B9FM6zcZOPX86XhFudNH716YupISdt0C8yO_eSxyJURb8loXtH-vSpwFqaAtWggftj3lZCrKEepwaPhAQASBPkO61U6XvOrzr3VlOP1k-IRE_PzVR6LvGBCB5z7AS-wj8UNValypaIoDXz0k4aedsxv2SPYA2QgKvERDtXMJPABqlB4Re7QJ-3JiIs3twpNb7k6pyyoGRzKvov"/>
+</div>
+<!-- Full Width Breaker -->
+<div class="md:col-span-3 h-[614px]">
+<img alt="Pool exterior" class="w-full h-full object-cover shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)]" data-alt="Infinity pool reflecting brutalist concrete architecture at dusk, surrounded by alpine forest, severe geometric lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI-AzTNRq5SOCjTWAQ7D25qtWxGoVuizzP7uce_AQdDKe8hoCKjye32CM-THeJYWwRcO8nXLH1dccvbyq4y3giqpSfQa_WovIgUeZ2n4jDmxoeqyA1_uadNARYu0JXNZ9-E17njZZZ5zBM0hATdMybqWjQz4GtEUg6Vt4wB0iir-6zqfyvq-nJLx_9VoWU-yokRYSbQwhqWat7Ih0J-9dtsZgpHjwMtJXDvJFc-U2zJQk2reT5VFFXEGrLwtQdGzoqe0ZIpOsAgACq"/>
+</div>
+</div>
+</section>
+<!-- Technical Specs -->
+<section class="bg-surface py-32 px-12 md:px-24 border-b border-outline-variant/15">
+<h3 class="font-headline text-3xl font-bold mb-16 uppercase tracking-tight">MATERIAL COMPOSITION</h3>
+<div class="grid md:grid-cols-3 gap-16 border-t border-outline-variant/15 pt-8">
+<div>
+<h4 class="font-label text-sm uppercase tracking-widest font-bold mb-4">EXTERIOR FAÇADE</h4>
+<p class="font-body text-on-surface-variant">Custom board-formed concrete mix engineered for sub-zero thermal mass. Oxidized Corten steel panelling detailing.</p>
+</div>
+<div>
+<h4 class="font-label text-sm uppercase tracking-widest font-bold mb-4">GLAZING</h4>
+<p class="font-body text-on-surface-variant">Triple-paned, thermally broken structural glass. Custom blackened steel mullion extrusions.</p>
+</div>
+<div>
+<h4 class="font-label text-sm uppercase tracking-widest font-bold mb-4">INTERIOR FINISHES</h4>
+<p class="font-body text-on-surface-variant">Reclaimed European Oak wide-plank flooring. Tadelakt plaster walls. Custom patinated brass hardware.</p>
+</div>
+</div>
+</section>
+<!-- Next Project Navigation -->
+<section class="bg-surface-container-lowest relative group cursor-pointer overflow-hidden h-[409px] flex items-center justify-center">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-primary/50 group-hover:to-primary/80 transition-all duration-700 z-10"></div>
+<img alt="Next Project" class="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-1000 ease-in-out grayscale" data-alt="Modern brutalist concrete structure, sharp lines against a stark white sky, high contrast black and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMVisX3Lb1GmbpSZk4w8hxtjZGnx7wDwWppT6QIobsObvN6Jby6RTF_JNQAA4p_3xDDMOOLQT4ZmJEe96UNAKcDRf6suoCGeKGJBhC4maVDeigfaLrlrnF0my6Q1vtZtMAX5brNA4To6IJzOgGN30ah6wB1aNf99p7S6xkWZfQpkNOfZMFvmbenrg8v2SkuknsOC6hFZbs03ndtrLYhXOFcXw7Sg9EsYoucTCYAwmNi_MGjeF9j0KSncyzGNpKeBXM_a1_GGGhLas"/>
+<div class="relative z-20 text-center">
+<span class="block font-label text-[10px] tracking-widest text-on-primary-fixed-variant uppercase mb-4 opacity-70">NEXT PROJECT</span>
+<h2 class="font-headline text-4xl md:text-6xl font-bold text-on-primary tracking-tighter group-hover:tracking-normal transition-all duration-700">THE VANGUARD</h2>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="bg-[#f9f9f9] dark:bg-neutral-950 text-black dark:text-white font-['Manrope'] text-sm tracking-tight w-full py-24 px-12 border-t border-black/5 grid grid-cols-1 md:grid-cols-4 gap-16 max-w-full focus-within:ring-0">
+<div class="md:col-span-4">
+<span class="text-4xl font-bold tracking-tighter mb-8 block font-headline">ACCSTAGE</span>
+</div>
+<div class="md:col-span-2">
+<p class="text-black/60 dark:text-white/60 mb-8 max-w-sm">
+                Architectural solutions engineered for permanence.
+            </p>
+<p class="text-[10px] tracking-widest text-black/40 dark:text-white/40 uppercase">
+                © 2024 ACCSTAGE ARCHITECTURAL SOLUTIONS. ALL RIGHTS RESERVED.
+            </p>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label text-[10px] tracking-widest uppercase text-black/40 dark:text-white/40">SOCIAL</span>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">INSTAGRAM</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">LINKEDIN</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="font-label text-[10px] tracking-widest uppercase text-black/40 dark:text-white/40">LEGAL</span>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">PRIVACY POLICY</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">TERMS OF SERVICE</a>
+</div>
+</footer>
+</body></html>

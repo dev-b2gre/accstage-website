@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accstage - Contact</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#f9f9f9",
+                        "tertiary-fixed": "#5e5e5e",
+                        "on-primary-fixed-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-container": "#eeeeee",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#adabaa",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f1f1f1",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#ffffff",
+                        "primary-container": "#3b3b3b",
+                        "tertiary-container": "#747474",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#464747",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary": "#e2e2e2",
+                        "surface-container-low": "#f3f3f3",
+                        "outline": "#777777",
+                        "primary-fixed": "#5e5e5e",
+                        "secondary-container": "#d6d4d3",
+                        "surface-bright": "#f9f9f9",
+                        "on-tertiary-container": "#ffffff",
+                        "on-secondary-fixed-variant": "#3c3b3b",
+                        "primary": "#000000",
+                        "on-tertiary": "#e3e2e2",
+                        "background": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#e3e2e2",
+                        "outline-variant": "#c6c6c6",
+                        "on-surface-variant": "#474747",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#474747",
+                        "surface-tint": "#5e5e5e",
+                        "on-surface": "#1a1c1c",
+                        "on-error-container": "#410002",
+                        "on-primary-container": "#ffffff",
+                        "secondary-fixed": "#c8c6c5",
+                        "tertiary": "#3b3b3c",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-container": "#1c1b1b",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "inverse-surface": "#2f3131",
+                        "surface-dim": "#dadada",
+                        "on-primary-fixed": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Newsreader", "serif"],
+                        "label": ["Space Grotesk", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { background-color: #f9f9f9; color: #1a1c1c; font-family: 'Newsreader', serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .label-md { font-family: 'Space Grotesk', sans-serif; text-transform: uppercase; letter-spacing: 0.1rem; font-size: 0.75rem; font-weight: 700; }
+        .hairline-bottom { border-bottom: 0.5px solid #c6c6c6; }
+        .hairline-top { border-top: 0.5px solid #c6c6c6; }
+        
+        /* Custom map styling to look monochromatic */
+        .mono-map { filter: grayscale(100%) contrast(1.2) brightness(0.9); mix-blend-mode: multiply; }
+        
+        /* Form inputs without boxes */
+        input[type="text"], input[type="email"], textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 0.5px solid #c6c6c6;
+            border-radius: 0;
+            padding: 1rem 0;
+            font-family: 'Newsreader', serif;
+            font-size: 1rem;
+            color: #1a1c1c;
+        }
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            box-shadow: none;
+            border-bottom-color: #000000;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-[#F9F9F9]/80 backdrop-blur-xl docked full-width top-0 z-50 border-b-[0.5px] border-[#C6C6C6] flat no shadows sticky">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[100vw] mx-auto">
+<a class="text-2xl font-bold tracking-tighter text-[#000000] font-headline" href="#">ACCSTAGE</a>
+<nav class="hidden md:flex gap-8 items-center font-headline">
+<a class="text-[#5F5E5E] transition-colors duration-300 hover:text-[#000000] transition-all duration-300 text-[0.75rem] font-bold uppercase tracking-[0.1rem]" href="#">Projects</a>
+<a class="text-[#5F5E5E] transition-colors duration-300 hover:text-[#000000] transition-all duration-300 text-[0.75rem] font-bold uppercase tracking-[0.1rem]" href="#">Philosophy</a>
+<a class="text-[#5F5E5E] transition-colors duration-300 hover:text-[#000000] transition-all duration-300 text-[0.75rem] font-bold uppercase tracking-[0.1rem]" href="#">Studio</a>
+<a class="text-[#5F5E5E] transition-colors duration-300 hover:text-[#000000] transition-all duration-300 text-[0.75rem] font-bold uppercase tracking-[0.1rem]" href="#">Archive</a>
+<a class="text-[#000000] border-b-[0.5px] border-[#000000] pb-1 text-[0.75rem] font-bold uppercase tracking-[0.1rem]" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary font-headline uppercase text-[0.75rem] tracking-[0.1rem] px-6 py-3 font-bold hover:bg-primary-fixed transition-colors duration-200">Inquire</button>
+</div>
+</header>
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-8 py-24 flex flex-col gap-24">
+<!-- Hero Section -->
+<section class="w-full">
+<h1 class="font-headline text-[3.5rem] md:text-[5rem] lg:text-[7rem] leading-[0.9] tracking-tighter font-bold text-primary mb-8 max-w-4xl uppercase">
+                Let's Build Legacy
+            </h1>
+<p class="font-body text-lg leading-[1.6] text-on-surface-variant max-w-2xl">
+                We design with intent. If you seek to create enduring architectural statements, initiate the conversation below. Our studio is selective with commissions to ensure uncompromising quality.
+            </p>
+</section>
+<!-- Asymmetric Grid: Contact Info & Form -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 w-full items-start">
+<!-- Left Column: Architectural Hierarchy Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-16">
+<div class="flex flex-col gap-8">
+<h2 class="label-md text-outline">Global Headquarters</h2>
+<div class="flex flex-col gap-2">
+<p class="font-body text-lg leading-[1.6] text-primary">Accstage Monolithic Structures</p>
+<p class="font-body text-lg leading-[1.6] text-on-surface-variant">1440 Blueprint Ave, Suite 900</p>
+<p class="font-body text-lg leading-[1.6] text-on-surface-variant">New York, NY 10011</p>
+<p class="font-body text-lg leading-[1.6] text-on-surface-variant">United States</p>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<h2 class="label-md text-outline">Direct Inquiries</h2>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 hairline-bottom pb-4">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">mail</span>
+<a class="font-body text-lg text-primary hover:text-tertiary-fixed transition-colors" href="mailto:inquiries@accstage.com">inquiries@accstage.com</a>
+</div>
+<div class="flex items-center gap-4 hairline-bottom pb-4">
+<span class="material-symbols-outlined text-outline" style="font-variation-settings: 'FILL' 0;">phone</span>
+<a class="font-body text-lg text-primary hover:text-tertiary-fixed transition-colors" href="tel:+12125550198">+1 (212) 555-0198</a>
+</div>
+</div>
+</div>
+<!-- Custom Map Image instead of iframe for aesthetic control -->
+<div class="w-full aspect-[4/3] bg-surface-container-low relative overflow-hidden group">
+<img alt="Monochromatic satellite map view of Manhattan" class="w-full h-full object-cover mono-map transition-transform duration-700 group-hover:scale-105" data-alt="high contrast black and white architectural satellite map view of Manhattan grid streets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCqFb7SHDdMLdQ4bez5V4HM-Ygry_NtJqOyK1aBEMCTlZumXhwKtomK2zxYJKatuZsYigP6HCxToHxojSJ-SYH7oJweCYibpsn2cjqA7CLJzfkPt1ccTNfgYG6AHT-GNLZJbZnpLz3dvbw7kqrBlafcVvImotBZAXAcu0j9mV17MyRmtGlH9M2okDS_IN7AMoJ5fCDUh9EjWfe22qgu3zN7rkp21Tk-_sc-yMiwqadp4hLAm_WQXiAHRytAyOATJ9wtGq2xkEN510q"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 bg-surface px-4 py-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<span class="label-md text-primary">NY Studio</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Minimalist Contact Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12">
+<form class="flex flex-col gap-12 w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="firstName">First Name</label>
+<input class="w-full focus:ring-0" id="firstName" name="firstName" placeholder="Enter your first name" required="" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="lastName">Last Name</label>
+<input class="w-full focus:ring-0" id="lastName" name="lastName" placeholder="Enter your last name" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="email">Email Address</label>
+<input class="w-full focus:ring-0" id="email" name="email" placeholder="Enter your professional email" required="" type="email"/>
+</div>
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="company">Company / Organization</label>
+<input class="w-full focus:ring-0" id="company" name="company" placeholder="Optional" type="text"/>
+</div>
+</div>
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="inquiryType">Nature of Inquiry</label>
+<select class="w-full bg-transparent border-none border-b-[0.5px] border-outline-variant rounded-none py-4 font-body text-lg text-primary focus:ring-0 focus:border-primary appearance-none cursor-pointer" id="inquiryType" name="inquiryType">
+<option disabled="" selected="" value="">Select an option</option>
+<option value="new_commission">New Commission</option>
+<option value="media">Media &amp; Press</option>
+<option value="careers">Careers</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="label-md text-outline mb-2" for="message">Message</label>
+<textarea class="w-full resize-none focus:ring-0" id="message" name="message" placeholder="Detail your project scope or inquiry..." required="" rows="4"></textarea>
+</div>
+<div class="pt-8">
+<button class="bg-primary text-on-primary font-headline uppercase text-[0.75rem] tracking-[0.1rem] px-8 py-4 font-bold hover:bg-primary-fixed transition-colors duration-200 w-full md:w-auto flex items-center justify-center gap-2 group" type="submit">
+                            Submit Inquiry
+                            <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#F9F9F9] full-width relative pb-12 pt-24 border-t-[0.5px] border-[#C6C6C6] flat no shadows flex flex-col items-center w-full px-8">
+<div class="w-full flex justify-between items-end mb-16 flex-wrap gap-8">
+<nav class="flex gap-6 font-headline">
+<a class="text-[#5F5E5E] hover:text-[#000000] underline-offset-4 hover:underline Transition-all duration-500 ease-in-out text-[0.75rem] uppercase tracking-widest font-bold" href="#">Instagram</a>
+<a class="text-[#5F5E5E] hover:text-[#000000] underline-offset-4 hover:underline Transition-all duration-500 ease-in-out text-[0.75rem] uppercase tracking-widest font-bold" href="#">LinkedIn</a>
+<a class="text-[#5F5E5E] hover:text-[#000000] underline-offset-4 hover:underline Transition-all duration-500 ease-in-out text-[0.75rem] uppercase tracking-widest font-bold" href="#">Contact</a>
+<a class="text-[#5F5E5E] hover:text-[#000000] underline-offset-4 hover:underline Transition-all duration-500 ease-in-out text-[0.75rem] uppercase tracking-widest font-bold" href="#">Privacy</a>
+<a class="text-[#5F5E5E] hover:text-[#000000] underline-offset-4 hover:underline Transition-all duration-500 ease-in-out text-[0.75rem] uppercase tracking-widest font-bold" href="#">Terms</a>
+</nav>
+<p class="font-label text-[0.75rem] uppercase tracking-widest text-[#5F5E5E]">© 2024 ACCSTAGE MONOLITHIC STRUCTURES. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="w-full overflow-hidden flex justify-center">
+<span class="text-[12vw] font-bold leading-none text-[#000000] opacity-10 font-headline tracking-tighter whitespace-nowrap">ACCSTAGE</span>
+</div>
+</footer>
+</body></html>

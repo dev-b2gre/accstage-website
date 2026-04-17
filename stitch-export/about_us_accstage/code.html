@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | ACCSTAGE ARCHITECTURAL SOLUTIONS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#1c1b1b",
+                        "on-tertiary-container": "#ffffff",
+                        "primary-container": "#3b3b3b",
+                        "on-secondary-fixed-variant": "#3c3b3b",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#e4e2e1",
+                        "on-background": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#adabaa",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#5f5e5e",
+                        "on-primary-fixed": "#ffffff",
+                        "outline-variant": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#d6d4d3",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#757474",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed": "#c8c6c5",
+                        "on-tertiary-fixed": "#ffffff",
+                        "on-primary": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "outline": "#777777",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary": "#3b3b3b",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#e4e2e1",
+                        "on-primary-container": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#474747",
+                        "primary-fixed": "#5e5e5e",
+                        "tertiary-fixed-dim": "#474747",
+                        "on-error-container": "#410002",
+                        "tertiary-fixed": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Space Grotesk', sans-serif; }
+        .label-text { font-family: 'Manrope', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; }
+        
+        /* Specific utility classes for the monolith feel */
+        .ghost-border-bottom {
+            border-bottom: 1px solid rgba(198, 198, 198, 0.15); /* outline-variant at 15% */
+        }
+        
+        .ambient-shadow {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        }
+        
+        .monolith-transition {
+            transition: all 400ms ease-in-out;
+        }
+        
+        .glassmorphism {
+            background-color: rgba(249, 249, 249, 0.8); /* surface at 80% */
+            backdrop-filter: blur(20px);
+        }
+        
+        .texture-gradient {
+            background: linear-gradient(to bottom right, #000000, #3b3b3b); /* primary to primary-container */
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-[0_20px_40px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center">
+<span class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline">ACCSTAGE</span>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">PROJECTS</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">SERVICES</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black dark:text-white border-b border-black dark:border-white pb-1" href="#">STUDIO</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">CONTACT</a>
+</div>
+<div class="hidden md:flex">
+<button class="bg-primary text-on-primary px-6 py-3 font-label text-xs tracking-widest uppercase hover:bg-primary-fixed monolith-transition">INQUIRE</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 w-full max-w-screen-2xl mx-auto">
+<!-- Hero Section -->
+<section class="min-h-[716px] flex flex-col justify-center px-12 md:px-24 py-24 bg-surface relative">
+<div class="w-full md:w-3/4 lg:w-2/3 relative z-10">
+<span class="label-text text-on-surface-variant mb-6 block text-sm">THE ACCSTAGE PHILOSOPHY</span>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9] text-primary mb-12 uppercase">OUR VISION,<br/>YOUR REALITY</h1>
+</div>
+<div class="w-full h-[400px] md:h-[600px] bg-surface-container-low mt-12 relative overflow-hidden group">
+<img alt="Architectural Model" class="w-full h-full object-cover filter grayscale opacity-90 group-hover:grayscale-0 monolith-transition duration-1000" data-alt="High-contrast black and white photograph of a brutalist concrete architectural model casting sharp, dramatic geometric shadows on a smooth white surface, emphasizing clean lines and spatial volume." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBq9sbGlDVCm_Lhj88VdFZ0PRGE78FVs_zAOyqIxzDolHfO648nTyzWuMzut4MkmCTnHcanNXOlI_gYvYLCh8jE_35UNpMtjO2_QFZaonk-xqlWoUrfl3deKfAXh1OFpSgWN4k4XZHCYGmRGvLmVq4IFidNPirrq3TeZaLMmdh_i1OObmbwSHNCBg9DQyqkwG3AbajmL5p1RT4V1v2t47fApuK4dImkl9jHrVVGiINXhbHa9RXbBQovmmxcyhGl36TS3LOGfyZUJf6N"/>
+<!-- Inner Glow for images as per guidelines -->
+<div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)] pointer-events-none"></div>
+</div>
+</section>
+<!-- Legacy / History Section -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-low relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+<div>
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-primary mb-8 tracking-tight">ENDURING STRUCTURES, FOUNDED ON PRECISION.</h2>
+<p class="font-body text-lg md:text-xl text-on-surface leading-relaxed mb-6">
+                        Accstage was established with a singular, uncompromising directive: to transcend standard construction paradigms through rigorous architectural intent. We do not merely build; we engineer permanence.
+                    </p>
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                        For over two decades, our firm has operated at the intersection of monumental scale and microscopic detail. Our legacy is written in concrete, steel, and light—structures designed not just to occupy space, but to define it. We approach every commission as a monolithic endeavor, ensuring that the physical reality precisely mirrors the initial vision.
+                    </p>
+</div>
+<div class="hidden md:flex flex-col justify-end items-end relative">
+<!-- Negative Space Utilization -->
+<div class="w-64 h-64 border border-outline-variant/30 relative">
+<div class="absolute -left-12 -top-12 w-48 h-48 bg-primary-container texture-gradient"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section (Bento Grid Style) -->
+<section class="py-32 px-12 md:px-24 bg-surface">
+<div class="mb-24">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tighter">THE PILLARS OF OUR PRACTICE</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-12 ambient-shadow h-[400px] flex flex-col justify-between hover:bg-surface-container-low monolith-transition group border border-outline-variant/10">
+<div>
+<span class="label-text text-primary text-xs mb-4 block opacity-50 group-hover:opacity-100 monolith-transition">01</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">RIGOR</h3>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        An exhaustive, unyielding approach to methodology. We scrutinize every variable, calculate every tolerance, and demand perfection in execution.
+                    </p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-12 ambient-shadow h-[400px] flex flex-col justify-between hover:bg-surface-container-low monolith-transition group border border-outline-variant/10 md:-translate-y-12">
+<div>
+<span class="label-text text-primary text-xs mb-4 block opacity-50 group-hover:opacity-100 monolith-transition">02</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">QUALITY</h3>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        The absolute standard. We source raw, authentic materials and apply masterful craftsmanship to ensure unparalleled structural integrity and aesthetic longevity.
+                    </p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-12 ambient-shadow h-[400px] flex flex-col justify-between hover:bg-surface-container-low monolith-transition group border border-outline-variant/10">
+<div>
+<span class="label-text text-primary text-xs mb-4 block opacity-50 group-hover:opacity-100 monolith-transition">03</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">TRUST</h3>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        Forged through transparency and delivery. We act as unwavering fiduciaries of our clients' visions, honoring commitments with absolute certainty.
+                    </p>
+</div>
+<!-- Value 4 -->
+<div class="bg-surface-container-lowest p-12 ambient-shadow h-[400px] flex flex-col justify-between hover:bg-surface-container-low monolith-transition group border border-outline-variant/10 md:-translate-y-12">
+<div>
+<span class="label-text text-primary text-xs mb-4 block opacity-50 group-hover:opacity-100 monolith-transition">04</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-6">DETAIL</h3>
+</div>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                        The micro defines the macro. Our obsession with the minutiae—the exactness of a reveal, the alignment of a joint—elevates the entire composition.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-32 px-12 md:px-24 bg-surface-container-low">
+<div class="mb-24 flex flex-col md:flex-row justify-between items-start md:items-end">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary tracking-tighter">THE ARCHITECTS OF INTENT</h2>
+<span class="label-text text-on-surface-variant mt-6 md:mt-0">LEADERSHIP</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Leader 1 -->
+<div class="group">
+<div class="w-full aspect-[3/4] bg-surface-container mb-8 overflow-hidden relative">
+<img alt="Leadership Portrait" class="w-full h-full object-cover filter grayscale group-hover:scale-105 monolith-transition duration-700" data-alt="High contrast black and white portrait of a serious male architect in his 50s with architectural plans subtly reflected in his glasses, dramatic studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAReD0Djjyzb-_03EWBHTZL_eQfEYu693Z0ocGB8A5Rwfo0rOr4FfYn8X4LbP4kp3_CnNuDedrTNwRghZMzrN6Do2h1xpEAQ03UR-5wBsvDf-X5hEzII3xOdlRldH7HtfMNtnHzNNbRGRhYay9LcKjhcOHvAUAMZCKbAXH2rT7NY3d9TczZWJRwFvcQef5YI7-MBkXqUxlc00hdwBeb8OvWp5E9tgA1T7AJKOUnlG6-SOUu7cfBt0s4viOY07Xuc_7rFI6VvDDPTqjo"/>
+<div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)] pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">MARCUS REVEAL</h4>
+<span class="font-label text-xs text-on-surface-variant tracking-widest uppercase">PRINCIPAL ARCHITECT</span>
+</div>
+<!-- Leader 2 -->
+<div class="group md:mt-16">
+<div class="w-full aspect-[3/4] bg-surface-container mb-8 overflow-hidden relative">
+<img alt="Leadership Portrait" class="w-full h-full object-cover filter grayscale group-hover:scale-105 monolith-transition duration-700" data-alt="High contrast black and white portrait of a confident female structural engineer in her 40s against a raw concrete texture background, sharp side lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCteftwR4X_2c0334pyjk8y00sYfxpuhEsNvJ60bSpjsRajBwgK0fkye8w7L1U-Cs0pQ9keWeHjISVZuDKfpDJKaXZNFBUO0vSZDlzgq8GCkIRYzY1gqg9y04XWJYqYqx61xioSZEOxofc5nhCXozwjC1N1uPqywgzxx8LMVN7O0bd4JYWKlq4-GjJH1HwvMA_IiuRwVEAyXqYO9-vb2zD2X2iCwd_N_bURJpeu9YiRwPmrEWLjJvC1kulnf98sc0kLnQDVg7JQxzYI"/>
+<div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)] pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">ELENA VANCE</h4>
+<span class="font-label text-xs text-on-surface-variant tracking-widest uppercase">HEAD OF ENGINEERING</span>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="w-full aspect-[3/4] bg-surface-container mb-8 overflow-hidden relative">
+<img alt="Leadership Portrait" class="w-full h-full object-cover filter grayscale group-hover:scale-105 monolith-transition duration-700" data-alt="High contrast black and white portrait of a focused male project director in his 40s looking slightly off-camera, standing near a steel column, architectural editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfHMXrE8MsbK9OGixtPuShrc1lHTZpBTaLC6iEje9xDpHjTZkVdDOakuY5zFnX18r57E4cPN2D8CFz_4eM40mUIKZFdOoyvWaZSxsS_GqjdjtFnYaOibgEfemWWQgO_EFBUfWzV90KRvp7BneSERJzmRYc3LA4qWjlfNvHa2FVXPyr0Tgtjaoc4NC_LHU4CFDW_R10whEpunVISEn59llo_fp6RiHydCRE9cFgv0FVz9NKLk8wosvniw9BRRyJniC4xYq2gJkUJ8Ga"/>
+<div class="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.01)] pointer-events-none"></div>
+</div>
+<h4 class="font-headline text-xl font-bold text-primary mb-2">JULIAN CARTER</h4>
+<span class="font-label text-xs text-on-surface-variant tracking-widest uppercase">DIRECTOR OF OPERATIONS</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 px-12 md:px-24 bg-surface text-center flex flex-col items-center justify-center min-h-[512px]">
+<h2 class="font-headline text-3xl md:text-5xl font-bold text-primary mb-12 tracking-tighter max-w-3xl">READY TO ENGINEER PERMANENCE?</h2>
+<button class="bg-primary text-on-primary px-12 py-5 font-label text-sm tracking-widest uppercase hover:bg-primary-fixed monolith-transition">INITIATE COMMISSION</button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f9f9f9] dark:bg-neutral-950 w-full py-24 px-12 border-t border-black/5 grid grid-cols-1 md:grid-cols-4 gap-16 max-w-full">
+<div class="md:col-span-1 flex flex-col justify-between">
+<span class="text-4xl font-bold tracking-tighter mb-8 block text-black dark:text-white font-headline">ACCSTAGE</span>
+<p class="font-['Manrope'] text-sm tracking-tight text-black/60 dark:text-white/60">
+                © 2024 ACCSTAGE ARCHITECTURAL SOLUTIONS. ALL RIGHTS RESERVED.
+            </p>
+</div>
+<div class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col space-y-4">
+<span class="label-text text-black/40 dark:text-white/40 text-xs mb-4">SOCIAL</span>
+<a class="font-['Manrope'] text-sm tracking-tight text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">INSTAGRAM</a>
+<a class="font-['Manrope'] text-sm tracking-tight text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">LINKEDIN</a>
+</div>
+<div class="flex flex-col space-y-4">
+<span class="label-text text-black/40 dark:text-white/40 text-xs mb-4">LEGAL</span>
+<a class="font-['Manrope'] text-sm tracking-tight text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">PRIVACY POLICY</a>
+<a class="font-['Manrope'] text-sm tracking-tight text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">TERMS OF SERVICE</a>
+</div>
+</div>
+</footer>
+</body></html>

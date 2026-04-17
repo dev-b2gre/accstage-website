@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accstage - Premium Construction</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c6c6c6",
+                        "on-surface-variant": "#474747",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-container": "#1c1b1b",
+                        "on-tertiary-container": "#ffffff",
+                        "primary-container": "#3b3b3b",
+                        "on-secondary-fixed-variant": "#3c3b3b",
+                        "surface": "#f9f9f9",
+                        "on-tertiary-fixed-variant": "#e4e2e1",
+                        "on-background": "#1a1c1c",
+                        "surface-variant": "#e2e2e2",
+                        "secondary-fixed-dim": "#adabaa",
+                        "surface-container-high": "#e8e8e8",
+                        "secondary": "#5f5e5e",
+                        "on-primary-fixed": "#ffffff",
+                        "outline-variant": "#c6c6c6",
+                        "inverse-surface": "#2f3131",
+                        "surface-tint": "#5e5e5e",
+                        "surface-dim": "#dadada",
+                        "surface-container": "#eeeeee",
+                        "secondary-container": "#d6d4d3",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#757474",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-fixed": "#c8c6c5",
+                        "on-tertiary-fixed": "#ffffff",
+                        "on-primary": "#e2e2e2",
+                        "inverse-on-surface": "#f0f1f1",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e2e2e2",
+                        "background": "#f9f9f9",
+                        "outline": "#777777",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary": "#3b3b3b",
+                        "on-surface": "#1a1c1c",
+                        "on-tertiary": "#e4e2e1",
+                        "on-primary-container": "#ffffff",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "primary-fixed-dim": "#474747",
+                        "primary-fixed": "#5e5e5e",
+                        "tertiary-fixed-dim": "#474747",
+                        "on-error-container": "#410002",
+                        "tertiary-fixed": "#5f5e5e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#e2e2e2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-xl border-b border-black/5 dark:border-white/5 shadow-[0_20px_40px_rgba(0,0,0,0.04)]">
+<div class="flex justify-between items-center px-12 py-6 w-full">
+<div class="text-2xl font-bold tracking-tighter text-black dark:text-white font-headline">
+                ACCSTAGE
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">PROJECTS</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">SERVICES</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">STUDIO</a>
+<a class="font-['Space_Grotesk'] tracking-widest text-[11px] uppercase font-bold text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors duration-400" href="#">CONTACT</a>
+</div>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-3 font-label text-sm tracking-widest uppercase hover:bg-primary-fixed transition-colors duration-400 rounded-none">
+                INQUIRE
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow pt-24">
+<!-- Hero Section -->
+<section class="min-h-[921px] flex flex-col md:flex-row relative bg-surface-container-lowest">
+<div class="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-24 py-20 z-10">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.9] tracking-tighter text-primary mb-8 uppercase">
+                    Building<br/>The<br/>Extraordinary
+                </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-md mb-12 leading-relaxed">
+                    Uncompromising luxury, exacting precision, and architectural monoliths that stand as testaments to permanent design.
+                </p>
+<div>
+<a class="inline-flex items-center gap-4 bg-primary text-on-primary px-8 py-5 font-label text-sm tracking-widest uppercase hover:bg-primary-fixed transition-colors duration-400 rounded-none group" href="#projects">
+                        VIEW PROJECTS
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative min-h-[512px] md:min-h-full h-full">
+<img alt="Modern architecture" class="absolute inset-0 w-full h-full object-cover rounded-none grayscale" data-alt="striking modern concrete architectural facade with sharp angles against a clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi8pX9uXdsDb52XLqv9wBHHxBO-qI55PZ2afVV29WHaU-J5d7VZbXGpjmtPdK1Rlvqf-chPIipEzMuWlwOSnX8zakuESFQ4pXPwLT6YHZBQXt2l7_V6gAu5W7JBi_jHAaTATwjer-zeeE6TORDSKAWs3fuzqL6zAqEV0Ha2_wiIebT_kip0PQjZo2A4qeuyZMipJaOvaf3ODZBXla-xA1UgUsmI8vWSg__1ZStKIPdd6J5QlSxwHkNoASNDLVkdjwnmcbAuLfFUTg2"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/50 to-transparent md:hidden"></div>
+</div>
+</section>
+<!-- Presentation Section -->
+<section class="py-32 px-8 md:px-16 lg:px-24 bg-surface relative">
+<div class="max-w-4xl">
+<h2 class="font-label text-sm tracking-[0.2em] text-on-surface-variant mb-8 uppercase">About the Firm</h2>
+<p class="font-headline text-3xl md:text-4xl lg:text-5xl leading-tight text-primary font-medium tracking-tight">
+                    We do not build structures. We forge legacy. Every material selected, every line drawn, every surface finished is an exercise in brutalist perfection and editorial restraint.
+                </p>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-24 bg-surface-container-low" id="projects">
+<div class="px-8 md:px-16 lg:px-24 mb-16 flex justify-between items-end">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-primary">SELECTED<br/>PROJECTS</h2>
+<a class="font-label text-sm tracking-widest uppercase text-primary border-b-2 border-primary pb-1 hover:text-primary-fixed transition-colors" href="#">ALL PROJECTS</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 px-8 md:px-16 lg:px-24">
+<!-- Project 1 (Large) -->
+<div class="md:col-span-8 group cursor-pointer relative bg-surface-container-lowest">
+<div class="relative h-[614px] overflow-hidden">
+<img alt="Villa Interior" class="w-full h-full object-cover rounded-none grayscale transition-transform duration-700 group-hover:scale-105" data-alt="minimalist luxury villa interior with concrete walls and expansive glass windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ6CwG1PJ1w2uUJAh7nFKN_0j9lJwYQJK0i_ubTHVuxSYWKa2eHkgDxBvkFFs_U_lZO1SPBjGJLAXbQYdeULlIOwIsHRhZv4dZBDXMz5OLBbW-wPbSFkhbQQCge7vSgQXgw7k0n5g-wLLDZXbDXYGGV956WZpwsSirIgGXRPXrz3NU6aScXNzFG7craR7BL19l635EsvNoDADje7EcKnHXpdS8aOnjGC9rkrJ-xOynFYAUpYqHnyQCdJL94I_J-RkqKINUnV3giBS-"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-400"></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold tracking-tight text-primary mb-2">THE RESIDENCE</h3>
+<p class="font-label text-xs tracking-widest uppercase text-on-surface-variant">BEVERLY HILLS, CA</p>
+</div>
+</div>
+<!-- Project 2 (Small) -->
+<div class="md:col-span-4 group cursor-pointer relative bg-surface-container-lowest">
+<div class="relative h-[409px] md:h-[614px] overflow-hidden">
+<img alt="Concrete Details" class="w-full h-full object-cover rounded-none grayscale transition-transform duration-700 group-hover:scale-105" data-alt="modern brutalist exterior staircase in cast concrete with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl10flNxxCi92UqfA2JGL3R97aUpJgfV-0ErqIBUaS1zRxmM5jLBTRocSWCmFgTKxXlZvkAMfjVwants_LNmE5DM6R2YRjk0V4Kp3Vo0UMofLK1SXvLRQhbL56R8rQuFT3tJnNSOtTCnE_adPUXQtuieX0D8U43bqpQQZHLZfZfG59IvYG0iSBTWvgd-nT9kXpCotkEZVisT4xK7WYM0OYYlfO7acdp7XSZFwNe0UVMziM4-duoFIHQKwG3hYGJjMdYihWZkJXFj_2"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-400"></div>
+</div>
+<div class="p-8">
+<h3 class="font-headline text-2xl font-bold tracking-tight text-primary mb-2">PAVILION 04</h3>
+<p class="font-label text-xs tracking-widest uppercase text-on-surface-variant">MONTAUK, NY</p>
+</div>
+</div>
+<!-- Project 3 (Full width staggered) -->
+<div class="md:col-span-12 group cursor-pointer relative bg-surface-container-lowest mt-0 md:mt-16 flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 relative h-[512px] overflow-hidden order-2 md:order-1">
+<img alt="Modern Kitchen" class="w-full h-full object-cover rounded-none grayscale transition-transform duration-700 group-hover:scale-105" data-alt="sleek modern minimalist kitchen with monolithic black island and concrete floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZPAkQK969ACWCgY-ZLxKkbX6IlYomCd6OA2tuK-qHYzmQpFuovOCrbhuprv3XQ2OkZUaBcdBYfJNtZXWMC4RgaFkGJ6HGkPpbMhAc8jX-kCjPPR4FAmMcXPSYS92OYZQMqOaBbqUdlBy3E8Jqt1rY2rN8i6v1JWL946lnLDVdP6i_bOwDy0GAkAQcoZeyxyyo2ezNp3TlTzIhpH3LggBji7b-4R1anD9RSN8W9xZyUNa3sLRAeppVhgoH7iBJ5rDIOpMOvxG8bc3p"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-400"></div>
+</div>
+<div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center order-1 md:order-2 bg-surface-container-lowest">
+<h3 class="font-headline text-3xl md:text-4xl font-bold tracking-tight text-primary mb-4">THE GALLERY</h3>
+<p class="font-body text-on-surface-variant mb-8 leading-relaxed max-w-md">A monolithic exploration of space and light, designed to house an extensive private collection while maintaining architectural purity.</p>
+<p class="font-label text-xs tracking-widest uppercase text-on-surface-variant">NEW YORK CITY, NY</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface">
+<div class="px-8 md:px-16 lg:px-24">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8">
+<!-- Service 1 -->
+<div class="border-t-2 border-primary pt-8">
+<span class="font-headline text-5xl text-outline-variant mb-8 block opacity-50">01</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4 uppercase">Design</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Conceptualization rooted in spatial integrity and material honesty. We draft blueprints that challenge conventions while respecting structural demands.</p>
+</div>
+<!-- Service 2 -->
+<div class="border-t-2 border-primary pt-8">
+<span class="font-headline text-5xl text-outline-variant mb-8 block opacity-50">02</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4 uppercase">Construction</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Exacting execution. Our teams operate with surgical precision, ensuring that the physical reality perfectly mirrors the theoretical intent.</p>
+</div>
+<!-- Service 3 -->
+<div class="border-t-2 border-primary pt-8">
+<span class="font-headline text-5xl text-outline-variant mb-8 block opacity-50">03</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4 uppercase">Management</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">Rigorous oversight. We control every variable of the timeline and resource allocation to deliver uncompromising results.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Block -->
+<section class="py-32 bg-primary text-on-primary">
+<div class="px-8 md:px-16 lg:px-24 flex flex-col md:flex-row gap-16 justify-between items-center">
+<div class="w-full md:w-1/2">
+<h2 class="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter uppercase mb-8">
+                        Quality.<br/>Rigor.<br/>Detail.
+                    </h2>
+</div>
+<div class="w-full md:w-1/2 max-w-lg">
+<p class="font-body text-lg text-on-primary-fixed-variant leading-relaxed mb-12">
+                        We accept no compromises. Our methodology is defined by an obsessive attention to detail and a rigorous demand for quality that borders on the extreme.
+                    </p>
+<a class="inline-flex items-center gap-4 bg-surface text-primary px-8 py-5 font-label text-sm tracking-widest uppercase hover:bg-surface-variant transition-colors duration-400 rounded-none group" href="#">
+                        START YOUR PROJECT
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-24 px-12 border-t border-black/5 bg-[#f9f9f9] dark:bg-neutral-950 font-['Manrope'] text-sm tracking-tight text-black dark:text-white">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 max-w-full">
+<div class="md:col-span-4">
+<span class="text-4xl font-bold tracking-tighter mb-8 block font-headline uppercase">ACCSTAGE</span>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 focus-within:ring-0 uppercase font-bold tracking-widest text-xs" href="#">INSTAGRAM</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 focus-within:ring-0 uppercase font-bold tracking-widest text-xs" href="#">LINKEDIN</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 focus-within:ring-0 uppercase font-bold tracking-widest text-xs" href="#">PRIVACY POLICY</a>
+<a class="text-black/60 dark:text-white/60 hover:text-black dark:hover:text-white transition-colors duration-400 focus-within:ring-0 uppercase font-bold tracking-widest text-xs" href="#">TERMS OF SERVICE</a>
+</div>
+<div class="md:col-span-2 flex items-end md:justify-end">
+<p class="text-black/50 dark:text-white/50 text-xs tracking-widest uppercase">
+                    © 2024 ACCSTAGE ARCHITECTURAL SOLUTIONS. ALL RIGHTS RESERVED.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>
