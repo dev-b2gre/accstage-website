@@ -13,8 +13,9 @@ if (! $project) {
 }
 
 $hero_image = isset($project['hero_image']) ? trim((string) $project['hero_image']) : '';
-$gallery_images = isset($project['gallery_images']) && is_array($project['gallery_images']) ? array_values($project['gallery_images']) : [];
-$gallery_slots = array_pad($gallery_images, 3, '');
+$gallery_images = isset($project['gallery_images']) && is_array($project['gallery_images'])
+    ? array_values(array_filter($project['gallery_images'], static fn($image) => trim((string) $image) !== ''))
+    : [];
 $project_description = isset($project['description']) && is_array($project['description']) ? $project['description'] : [];
 ?>
 <section class="acc-project-detail-hero<?php echo $hero_image !== '' ? ' has-image' : ' is-placeholder'; ?>"<?php echo $hero_image !== '' ? ' style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.22)), url(\'' . esc_url($hero_image) . '\');"' : ''; ?>>
@@ -50,28 +51,32 @@ $project_description = isset($project['description']) && is_array($project['desc
 
 <section class="acc-section acc-project-detail-gallery">
     <div class="acc-wrap acc-project-detail-gallery__grid">
-        <?php foreach ($gallery_slots as $index => $gallery_image) : ?>
-            <?php
-            $classes = 'acc-project-detail-gallery__item';
-            if ($index === 0) {
-                $classes .= ' acc-project-detail-gallery__item--wide';
-            } elseif ($index === 1) {
-                $classes .= ' acc-project-detail-gallery__item--tall';
-            } else {
-                $classes .= ' acc-project-detail-gallery__item--panorama';
-            }
-            ?>
-            <figure class="<?php echo esc_attr($classes); ?>">
-                <?php if (trim((string) $gallery_image) !== '') : ?>
+        <?php if (! empty($gallery_images)) : ?>
+            <?php foreach ($gallery_images as $index => $gallery_image) : ?>
+                <?php
+                $classes = 'acc-project-detail-gallery__item';
+                $layout_position = $index % 3;
+
+                if ($layout_position === 0) {
+                    $classes .= ' acc-project-detail-gallery__item--wide';
+                } elseif ($layout_position === 1) {
+                    $classes .= ' acc-project-detail-gallery__item--tall';
+                } else {
+                    $classes .= ' acc-project-detail-gallery__item--panorama';
+                }
+                ?>
+                <figure class="<?php echo esc_attr($classes); ?>">
                     <img src="<?php echo esc_url($gallery_image); ?>" alt="<?php echo esc_attr($project['title']); ?>" loading="lazy"/>
-                <?php else : ?>
-                    <span class="acc-project-placeholder" aria-hidden="true">
-                        <span class="acc-project-placeholder__label"><?php echo esc_html(sprintf(__('Imagem %d', 'accstage-custom'), $index + 1)); ?></span>
-                        <span class="acc-project-placeholder__title"><?php echo esc_html($project['title']); ?></span>
-                    </span>
-                <?php endif; ?>
+                </figure>
+            <?php endforeach; ?>
+        <?php else : ?>
+            <figure class="acc-project-detail-gallery__item acc-project-detail-gallery__item--wide">
+                <span class="acc-project-placeholder" aria-hidden="true">
+                    <span class="acc-project-placeholder__label"><?php esc_html_e('Galeria em atualização', 'accstage-custom'); ?></span>
+                    <span class="acc-project-placeholder__title"><?php echo esc_html($project['title']); ?></span>
+                </span>
             </figure>
-        <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </section>
 

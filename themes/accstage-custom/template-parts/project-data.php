@@ -17,14 +17,26 @@ if (! function_exists('accstage_custom_get_projects_data')) {
      */
     function accstage_custom_get_projects_data(): array
     {
+        $projects_images_base_uri = trailingslashit(get_template_directory_uri()) . 'assets/images/';
+
+        $build_gallery_images = static function (string $prefix, int $start, int $end) use ($projects_images_base_uri): array {
+            $images = [];
+
+            for ($index = $start; $index <= $end; $index++) {
+                $images[] = $projects_images_base_uri . sprintf('%s-%02d.jpg', $prefix, $index);
+            }
+
+            return $images;
+        };
+
         return [
             [
                 'title' => __('2URBA', 'accstage-custom'),
                 'slug' => '2urba',
                 'location' => '',
                 'year' => '',
-                'hero_image' => '',
-                'gallery_images' => ['', '', ''],
+                'hero_image' => $projects_images_base_uri . '2urba-hero.jpg',
+                'gallery_images' => $build_gallery_images('2urba', 1, 8),
                 'description' => [
                     __('Projeto transversal de duas moradias geminadas para loteamento na cidade de Guimarães. É um projeto dotado de traços minimalistas e modernos, conjugando de uma forma harmoniosa os materiais e o espaço.', 'accstage-custom'),
                     __('Estas moradias incluem três níveis: rés-do-chão com áreas de lazer, cozinha, lavandaria, instalações sanitárias e sala; o 1º andar com três quartos; cave com garagem para dois veículos por unidade habitacional.', 'accstage-custom'),
@@ -37,8 +49,8 @@ if (! function_exists('accstage_custom_get_projects_data')) {
                 'slug' => 'projeto-ribeira-verde',
                 'location' => __('Guimarães, Portugal', 'accstage-custom'),
                 'year' => '',
-                'hero_image' => '',
-                'gallery_images' => ['', '', ''],
+                'hero_image' => $projects_images_base_uri . 'ribeira-verde-hero.jpg',
+                'gallery_images' => $build_gallery_images('ribeira-verde', 1, 6),
                 'description' => [
                     __('O edifício Ribeira Verde pretende introduzir na cidade uma forte relação entre construção e natureza. Elementos naturais como a água, as árvores e outros tipos de vegetação, sobressaem no edificado proposto, aumentando a biodiversidade e os níveis de oxigénio do local.', 'accstage-custom'),
                     __('A valorização da ribeira de couros, que atualmente denota uma presença discreta e sem grande relação com as atividades sociais, representa uma clara mais valia. Este projeto congrega alguns interesses municipais que potencializarão a ligação do parque verde da cidade ao centro histórico.', 'accstage-custom'),
@@ -52,8 +64,8 @@ if (! function_exists('accstage_custom_get_projects_data')) {
                 'slug' => 'projeto-fabrica-camport',
                 'location' => __('Guimarães, Portugal', 'accstage-custom'),
                 'year' => '',
-                'hero_image' => '',
-                'gallery_images' => ['', '', ''],
+                'hero_image' => $projects_images_base_uri . 'camport-hero.jpg',
+                'gallery_images' => $build_gallery_images('camport', 1, 12),
                 'description' => [
                     __('O design concilia a funcionalidade à organização e aos pressupostos de uma empresa com marca reconhecida na indústria do calçado. A pureza e força do betão jogam constantemente com o alumínio branco e as suas diversas transparências e texturas.', 'accstage-custom'),
                     __('A introdução da luz, interior e exterior, constitui um elemento importante no desenvolvimento da proposta. À noite, todas as fachadas assumem novas formas e dinâmicas. A complexidade da geometria presente no alçado principal foi desenvolvida através de um componente básico, o qual possui uma estreita relação com a empresa: a palmilha, que representa conforto.', 'accstage-custom'),
@@ -66,8 +78,8 @@ if (! function_exists('accstage_custom_get_projects_data')) {
                 'slug' => 'maison-quinta-do-peixoto',
                 'location' => __('Mascotelos, Guimarães', 'accstage-custom'),
                 'year' => __('Projeto 2019', 'accstage-custom'),
-                'hero_image' => '',
-                'gallery_images' => ['', '', ''],
+                'hero_image' => $projects_images_base_uri . 'quinta-peixoto-hero.jpg',
+                'gallery_images' => $build_gallery_images('quinta-peixoto', 1, 5),
                 'description' => [
                     __('As residências da Quinta do Peixoto situam-se em Mascotelos, Guimarães. Este projeto inclui 13 lotes habitacionais, 78 residências e inúmeros espaços verdes. O ambiente é uma preocupação especial, uma vez que a biodiversidade e a sustentabilidade são duas das prioridades atuais.', 'accstage-custom'),
                     __('A classe energética A, as centrais elétricas, o conforto térmico e a existência de painéis solares não passam despercebidos. Mais uma vez, o minimalismo de todos os elementos é evidente.', 'accstage-custom'),
