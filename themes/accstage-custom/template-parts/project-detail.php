@@ -5,8 +5,12 @@
  * @package accstage-custom
  */
 
-$project_slug = get_query_var('acc_project_slug');
-$project = $project_slug ? accstage_custom_get_project_by_slug((string) $project_slug) : null;
+$project = get_query_var('acc_project_detail_data');
+
+if (! is_array($project)) {
+    $project_slug = accstage_custom_resolve_project_slug_from_request();
+    $project = $project_slug ? accstage_custom_get_project_by_slug((string) $project_slug) : null;
+}
 
 if (! $project) {
     return;

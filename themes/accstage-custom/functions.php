@@ -98,6 +98,37 @@ function accstage_custom_project_query_vars(array $vars): array
 }
 add_filter('query_vars', 'accstage_custom_project_query_vars');
 
+if (! function_exists('accstage_custom_resolve_project_slug_from_request')) {
+    /**
+     * Resolve slug do projeto com fallback robusto para várias formas de request.
+     *
+     * @return string
+     */
+    function accstage_custom_resolve_project_slug_from_request(): string
+    {
+        $slug = sanitize_title((string) get_query_var('acc_project_slug'));
+
+        if ($slug !== '') {
+            return $slug;
+        }
+
+        $pagename = trim((string) get_query_var('pagename'), '/');
+        if (preg_match('#^projetos/([^/]+)$#', $pagename, $matches) === 1) {
+            return sanitize_title($matches[1]);
+        }
+
+        $request_uri = isset($_SERVER['REQUEST_URI']) ? wp_unslash((string) $_SERVER['REQUEST_URI']) : '';
+        if ($request_uri !== '') {
+            $request_path = trim((string) wp_parse_url($request_uri, PHP_URL_PATH), '/');
+            if (preg_match('#^projetos/([^/]+)$#', $request_path, $matches) === 1) {
+                return sanitize_title($matches[1]);
+            }
+        }
+
+        return '';
+    }
+}
+
 /**
  * Links sociais opcionais para o footer.
  *
