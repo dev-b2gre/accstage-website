@@ -109,21 +109,14 @@ function accstage_custom_social_links(): array
 {
     $links = [
         [
-            'label' => 'Instagram',
-            'url'   => '',
-        ],
-        [
             'label' => 'LinkedIn',
-            'url'   => '',
+            'url'   => 'https://www.linkedin.com/company/accstage/',
         ],
         [
-            'label' => 'Behance',
-            'url'   => '',
+            'label' => 'Facebook',
+            'url'   => 'https://www.facebook.com/Accstage',
         ],
     ];
 
-    /**
-     * @param array<int, array<string, string>> $links
-     */
-    return apply_filters('accstage_custom_social_links', $links);
+    return $links;
 }

@@ -27,9 +27,9 @@
         <div class="acc-site-footer__meta">
             <div class="acc-site-footer__contact">
                 <p class="acc-label"><?php esc_html_e('Head Office', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('Rua do Professor, 221 Ac, Nossa Senhora da Piedade', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('4880-203 Mondim de Basto', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('Vila Real, Portugal', 'accstage-custom'); ?></p>
+                <p><?php esc_html_e('R. António Luis Gomes 120', 'accstage-custom'); ?></p>
+                <p><?php esc_html_e('4430-195 Vila Nova de Gaia', 'accstage-custom'); ?></p>
+                <p><?php esc_html_e('Portugal', 'accstage-custom'); ?></p>
                 <p><a href="tel:+351255913065"><?php esc_html_e('Business Contact: +351 255 913 065', 'accstage-custom'); ?></a></p>
                 <p><a href="mailto:info@accstage.com">info@accstage.com</a></p>
             </div>
