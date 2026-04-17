@@ -35,16 +35,16 @@ get_header();
         <h2 id="acc-about-facts-title" class="screen-reader-text"><?php esc_html_e('Dados do estúdio', 'accstage-custom'); ?></h2>
         <ul class="acc-list acc-about-facts__list">
             <li>
-                <span class="acc-label"><?php esc_html_e('Fundação', 'accstage-custom'); ?></span>
-                <p><?php esc_html_e('Lisboa, 2018', 'accstage-custom'); ?></p>
+                <span class="acc-label"><?php esc_html_e('Empresa', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('ACCSTAGE Lda.', 'accstage-custom'); ?></p>
             </li>
             <li>
-                <span class="acc-label"><?php esc_html_e('Escala', 'accstage-custom'); ?></span>
-                <p><?php esc_html_e('Residencial, cultural e hospitality premium', 'accstage-custom'); ?></p>
+                <span class="acc-label"><?php esc_html_e('Head Office', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('Mondim de Basto, Vila Real, Portugal', 'accstage-custom'); ?></p>
             </li>
             <li>
-                <span class="acc-label"><?php esc_html_e('Método', 'accstage-custom'); ?></span>
-                <p><?php esc_html_e('Conceito, projeto e coordenação de execução', 'accstage-custom'); ?></p>
+                <span class="acc-label"><?php esc_html_e('Contacto', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('+351 255 913 065 · info@accstage.com', 'accstage-custom'); ?></p>
             </li>
         </ul>
     </div>

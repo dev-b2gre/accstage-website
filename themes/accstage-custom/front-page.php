@@ -54,4 +54,20 @@ get_template_part('template-parts/hero', 'home');
     </div>
 </section>
 
+<section class="acc-section acc-home-contact" aria-labelledby="acc-home-contact-title">
+    <div class="acc-wrap acc-home-contact__grid">
+        <div>
+            <p class="acc-label"><?php esc_html_e('Contacto oficial', 'accstage-custom'); ?></p>
+            <h2 id="acc-home-contact-title" class="acc-title-lg"><?php esc_html_e('ACCSTAGE Lda. — Head Office', 'accstage-custom'); ?></h2>
+        </div>
+        <div class="acc-editorial">
+            <p><?php esc_html_e('Rua do Professor, 221 Ac, Nossa Senhora da Piedade', 'accstage-custom'); ?></p>
+            <p><?php esc_html_e('4880-203 Mondim de Basto, Vila Real, Portugal', 'accstage-custom'); ?></p>
+            <p><a href="tel:+351255913065"><?php esc_html_e('Business Contact: +351 255 913 065', 'accstage-custom'); ?></a></p>
+            <p><a href="mailto:info@accstage.com">info@accstage.com</a></p>
+            <p><a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a Accstage', 'accstage-custom'); ?></a></p>
+        </div>
+    </div>
+</section>
+
 <?php get_footer();
