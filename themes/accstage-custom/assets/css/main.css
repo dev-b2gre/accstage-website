@@ -361,6 +361,101 @@ img {
   gap: 1.25rem;
 }
 
+.acc-contact-hero {
+  padding-top: clamp(6rem, 12vw, 10rem);
+}
+
+.acc-contact-hero .acc-wrap {
+  padding-bottom: clamp(2.8rem, 6vw, 4.8rem);
+  display: grid;
+  gap: 1.2rem;
+}
+
+.acc-contact-hero .acc-title-xl {
+  max-width: 12ch;
+  color: var(--acc-text);
+}
+
+.acc-contact-hero .acc-lead {
+  color: var(--acc-muted);
+  max-width: 54ch;
+}
+
+.acc-contact-main {
+  padding-top: clamp(3.4rem, 8vw, 6.5rem);
+}
+
+.acc-contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.acc-contact-panel {
+  display: grid;
+  gap: 2rem;
+}
+
+.acc-contact-panel__intro,
+.acc-contact-panel__block {
+  border-top: 1px solid var(--acc-line);
+  padding-top: 1rem;
+}
+
+.acc-contact-panel__intro p:last-child {
+  margin-bottom: 0;
+}
+
+.acc-contact-list span {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.acc-contact-list a {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.acc-contact-list p {
+  margin: 0;
+}
+
+.acc-contact-location {
+  background: var(--acc-bg-soft);
+  padding: 1rem;
+}
+
+.acc-contact-location__title {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  font-size: 1rem;
+  margin: 0 0 0.55rem;
+}
+
+.acc-contact-location p {
+  margin: 0.25rem 0;
+}
+
+.acc-contact-location__note {
+  margin-top: 0.9rem;
+  color: var(--acc-muted);
+}
+
+.acc-contact-form-wrap {
+  border: 1px solid var(--acc-line);
+  padding: clamp(1.2rem, 4vw, 2.2rem);
+  background: color-mix(in srgb, var(--acc-bg) 80%, white 20%);
+}
+
+.acc-contact-form-wrap .acc-title-md {
+  margin-top: 0.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.acc-contact-form-wrap .acc-button {
+  margin-top: 0.4rem;
+}
+
 .acc-site-footer {
   background: var(--acc-inverse);
   color: var(--acc-inverse-text);
@@ -635,7 +730,8 @@ img {
 
   .acc-about-pillars__grid,
   .acc-about-facts__list,
-  .acc-about-team__grid {
+  .acc-about-team__grid,
+  .acc-contact-layout {
     grid-template-columns: 1fr;
   }
 
