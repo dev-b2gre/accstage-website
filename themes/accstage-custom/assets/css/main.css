@@ -415,8 +415,8 @@ img {
 }
 
 .acc-contact-form textarea {
-  min-height: 150px;
-  resize: vertical;
+  min-height: clamp(9.5rem, 18vw, 12rem);
+  resize: none;
 }
 
 .acc-contact-form .acc-grid-2 {
