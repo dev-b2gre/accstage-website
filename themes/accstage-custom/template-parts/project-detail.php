@@ -12,70 +12,73 @@ if (! $project) {
     return;
 }
 
-$gallery = ! empty($project['gallery']) ? $project['gallery'] : [$project['image'], $project['image'], $project['image']];
+$hero_image = isset($project['hero_image']) ? trim((string) $project['hero_image']) : '';
+$gallery_images = isset($project['gallery_images']) && is_array($project['gallery_images']) ? array_values($project['gallery_images']) : [];
+$gallery_slots = array_pad($gallery_images, 3, '');
+$project_description = isset($project['description']) && is_array($project['description']) ? $project['description'] : [];
 ?>
-<section class="acc-project-detail-hero" style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.22)), url('<?php echo esc_url($project['image']); ?>');">
+<section class="acc-project-detail-hero<?php echo $hero_image !== '' ? ' has-image' : ' is-placeholder'; ?>"<?php echo $hero_image !== '' ? ' style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.22)), url(\'' . esc_url($hero_image) . '\');"' : ''; ?>>
     <div class="acc-wrap acc-project-detail-hero__inner">
-        <p class="acc-label"><?php esc_html_e('Projeto selecionado', 'accstage-custom'); ?></p>
+        <p class="acc-label"><?php esc_html_e('Projeto', 'accstage-custom'); ?></p>
         <h1 class="acc-title-xl"><?php echo esc_html($project['title']); ?></h1>
-        <p class="acc-lead"><?php echo esc_html($project['hero_lead']); ?></p>
+        <?php if ($hero_image === '') : ?>
+            <p class="acc-lead"><?php esc_html_e('Placeholder pronto para imagem principal.', 'accstage-custom'); ?></p>
+        <?php endif; ?>
     </div>
 </section>
 
 <section class="acc-project-detail-meta">
     <div class="acc-wrap">
         <ul class="acc-project-detail-meta__list">
-            <li><span class="acc-label"><?php esc_html_e('Localização', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['location']); ?></strong></li>
-            <li><span class="acc-label"><?php esc_html_e('Ano', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['year']); ?></strong></li>
-            <li><span class="acc-label"><?php esc_html_e('Área', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['area']); ?></strong></li>
-            <li><span class="acc-label"><?php esc_html_e('Estado', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['status']); ?></strong></li>
+            <?php if (! empty($project['location'])) : ?>
+                <li><span class="acc-label"><?php esc_html_e('Localização', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['location']); ?></strong></li>
+            <?php endif; ?>
+            <?php if (! empty($project['year'])) : ?>
+                <li><span class="acc-label"><?php esc_html_e('Ano', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['year']); ?></strong></li>
+            <?php endif; ?>
         </ul>
     </div>
 </section>
 
 <section class="acc-section acc-project-detail-story">
-    <div class="acc-wrap acc-project-detail-story__grid">
-        <div>
-            <h2 class="acc-title-md"><?php echo esc_html($project['concept']); ?></h2>
-        </div>
-        <div class="acc-editorial">
-            <p><?php echo esc_html($project['description']); ?></p>
-        </div>
+    <div class="acc-wrap acc-editorial">
+        <?php foreach ($project_description as $paragraph) : ?>
+            <p><?php echo esc_html($paragraph); ?></p>
+        <?php endforeach; ?>
     </div>
 </section>
 
 <section class="acc-section acc-project-detail-gallery">
     <div class="acc-wrap acc-project-detail-gallery__grid">
-        <figure class="acc-project-detail-gallery__item acc-project-detail-gallery__item--wide">
-            <img src="<?php echo esc_url($gallery[0]); ?>" alt="<?php echo esc_attr($project['title']); ?>" loading="lazy"/>
-        </figure>
-        <figure class="acc-project-detail-gallery__item acc-project-detail-gallery__item--tall">
-            <img src="<?php echo esc_url($gallery[1]); ?>" alt="<?php echo esc_attr($project['title']); ?>" loading="lazy"/>
-        </figure>
-        <figure class="acc-project-detail-gallery__item acc-project-detail-gallery__item--panorama">
-            <img src="<?php echo esc_url($gallery[2]); ?>" alt="<?php echo esc_attr($project['title']); ?>" loading="lazy"/>
-        </figure>
-    </div>
-</section>
-
-<section class="acc-section acc-project-detail-facts">
-    <div class="acc-wrap acc-project-detail-facts__grid">
-        <div>
-            <p class="acc-label"><?php esc_html_e('Detalhes do projeto', 'accstage-custom'); ?></p>
-            <h2 class="acc-title-lg"><?php esc_html_e('Rigor técnico com expressão mínima.', 'accstage-custom'); ?></h2>
-        </div>
-        <ul class="acc-list">
-            <li><strong><?php esc_html_e('Programa', 'accstage-custom'); ?></strong><p><?php echo esc_html($project['type']); ?></p></li>
-            <li><strong><?php esc_html_e('Abordagem', 'accstage-custom'); ?></strong><p><?php esc_html_e('Composição monolítica, luz controlada e materialidade contínua.', 'accstage-custom'); ?></p></li>
-            <li><strong><?php esc_html_e('Entrega', 'accstage-custom'); ?></strong><p><?php esc_html_e('Coordenação total entre conceito, detalhe e obra.', 'accstage-custom'); ?></p></li>
-        </ul>
+        <?php foreach ($gallery_slots as $index => $gallery_image) : ?>
+            <?php
+            $classes = 'acc-project-detail-gallery__item';
+            if ($index === 0) {
+                $classes .= ' acc-project-detail-gallery__item--wide';
+            } elseif ($index === 1) {
+                $classes .= ' acc-project-detail-gallery__item--tall';
+            } else {
+                $classes .= ' acc-project-detail-gallery__item--panorama';
+            }
+            ?>
+            <figure class="<?php echo esc_attr($classes); ?>">
+                <?php if (trim((string) $gallery_image) !== '') : ?>
+                    <img src="<?php echo esc_url($gallery_image); ?>" alt="<?php echo esc_attr($project['title']); ?>" loading="lazy"/>
+                <?php else : ?>
+                    <span class="acc-project-placeholder" aria-hidden="true">
+                        <span class="acc-project-placeholder__label"><?php echo esc_html(sprintf(__('Imagem %d', 'accstage-custom'), $index + 1)); ?></span>
+                        <span class="acc-project-placeholder__title"><?php echo esc_html($project['title']); ?></span>
+                    </span>
+                <?php endif; ?>
+            </figure>
+        <?php endforeach; ?>
     </div>
 </section>
 
 <section class="acc-section acc-project-detail-cta">
     <div class="acc-wrap">
-        <p class="acc-label"><?php esc_html_e('Próximo passo', 'accstage-custom'); ?></p>
+        <p class="acc-label"><?php esc_html_e('Contacto', 'accstage-custom'); ?></p>
         <h2 class="acc-title-lg"><?php echo esc_html($project['cta_title']); ?></h2>
-        <a class="acc-button acc-button--solid" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a equipa', 'accstage-custom'); ?></a>
+        <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a equipa', 'accstage-custom'); ?></a>
     </div>
 </section>
