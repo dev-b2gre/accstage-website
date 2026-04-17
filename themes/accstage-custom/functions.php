@@ -97,3 +97,33 @@ function accstage_custom_project_query_vars(array $vars): array
     return $vars;
 }
 add_filter('query_vars', 'accstage_custom_project_query_vars');
+
+/**
+ * Links sociais opcionais para o footer.
+ *
+ * Preencher via filtro `accstage_custom_social_links` no child theme/plugin.
+ *
+ * @return array<int, array<string, string>>
+ */
+function accstage_custom_social_links(): array
+{
+    $links = [
+        [
+            'label' => 'Instagram',
+            'url'   => '',
+        ],
+        [
+            'label' => 'LinkedIn',
+            'url'   => '',
+        ],
+        [
+            'label' => 'Behance',
+            'url'   => '',
+        ],
+    ];
+
+    /**
+     * @param array<int, array<string, string>> $links
+     */
+    return apply_filters('accstage_custom_social_links', $links);
+}

@@ -11,7 +11,7 @@ get_header();
     <div class="acc-wrap">
         <p class="acc-label"><?php esc_html_e('Contacto', 'accstage-custom'); ?></p>
         <h1 id="acc-contact-title" class="acc-title-xl"><?php esc_html_e('Vamos conversar sobre o seu próximo projeto.', 'accstage-custom'); ?></h1>
-        <p class="acc-lead"><?php esc_html_e('Partilhe o contexto e os objetivos. Respondemos com clareza estratégica, próximos passos e enquadramento de colaboração.', 'accstage-custom'); ?></p>
+        <p class="acc-lead"><?php esc_html_e('Partilhe o contexto e os objetivos. A ACCSTAGE responde com enquadramento técnico, próximos passos e acompanhamento profissional.', 'accstage-custom'); ?></p>
     </div>
 </section>
 
@@ -22,8 +22,8 @@ get_header();
             <aside class="acc-contact-panel" aria-labelledby="acc-contact-panel-title">
                 <div class="acc-contact-panel__intro">
                     <p class="acc-label"><?php esc_html_e('Introdução', 'accstage-custom'); ?></p>
-                    <h3 id="acc-contact-panel-title" class="acc-title-md"><?php esc_html_e('Comissões selecionadas com rigor.', 'accstage-custom'); ?></h3>
-                    <p><?php esc_html_e('A ACCSTAGE trabalha em número limitado de projetos por ciclo. Cada contacto recebe análise dedicada e resposta estruturada.', 'accstage-custom'); ?></p>
+                    <h3 id="acc-contact-panel-title" class="acc-title-md"><?php esc_html_e('ACCSTAGE Lda.', 'accstage-custom'); ?></h3>
+                    <p><?php esc_html_e('Sede oficial em Mondim de Basto, com atuação em projetos de arquitetura e construção premium em diferentes escalas.', 'accstage-custom'); ?></p>
                 </div>
 
                 <div class="acc-contact-panel__block">
@@ -31,24 +31,24 @@ get_header();
                     <ul class="acc-list acc-contact-list">
                         <li>
                             <span class="acc-label"><?php esc_html_e('Email', 'accstage-custom'); ?></span>
-                            <a href="mailto:hello@accstage.com">hello@accstage.com</a>
+                            <a href="mailto:info@accstage.com">info@accstage.com</a>
                         </li>
                         <li>
-                            <span class="acc-label"><?php esc_html_e('Telefone', 'accstage-custom'); ?></span>
-                            <a href="tel:+351211000201">+351 211 000 201</a>
+                            <span class="acc-label"><?php esc_html_e('Business Contact', 'accstage-custom'); ?></span>
+                            <a href="tel:+351255913065">+351 255 913 065</a>
                         </li>
                         <li>
-                            <span class="acc-label"><?php esc_html_e('Disponibilidade', 'accstage-custom'); ?></span>
-                            <p><?php esc_html_e('Segunda a sexta, 09:00–18:00', 'accstage-custom'); ?></p>
+                            <span class="acc-label"><?php esc_html_e('Empresa', 'accstage-custom'); ?></span>
+                            <p><?php esc_html_e('ACCSTAGE Lda.', 'accstage-custom'); ?></p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="acc-contact-panel__block acc-contact-location">
-                    <p class="acc-label"><?php esc_html_e('Localização', 'accstage-custom'); ?></p>
-                    <p class="acc-contact-location__title"><?php esc_html_e('Estúdio ACCSTAGE Lisboa', 'accstage-custom'); ?></p>
-                    <p><?php esc_html_e('Avenida da Liberdade 245, 4.º', 'accstage-custom'); ?></p>
-                    <p><?php esc_html_e('1250-143 Lisboa, Portugal', 'accstage-custom'); ?></p>
+                    <p class="acc-label"><?php esc_html_e('Head Office', 'accstage-custom'); ?></p>
+                    <p class="acc-contact-location__title"><?php esc_html_e('Rua do Professor, 221 Ac, Nossa Senhora da Piedade', 'accstage-custom'); ?></p>
+                    <p><?php esc_html_e('4880-203 Mondim de Basto', 'accstage-custom'); ?></p>
+                    <p><?php esc_html_e('Vila Real, Portugal', 'accstage-custom'); ?></p>
                     <p class="acc-contact-location__note"><?php esc_html_e('Reuniões presenciais por marcação prévia.', 'accstage-custom'); ?></p>
                 </div>
             </aside>
