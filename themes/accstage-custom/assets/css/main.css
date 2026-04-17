@@ -111,6 +111,24 @@ img {
   color: var(--acc-inverse-text);
 }
 
+.acc-button--hero-discover {
+  background: #ffffff;
+  color: #101010;
+  border-color: #ffffff;
+}
+
+.acc-button--hero-discover:hover {
+  background: #f2f2ef;
+  border-color: #f2f2ef;
+  color: #101010;
+}
+
+.acc-button--hero-discover:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 1px rgba(16, 16, 16, 0.18);
+}
+
 .acc-button--solid {
   background: var(--acc-text);
   color: var(--acc-inverse-text);

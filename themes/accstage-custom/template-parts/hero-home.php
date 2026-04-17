@@ -12,7 +12,7 @@ $hero_image = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-zoLVvOBsu6z
         <h1 class="acc-title-xl">MONOLITHIC<br/>STRUCTURES</h1>
         <div>
             <p class="acc-lead"><?php esc_html_e('Arquitetamos permanência num mundo efémero. Cada projeto é desenhado com rigor espacial, matéria honesta e silêncio intencional.', 'accstage-custom'); ?></p>
-            <p><a class="acc-button" href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Descobrir arquivo', 'accstage-custom'); ?></a></p>
+            <p><a class="acc-button acc-button--hero-discover" href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Descobrir arquivo', 'accstage-custom'); ?></a></p>
         </div>
     </div>
 </section>
