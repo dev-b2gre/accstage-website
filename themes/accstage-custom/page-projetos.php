@@ -9,6 +9,7 @@ get_header();
 
 $project_slug = accstage_custom_resolve_project_slug_from_request();
 $project = $project_slug ? accstage_custom_get_project_by_slug((string) $project_slug) : null;
+$projects_total = count(accstage_custom_get_projects_data());
 
 if ($project_slug && $project) {
     set_query_var('acc_project_slug', $project_slug);
@@ -41,7 +42,7 @@ if ($project_slug && $project) {
             </div>
 
             <div class="acc-projects-hero__meta">
-                <p><?php esc_html_e('Quatro intervenções selecionadas, com linguagem minimalista, rigor técnico e foco na permanência.', 'accstage-custom'); ?></p>
+                <p><?php echo esc_html(sprintf(__('Arquivo com %d intervenções selecionadas, com linguagem minimalista, rigor técnico e foco na permanência.', 'accstage-custom'), $projects_total)); ?></p>
             </div>
         </div>
     </section>
