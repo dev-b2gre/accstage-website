@@ -40,7 +40,7 @@ get_header();
             </li>
             <li>
                 <span class="acc-label"><?php esc_html_e('Head Office', 'accstage-custom'); ?></span>
-                <p><?php esc_html_e('Mondim de Basto, Vila Real, Portugal', 'accstage-custom'); ?></p>
+                <p><?php esc_html_e('R. António Luis Gomes 120, 4430-195 Vila Nova de Gaia', 'accstage-custom'); ?></p>
             </li>
             <li>
                 <span class="acc-label"><?php esc_html_e('Contacto', 'accstage-custom'); ?></span>
