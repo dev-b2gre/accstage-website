@@ -27,10 +27,16 @@ $projects = accstage_custom_get_projects_data();
             </a>
             <div class="acc-project-card__meta">
                 <div>
-                    <h3><?php echo esc_html($project['title']); ?></h3>
+                    <h3>
+                        <a class="acc-project-card__title-link" href="<?php echo esc_url($project_url); ?>">
+                            <?php echo esc_html($project['title']); ?>
+                        </a>
+                    </h3>
                     <p><?php echo esc_html($project['list_tag']); ?></p>
                 </div>
-                <span class="acc-label"><?php esc_html_e('Ver projeto', 'accstage-custom'); ?></span>
+                <a class="acc-label acc-project-card__link" href="<?php echo esc_url($project_url); ?>">
+                    <?php esc_html_e('Ver projeto', 'accstage-custom'); ?>
+                </a>
             </div>
         </article>
     <?php endforeach; ?>
