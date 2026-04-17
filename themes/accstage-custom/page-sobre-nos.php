@@ -7,23 +7,49 @@
 
 get_header();
 ?>
-<section class="acc-page-hero">
+<section class="acc-page-hero acc-about-hero" aria-labelledby="acc-about-title">
     <div class="acc-wrap">
-        <p class="acc-label"><?php esc_html_e('Estúdio', 'accstage-custom'); ?></p>
-        <h1 class="acc-title-lg"><?php esc_html_e('Silêncio formal, impacto duradouro.', 'accstage-custom'); ?></h1>
+        <p class="acc-label"><?php esc_html_e('Sobre nós', 'accstage-custom'); ?></p>
+        <h1 id="acc-about-title" class="acc-title-xl"><?php esc_html_e('Arquitetos de intenção.', 'accstage-custom'); ?></h1>
+        <p class="acc-lead"><?php esc_html_e('Não desenhamos para ocupar espaço. Desenhamos para o definir com permanência, silêncio formal e precisão absoluta.', 'accstage-custom'); ?></p>
     </div>
 </section>
-<section class="acc-section acc-section--soft">
+
+<section class="acc-section acc-section--soft acc-about-manifesto">
     <div class="acc-wrap acc-grid-2">
-        <div class="acc-editorial">
-            <p><?php esc_html_e('A ACCSTAGE trabalha na fronteira entre arquitetura e direção artística espacial. O nosso foco é criar estruturas de presença inequívoca, depuradas de ruído e desenhadas para envelhecer com integridade.', 'accstage-custom'); ?></p>
-            <p><?php esc_html_e('Assumimos cada projeto como peça editorial tridimensional: sequência, ritmo, matéria, luz e sombra em equilíbrio rigoroso.', 'accstage-custom'); ?></p>
+        <div>
+            <p class="acc-label"><?php esc_html_e('Manifesto', 'accstage-custom'); ?></p>
+            <h2 class="acc-title-lg"><?php esc_html_e('Geometria disciplinada. Matéria com legado.', 'accstage-custom'); ?></h2>
         </div>
-        <ul class="acc-list">
-            <li><span class="acc-label">Fundação</span><p>Lisboa, 2018</p></li>
-            <li><span class="acc-label">Escala</span><p>Residencial, cultural e hospitality premium</p></li>
-            <li><span class="acc-label">Método</span><p>Conceito, projeto e coordenação de execução</p></li>
+        <div class="acc-editorial">
+            <p><?php esc_html_e('A ACCSTAGE atua na fronteira entre arquitetura e direção espacial. Cada projeto nasce de uma leitura rigorosa do lugar, da luz e da proporção para alcançar presença inequívoca sem excesso formal.', 'accstage-custom'); ?></p>
+            <p><?php esc_html_e('Assumimos cada obra como composição editorial tridimensional: sequência, vazio, ritmo e materialidade em equilíbrio. O objetivo é claro — criar espaços intemporais, capazes de manter relevância estética e técnica durante décadas.', 'accstage-custom'); ?></p>
+        </div>
+    </div>
+</section>
+
+<?php get_template_part('template-parts/about', 'pillars'); ?>
+
+<section class="acc-section acc-about-facts" aria-labelledby="acc-about-facts-title">
+    <div class="acc-wrap">
+        <h2 id="acc-about-facts-title" class="screen-reader-text"><?php esc_html_e('Dados do estúdio', 'accstage-custom'); ?></h2>
+        <ul class="acc-list acc-about-facts__list">
+            <li>
+                <span class="acc-label"><?php esc_html_e('Fundação', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('Lisboa, 2018', 'accstage-custom'); ?></p>
+            </li>
+            <li>
+                <span class="acc-label"><?php esc_html_e('Escala', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('Residencial, cultural e hospitality premium', 'accstage-custom'); ?></p>
+            </li>
+            <li>
+                <span class="acc-label"><?php esc_html_e('Método', 'accstage-custom'); ?></span>
+                <p><?php esc_html_e('Conceito, projeto e coordenação de execução', 'accstage-custom'); ?></p>
+            </li>
         </ul>
     </div>
 </section>
+
+<?php get_template_part('template-parts/about', 'team'); ?>
+
 <?php get_footer();
