@@ -30,6 +30,7 @@
 
         <nav class="acc-menu" aria-label="<?php esc_attr_e('Navegação principal', 'accstage-custom'); ?>">
             <a href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Projetos', 'accstage-custom'); ?></a>
+            <a href="<?php echo esc_url(home_url('/servicos/')); ?>"><?php esc_html_e('Serviços', 'accstage-custom'); ?></a>
             <a href="<?php echo esc_url(home_url('/sobre-nos/')); ?>"><?php esc_html_e('Sobre nós', 'accstage-custom'); ?></a>
             <a href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Contacto', 'accstage-custom'); ?></a>
         </nav>
