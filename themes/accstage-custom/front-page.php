@@ -55,17 +55,18 @@ get_template_part('template-parts/hero', 'home');
 </section>
 
 <section class="acc-section acc-home-contact" aria-labelledby="acc-home-contact-title">
-    <div class="acc-wrap acc-home-contact__grid">
-        <div>
+    <div class="acc-wrap">
+        <div class="acc-home-contact__content">
             <p class="acc-label"><?php esc_html_e('Contacto oficial', 'accstage-custom'); ?></p>
             <h2 id="acc-home-contact-title" class="acc-title-lg"><?php esc_html_e('ACCSTAGE Lda. — Head Office', 'accstage-custom'); ?></h2>
-        </div>
-        <div class="acc-editorial">
-            <p><?php esc_html_e('R. António Luis Gomes 120', 'accstage-custom'); ?></p>
-            <p><?php esc_html_e('4430-195 Vila Nova de Gaia', 'accstage-custom'); ?></p>
-            <p><a href="tel:+351255913065"><?php esc_html_e('Business Contact: +351 255 913 065', 'accstage-custom'); ?></a></p>
-            <p><a href="mailto:info@accstage.com">info@accstage.com</a></p>
-            <p><a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a Accstage', 'accstage-custom'); ?></a></p>
+
+            <div class="acc-editorial acc-home-contact__details">
+                <p><?php esc_html_e('R. António Luis Gomes 120', 'accstage-custom'); ?></p>
+                <p><?php esc_html_e('4430-195 Vila Nova de Gaia', 'accstage-custom'); ?></p>
+                <p><a href="tel:+351255913065"><?php esc_html_e('Business Contact: +351 255 913 065', 'accstage-custom'); ?></a></p>
+                <p><a href="mailto:info@accstage.com">info@accstage.com</a></p>
+                <p><a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a Accstage', 'accstage-custom'); ?></a></p>
+            </div>
         </div>
     </div>
 </section>

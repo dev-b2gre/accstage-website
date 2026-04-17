@@ -179,6 +179,11 @@ img {
   gap: 2.2rem;
 }
 
+.acc-hero .acc-title-xl {
+  max-width: 14ch;
+  line-height: 0.92;
+}
+
 .acc-title-xl {
   font-family: "Space Grotesk", Arial, sans-serif;
   font-size: clamp(2.4rem, 8.5vw, 7.8rem);
@@ -724,15 +729,27 @@ img {
   border-top: 1px solid var(--acc-line);
 }
 
-.acc-home-contact__grid {
+.acc-home-contact__content {
+  max-width: 62ch;
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: clamp(1.8rem, 4vw, 4.5rem);
-  align-items: end;
+  justify-items: center;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  text-align: center;
 }
 
-.acc-home-contact .acc-editorial p {
-  margin-block: 0 0.5rem;
+.acc-home-contact__details {
+  display: grid;
+  justify-items: center;
+  gap: 0.55rem;
+}
+
+.acc-home-contact__details p {
+  margin: 0;
+}
+
+.acc-home-contact__details .acc-button {
+  margin-top: 0.9rem;
 }
 
 
@@ -1110,7 +1127,6 @@ img {
   .acc-about-team__grid,
   .acc-services__item,
   .acc-contact-layout,
-  .acc-home-contact__grid,
   .acc-site-footer__top,
   .acc-site-footer__meta {
     grid-template-columns: 1fr;

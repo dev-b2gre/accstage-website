@@ -9,9 +9,9 @@ $hero_image = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-zoLVvOBsu6z
 ?>
 <section class="acc-hero" style="background-image: url('<?php echo esc_url($hero_image); ?>');">
     <div class="acc-hero__inner">
-        <h1 class="acc-title-xl">MONOLITHIC<br/>STRUCTURES</h1>
+        <h1 class="acc-title-xl"><?php esc_html_e('Projetamos permanência. Construímos com precisão.', 'accstage-custom'); ?></h1>
         <div>
-            <p class="acc-lead"><?php esc_html_e('Arquitetamos permanência num mundo efémero. Cada projeto é desenhado com rigor espacial, matéria honesta e silêncio intencional.', 'accstage-custom'); ?></p>
+            <p class="acc-lead"><?php esc_html_e('Da arquitetura à construção, desenvolvemos espaços com rigor técnico, linguagem contemporânea e atenção absoluta ao detalhe.', 'accstage-custom'); ?></p>
             <p><a class="acc-button acc-button--hero-discover" href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Descobrir arquivo', 'accstage-custom'); ?></a></p>
         </div>
     </div>
