@@ -1,18 +1,19 @@
-const footerLinks = ["Instagram", "LinkedIn", "Contact", "Privacy", "Terms"];
+import Link from "next/link";
+import { footerNavigation } from "@/content/navigation";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container">
         <div className="footer-top">
-          <nav className="footer-links" aria-label="Footer links">
-            {footerLinks.map((link) => (
-              <a key={link} href="#">
-                {link}
-              </a>
+          <nav className="footer-links" aria-label="Links de rodapé">
+            {footerNavigation.map((link) => (
+              <Link key={link.label} href={link.href}>
+                {link.label}
+              </Link>
             ))}
           </nav>
-          <p className="copyright">© 2024 ACCSTAGE MONOLITHIC STRUCTURES. ALL RIGHTS RESERVED.</p>
+          <p className="copyright">© 2026 ACCSTAGE. TODOS OS DIREITOS RESERVADOS.</p>
         </div>
 
         <div className="footer-brand-wrap">

@@ -2,7 +2,7 @@
   --surface: #f9f9f9;
   --surface-low: #f3f3f3;
   --surface-high: #e8e8e8;
-  --primary: #000000;
+  --primary: #000;
   --secondary: #5f5e5e;
   --outline: #c6c6c6;
 }
@@ -31,6 +31,7 @@ a {
 
 main {
   min-height: 100vh;
+  padding-top: 5rem;
 }
 
 .container {
@@ -75,9 +76,9 @@ main {
 
 .desktop-nav a,
 .inquire-cta,
-.hero-side a,
-.philosophy a,
-.footer-links a {
+.monolith-link,
+.footer-links a,
+.eyebrow-label {
   font-family: var(--font-headline), sans-serif;
   font-size: 0.74rem;
   font-weight: 700;
@@ -85,7 +86,9 @@ main {
   text-transform: uppercase;
 }
 
-.desktop-nav a {
+.desktop-nav a,
+.footer-links a,
+.eyebrow-label {
   color: var(--secondary);
 }
 
@@ -93,6 +96,15 @@ main {
   background: var(--primary);
   color: var(--surface);
   padding: 0.8rem 1.5rem;
+}
+
+.monolith-link {
+  border-bottom: 0.5px solid currentcolor;
+  padding-bottom: 0.3rem;
+}
+
+.monolith-link-dark {
+  color: var(--primary);
 }
 
 .hero {
@@ -103,7 +115,8 @@ main {
   padding: 8rem 0 4.5rem;
 }
 
-.hero-image {
+.hero-image,
+.media-frame {
   object-fit: cover;
 }
 
@@ -122,13 +135,19 @@ main {
   gap: 2rem;
 }
 
-.hero h1 {
+.hero h1,
+.section-heading,
+.base-page h1 {
   margin: 0;
-  color: var(--surface);
   font-family: var(--font-headline), sans-serif;
+  letter-spacing: -0.05em;
+  white-space: pre-line;
+}
+
+.hero h1 {
+  color: var(--surface);
   font-size: clamp(3.1rem, 9vw, 8rem);
   font-weight: 700;
-  letter-spacing: -0.05em;
   line-height: 0.86;
 }
 
@@ -140,12 +159,6 @@ main {
 .hero-side p {
   font-size: 1.25rem;
   line-height: 1.45;
-}
-
-.hero-side a,
-.philosophy a {
-  border-bottom: 0.5px solid currentcolor;
-  padding-bottom: 0.3rem;
 }
 
 .philosophy {
@@ -164,18 +177,13 @@ main {
   grid-column: 2 / span 5;
 }
 
-.philosophy-grid h2,
-.archive h2 {
-  font-family: var(--font-headline), sans-serif;
-  margin: 0 0 2rem;
-  letter-spacing: -0.03em;
+.section-heading {
+  font-size: clamp(2rem, 3.6vw, 3.3rem);
+  margin-bottom: 2rem;
 }
 
-.philosophy-grid h2 {
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.philosophy-grid p {
+.philosophy-grid p,
+.base-page p {
   font-size: 1.3rem;
   line-height: 1.5;
   color: var(--secondary);
@@ -203,20 +211,11 @@ main {
   justify-content: space-between;
   align-items: end;
   padding-bottom: 2rem;
+}
+
+.hairline-divider {
+  border-top: 0.5px solid var(--outline);
   margin-bottom: 4rem;
-  border-bottom: 0.5px solid var(--outline);
-}
-
-.archive h2 {
-  font-size: clamp(2rem, 3.6vw, 3.3rem);
-}
-
-.archive-head span {
-  font-family: var(--font-headline), sans-serif;
-  font-size: 0.74rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  color: var(--secondary);
 }
 
 .archive-grid {
@@ -225,7 +224,8 @@ main {
   gap: 4rem 2rem;
 }
 
-.project-card img {
+.project-card img,
+.project-card .media-frame {
   width: 100%;
   height: auto;
   display: block;
@@ -264,9 +264,26 @@ main {
   font-size: 1.05rem;
 }
 
-.project-meta span {
+.project-meta a {
   font-family: var(--font-headline), sans-serif;
   color: var(--secondary);
+}
+
+.archive-cta {
+  margin-top: 4rem;
+}
+
+.base-page {
+  padding: 8rem 0;
+}
+
+.base-page h1 {
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  margin-bottom: 1.5rem;
+}
+
+.base-page p {
+  max-width: 780px;
 }
 
 .site-footer {
@@ -285,10 +302,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-.footer-links a {
-  color: var(--secondary);
 }
 
 .copyright {
@@ -320,6 +333,10 @@ main {
   .desktop-nav,
   .inquire-cta {
     display: none;
+  }
+
+  main {
+    padding-top: 4.5rem;
   }
 
   .hero {
