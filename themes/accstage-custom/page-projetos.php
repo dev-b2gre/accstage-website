@@ -21,12 +21,12 @@ if ($project_slug && $project) {
     <section class="acc-page-hero acc-projects-hero">
         <div class="acc-wrap">
             <div class="acc-projects-hero__head">
-                <p class="acc-label"><?php esc_html_e('Arquivo ACCSTAGE', 'accstage-custom'); ?></p>
-                <h1 class="acc-title-xl"><?php esc_html_e('Projeto não encontrado', 'accstage-custom'); ?></h1>
+                <p class="acc-label"><?php echo esc_html(accstage_translate('projects.not_found.label', 'Arquivo ACCSTAGE')); ?></p>
+                <h1 class="acc-title-xl"><?php echo esc_html(accstage_translate('projects.not_found.title', 'Projeto não encontrado')); ?></h1>
             </div>
             <div class="acc-projects-hero__meta">
-                <p><?php esc_html_e('O projeto solicitado não existe no arquivo atual. Consulte a seleção completa de projetos.', 'accstage-custom'); ?></p>
-                <a class="acc-button" href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Ver todos os projetos', 'accstage-custom'); ?></a>
+                <p><?php echo esc_html(accstage_translate('projects.not_found.body', 'O projeto solicitado não existe no arquivo atual. Consulte a seleção completa de projetos.')); ?></p>
+                <a class="acc-button" href="<?php echo esc_url(accstage_i18n_url('/projetos/')); ?>"><?php echo esc_html(accstage_translate('projects.not_found.cta', 'Ver todos os projetos')); ?></a>
             </div>
         </div>
     </section>
@@ -37,12 +37,12 @@ if ($project_slug && $project) {
     <section class="acc-page-hero acc-projects-hero">
         <div class="acc-wrap">
             <div class="acc-projects-hero__head">
-                <p class="acc-label"><?php esc_html_e('Arquivo de projetos', 'accstage-custom'); ?></p>
-                <h1 class="acc-title-xl"><?php esc_html_e('Projetos', 'accstage-custom'); ?></h1>
+                <p class="acc-label"><?php echo esc_html(accstage_translate('projects.archive.label', 'Arquivo de projetos')); ?></p>
+                <h1 class="acc-title-xl"><?php echo esc_html(accstage_translate('projects.archive.title', 'Projetos')); ?></h1>
             </div>
 
             <div class="acc-projects-hero__meta">
-                <p><?php echo esc_html(sprintf(__('Arquivo com %d intervenções selecionadas, com linguagem minimalista, rigor técnico e foco na permanência.', 'accstage-custom'), $projects_total)); ?></p>
+                <p><?php echo esc_html(sprintf(accstage_translate('projects.archive.lead', 'Arquivo com %d intervenções selecionadas, com linguagem minimalista, rigor técnico e foco na permanência.'), $projects_total)); ?></p>
             </div>
         </div>
     </section>

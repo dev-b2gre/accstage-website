@@ -7,20 +7,20 @@
 
 $pilares = [
     [
-        'titulo' => __('Rigor', 'accstage-custom'),
-        'descricao' => __('Aplicamos critérios técnicos estritos em todas as fases, do conceito ao detalhe construtivo.', 'accstage-custom'),
+        'titulo' => accstage_translate('about.pillars.rigor.title', 'Rigor'),
+        'descricao' => accstage_translate('about.pillars.rigor.description', 'Aplicamos critérios técnicos estritos em todas as fases, do conceito ao detalhe construtivo.'),
     ],
     [
-        'titulo' => __('Qualidade', 'accstage-custom'),
-        'descricao' => __('Selecionamos materiais e soluções pela sua capacidade de envelhecer com nobreza e coerência.', 'accstage-custom'),
+        'titulo' => accstage_translate('about.pillars.quality.title', 'Qualidade'),
+        'descricao' => accstage_translate('about.pillars.quality.description', 'Selecionamos materiais e soluções pela sua capacidade de envelhecer com nobreza e coerência.'),
     ],
     [
-        'titulo' => __('Confiança', 'accstage-custom'),
-        'descricao' => __('Construímos relações transparentes, com compromisso rigoroso entre visão, prazo e execução.', 'accstage-custom'),
+        'titulo' => accstage_translate('about.pillars.trust.title', 'Confiança'),
+        'descricao' => accstage_translate('about.pillars.trust.description', 'Construímos relações transparentes, com compromisso rigoroso entre visão, prazo e execução.'),
     ],
     [
-        'titulo' => __('Detalhe', 'accstage-custom'),
-        'descricao' => __('A precisão milimétrica é o alicerce silencioso de cada espaço que desenhamos.', 'accstage-custom'),
+        'titulo' => accstage_translate('about.pillars.detail.title', 'Detalhe'),
+        'descricao' => accstage_translate('about.pillars.detail.description', 'A precisão milimétrica é o alicerce silencioso de cada espaço que desenhamos.'),
     ],
 ];
 
@@ -31,13 +31,13 @@ $pilares_image_exists = file_exists(get_theme_file_path($pilares_image_relative_
     <div class="acc-wrap">
         <div class="acc-about-pillars__grid">
             <div class="acc-about-pillars__intro">
-                <h2 id="acc-about-pillars-title" class="acc-title-lg"><?php esc_html_e('Os nossos pilares', 'accstage-custom'); ?></h2>
+                <h2 id="acc-about-pillars-title" class="acc-title-lg"><?php echo esc_html(accstage_translate('about.pillars.title', 'Os nossos pilares')); ?></h2>
 
                 <figure class="acc-about-pillars__media<?php echo $pilares_image_exists ? '' : ' is-placeholder'; ?>">
                     <?php if ($pilares_image_exists) : ?>
                         <img
                             src="<?php echo esc_url(get_theme_file_uri($pilares_image_relative_path)); ?>"
-                            alt="<?php esc_attr_e('Composição arquitetónica em preto e branco', 'accstage-custom'); ?>"
+                            alt="<?php echo esc_attr(accstage_translate('about.pillars.image_alt', 'Composição arquitetónica em preto e branco')); ?>"
                             loading="lazy"
                             decoding="async"
                         />
