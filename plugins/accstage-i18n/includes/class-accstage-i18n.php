@@ -153,7 +153,9 @@ class ACCSTAGE_I18N
 
     public function build_url(string $path = '/', ?string $lang = null): string
     {
-        $language = $this->sanitize_language((string) $lang);
+        $language = $lang === null || $lang === ''
+            ? $this->current_language
+            : $this->sanitize_language((string) $lang);
         $trimmed_path = ltrim($path, '/');
 
         if ($language === self::DEFAULT_LANGUAGE) {

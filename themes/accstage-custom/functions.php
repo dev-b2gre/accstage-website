@@ -70,7 +70,7 @@ function accstage_custom_contact_form_redirect(array $error_fields = [], string 
 {
     $redirect_url = wp_get_referer();
     if (! $redirect_url) {
-        $redirect_url = home_url('/');
+        $redirect_url = function_exists('accstage_i18n_url') ? accstage_i18n_url('/') : home_url('/');
     }
 
     $args = [
