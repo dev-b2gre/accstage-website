@@ -6,310 +6,310 @@
   "navigation": {
     "projects": "Projects",
     "services": "Services",
-    "about": "About us",
+    "about": "About",
     "contact": "Contact",
     "cta": "Talk to us"
   },
   "home": {
     "hero": {
       "title": "We design permanence. We build with precision.",
-      "lead": "From architecture to construction, we develop spaces with technical rigor and absolute attention to detail.",
-      "cta": "Explore archive"
+      "lead": "From architecture to construction, we deliver spaces with technical rigour, contemporary language and absolute attention to detail.",
+      "cta": "Discover archive"
     },
     "manifesto": {
       "label": "Manifesto",
-      "title": "O espaço não está vazio.<br/>É matéria arquitetónica.",
-      "body": "A ACCSTAGE afasta-se da arquitetura descartável. Trabalhamos com geometrias puras, proporção disciplinada e materiais que ganham carácter com o tempo.",
-      "cta": "Ler manifesto completo"
+      "title": "Space is not empty.<br/>It is architectural matter.",
+      "body": "ACCSTAGE rejects disposable architecture. We work with pure geometries, disciplined proportion and materials that gain character over time.",
+      "cta": "Read full manifesto"
     },
     "archive": {
-      "title": "Arquivo selecionado",
+      "title": "Selected archive",
       "years": "2018 — 2026"
     },
     "values": {
       "rigor": {
-        "title": "Rigor",
-        "body": "Cada linha nasce de decisão técnica e não de efeito visual efémero."
+        "title": "Rigour",
+        "body": "Every line comes from technical intent, never from fleeting visual effect."
       },
       "permanence": {
-        "title": "Permanência",
-        "body": "Projetamos para atravessar décadas com dignidade material e espacial."
+        "title": "Permanence",
+        "body": "We design to endure for decades with spatial and material dignity."
       },
       "precision": {
-        "title": "Precisão",
-        "body": "A execução é tratada com o mesmo nível de exigência da fase conceptual."
+        "title": "Precision",
+        "body": "Execution is held to the same demanding standard as the concept phase."
       }
     },
     "contact": {
-      "label": "Contacto oficial",
+      "label": "Official contact",
       "title": "ACCSTAGE Lda. — Head Office",
       "address_line_1": "R. António Luis Gomes 120",
       "address_line_2": "4430-195 Vila Nova de Gaia",
       "phone": "Business Contact: +351 255 913 065",
-      "cta": "Falar com a Accstage"
+      "cta": "Contact Accstage"
     }
   },
   "about": {
     "hero": {
-      "label": "About us",
-      "title": "Arquitetos de intenção.",
-      "lead": "Não desenhamos para ocupar espaço. Desenhamos para o definir com permanência, silêncio formal e precisão absoluta."
+      "label": "About",
+      "title": "Architects of intent.",
+      "lead": "We do not draw to occupy space. We draw to define it with permanence, formal restraint and absolute precision."
     },
     "manifesto": {
       "label": "Manifesto",
-      "title": "Geometria disciplinada. Matéria com legado.",
-      "body_1": "A ACCSTAGE atua na fronteira entre arquitetura e direção espacial. Cada projeto nasce de uma leitura rigorosa do lugar, da luz e da proporção para alcançar presença inequívoca sem excesso formal.",
-      "body_2": "Assumimos cada obra como composição editorial tridimensional: sequência, vazio, ritmo e materialidade em equilíbrio. O objetivo é claro — criar espaços intemporais, capazes de manter relevância estética e técnica durante décadas."
+      "title": "Disciplined geometry. Material with legacy.",
+      "body_1": "ACCSTAGE operates at the boundary between architecture and spatial direction. Every project begins with a rigorous reading of place, light and proportion to achieve clear presence without formal excess.",
+      "body_2": "We approach each commission as a three-dimensional editorial composition: sequence, void, rhythm and materiality in balance. The goal is clear — timeless spaces that retain technical and aesthetic relevance for decades."
     },
     "pillars": {
-      "title": "Os nossos pilares",
-      "image_alt": "Composição arquitetónica em preto e branco",
+      "title": "Our pillars",
+      "image_alt": "Black-and-white architectural composition",
       "rigor": {
-        "title": "Rigor",
-        "description": "Aplicamos critérios técnicos estritos em todas as fases, do conceito ao detalhe construtivo."
+        "title": "Rigour",
+        "description": "We apply strict technical criteria at every stage, from concept to construction detail."
       },
       "quality": {
-        "title": "Qualidade",
-        "description": "Selecionamos materiais e soluções pela sua capacidade de envelhecer com nobreza e coerência."
+        "title": "Quality",
+        "description": "We select materials and systems for their ability to age with coherence and nobility."
       },
       "trust": {
-        "title": "Confiança",
-        "description": "Construímos relações transparentes, com compromisso rigoroso entre visão, prazo e execução."
+        "title": "Trust",
+        "description": "We build transparent relationships, aligning vision, schedule and delivery."
       },
       "detail": {
-        "title": "Detalhe",
-        "description": "A precisão milimétrica é o alicerce silencioso de cada espaço que desenhamos."
+        "title": "Detail",
+        "description": "Millimetric precision is the silent foundation of every space we design."
       }
     },
     "facts": {
-      "sr_title": "Dados do estúdio",
-      "company_label": "Empresa",
+      "sr_title": "Studio data",
+      "company_label": "Company",
       "company_value": "ACCSTAGE Lda.",
       "office_label": "Head Office",
       "office_value": "R. António Luis Gomes 120, 4430-195 Vila Nova de Gaia",
-      "contact_label": "Contacto",
+      "contact_label": "Contact",
       "contact_value": "+351 255 913 065 · info@accstage.com"
     }
   },
   "services": {
     "hero": {
       "label": "Services",
-      "title": "Serviços com rigor, visão e execução integrada.",
-      "lead": "A Accstage integra arquitetura, construção e soluções especializadas com foco em qualidade, consistência técnica e valor duradouro."
+      "title": "Services delivered with rigour, vision and integrated execution.",
+      "lead": "Accstage combines architecture, construction and specialised solutions with a focus on quality, technical consistency and long-term value."
     },
-    "sr_title": "Áreas de serviço",
-    "image_placeholder": "Imagem de serviço",
-    "item_label": "Área de serviço",
-    "cta": "Fale connosco",
+    "sr_title": "Service areas",
+    "image_placeholder": "Service image",
+    "item_label": "Service area",
+    "cta": "Talk to us",
     "items": {
       "architecture": {
-        "title": "Arquitetura",
-        "paragraph_1": "Integrando uma equipa multidisciplinar, o nosso escritório conta com talentosos designers e arquitetos, que nos permitem desenvolver projetos desde os primeiros esboços e discussão de ideias, até ao acompanhamento e assistência técnica em obra.",
-        "paragraph_2": "Os nossos métodos aliam criatividade ao rigor, proporcionando resultados inovadores.",
-        "paragraph_3": "Possuímos vasta experiência na elaboração de projetos de carácter residencial, bem como em edifícios de saúde, desportivos e comerciais.",
-        "paragraph_4": "A proximidade com o cliente revela-se um fator de extrema importância no sentido de proporcionar os resultados desejados."
+        "title": "Architecture",
+        "paragraph_1": "Our multidisciplinary team of designers and architects develops projects from first sketches and strategic briefing through on-site technical follow-up.",
+        "paragraph_2": "Our methods unite creativity with technical rigour to deliver consistent and innovative outcomes.",
+        "paragraph_3": "We have broad experience across residential projects and health, sports and commercial buildings.",
+        "paragraph_4": "Close collaboration with each client is essential to achieving the intended result."
       },
       "construction": {
-        "title": "Construção",
-        "paragraph_1": "Com uma vasta experiência na construção de edifícios de habitação coletiva e individual, a Accstage realiza obras no mercado nacional e no mercado internacional.",
-        "paragraph_2": "Para além de edifícios residenciais, construímos também outras tipologias.",
-        "paragraph_3": "A experiência adquirida permite-nos encarar o futuro com a confiança necessária que o mercado, cada vez mais exigente, solicita.",
-        "paragraph_4": "Oferecemos uma elevada capacidade de resposta face às maiores exigências.",
-        "paragraph_5": "Com uma equipa de técnicos altamente qualificados, a Accstage – Building for Tomorrow representa uma opção sólida com vista à obtenção de resultados de excelência, em qualquer fase de obra.",
-        "paragraph_6": "Trabalhamos de forma que a nossa confiança seja a confiança dos nossos clientes."
+        "title": "Construction",
+        "paragraph_1": "With strong experience in collective and single-family housing, Accstage delivers projects in national and international markets.",
+        "paragraph_2": "Beyond residential buildings, we build across multiple typologies.",
+        "paragraph_3": "Our track record gives us the confidence required by an increasingly demanding market.",
+        "paragraph_4": "We offer high responsiveness to complex technical and operational requirements.",
+        "paragraph_5": "Supported by a highly qualified technical team, Accstage – Building for Tomorrow is a solid choice for excellence at every project stage.",
+        "paragraph_6": "We work so that our confidence becomes our clients’ confidence."
       },
       "metal_solutions": {
-        "title": "Soluções Metálicas",
-        "paragraph_1": "A comercialização de soluções metálicas para arquitetura adveio de uma paixão e da capacidade de trabalhar o metal. Acreditamos que o peso do metal na construção civil será cada vez maior.",
-        "paragraph_2": "Com o objetivo de apresentar soluções diferenciadas, procuramos novos desafios que nos permitam evoluir a todos os níveis. Esta postura leva-nos a experimentar novos conceitos.",
-        "paragraph_3": "Contamos com uma equipa qualificada e experiente, capaz de criar produtos de grande exigência, com resultados amplamente satisfatórios e inovadores.",
-        "paragraph_4": "Garantimos qualidade, precisão e engenharia, sendo por isso altamente competitivos por forma a operar no mercado global."
+        "title": "Metal Solutions",
+        "paragraph_1": "Our metal solutions for architecture stem from a genuine passion and deep expertise in metal craft. We believe metal will play an ever greater role in construction.",
+        "paragraph_2": "To deliver differentiated solutions, we pursue new challenges that drive progress at every level and encourage new concepts.",
+        "paragraph_3": "Our skilled team develops high-demand products with innovative, consistently reliable results.",
+        "paragraph_4": "We combine quality, precision and engineering to remain highly competitive in global markets."
       },
       "vertical_gardens": {
-        "title": "Jardins Verticais",
-        "paragraph_1": "O pensamento em relação ao meio ambiente está cada vez mais vincado na visão de quem define as regras de urbanização, de quem projeta e inclusive dos próprios governos. Intervindo diretamente no meio ambiente e na criação e desenvolvimento do território, as questões ecológicas e ambientais são preocupações que integram os nossos trabalhos.",
-        "paragraph_2": "O jardim vertical, ou parede verde, consiste numa intervenção paisagística no edificado, onde as paredes ou muros são cobertos por vegetação através de técnicas especializadas. Estas intervenções interferem bastante no microclima dos espaços envolventes.",
-        "paragraph_3": "Para além de todas as mais-valias técnicas, nas quais se destacam as melhorias de eficiência térmica, os jardins verticais têm ainda um fator estético de inegável requinte pela sua naturalidade."
+        "title": "Vertical Gardens",
+        "paragraph_1": "Environmental thinking is increasingly central to urban policy, design practice and public governance. Because we intervene directly in territory and built form, ecological concerns are integral to our work.",
+        "paragraph_2": "A vertical garden, or green wall, is a landscape intervention in architecture, where façades or walls are covered with vegetation through specialised systems, significantly improving local microclimate.",
+        "paragraph_3": "Beyond technical benefits such as thermal efficiency, vertical gardens bring undeniable visual refinement through natural presence."
       }
     }
   },
   "contact": {
     "hero": {
       "label": "Contact",
-      "title": "Vamos conversar sobre o seu próximo projeto.",
-      "lead": "Partilhe o contexto e os objetivos. A ACCSTAGE responde com enquadramento técnico, próximos passos e acompanhamento profissional."
+      "title": "Let’s discuss your next project.",
+      "lead": "Share your goals and context. ACCSTAGE replies with technical framing, clear next steps and professional guidance."
     },
-    "sr_title": "Informação de contacto e formulário",
+    "sr_title": "Contact information and form",
     "panel": {
-      "intro_label": "Introdução",
+      "intro_label": "Introduction",
       "company": "ACCSTAGE Lda.",
-      "intro_text": "Sede oficial em Vila Nova de Gaia, com atuação em projetos de arquitetura e construção premium em diferentes escalas.",
-      "contacts_label": "Contactos principais",
+      "intro_text": "Official headquarters in Vila Nova de Gaia, delivering premium architecture and construction across different scales.",
+      "contacts_label": "Main contacts",
       "email_label": "Email",
       "phone_label": "Business Contact",
-      "company_label": "Empresa",
+      "company_label": "Company",
       "office_label": "Head Office",
       "address_line_1": "R. António Luis Gomes 120",
       "address_line_2": "4430-195 Vila Nova de Gaia",
       "country": "Portugal",
-      "note": "Reuniões presenciais por marcação prévia."
+      "note": "In-person meetings by prior appointment."
     },
     "form": {
-      "label": "Formulário",
-      "title": "Iniciar contacto",
-      "aria_label": "Formulário de contacto",
-      "error_global": "Por favor, valide os campos assinalados para concluir o envio.",
-      "name_label": "Nome completo",
-      "name_hint": "Indique o nome completo.",
-      "email_label": "Email profissional",
-      "email_hint": "Introduza um email profissional válido.",
-      "phone_label": "Telefone",
-      "phone_hint": "O telefone deve conter exatamente 9 números.",
-      "project_type_label": "Tipo de projeto",
-      "project_type_placeholder": "Residencial, comercial, cultural...",
-      "project_type_hint": "Selecione ou descreva o tipo de projeto.",
-      "message_label": "Detalhes do pedido",
-      "message_hint": "Partilhe os detalhes essenciais do pedido.",
-      "submit": "Enviar pedido",
-      "success": "Pedido enviado, entraremos em contacto brevemente."
+      "label": "Form",
+      "title": "Start contact",
+      "aria_label": "Contact form",
+      "error_global": "Please review the highlighted fields to complete submission.",
+      "name_label": "Full name",
+      "name_hint": "Please provide your full name.",
+      "email_label": "Professional email",
+      "email_hint": "Please enter a valid professional email.",
+      "phone_label": "Phone",
+      "phone_hint": "Phone must contain exactly 9 digits.",
+      "project_type_label": "Project type",
+      "project_type_placeholder": "Residential, commercial, cultural...",
+      "project_type_hint": "Select or describe the project type.",
+      "message_label": "Project details",
+      "message_hint": "Please share the essential details of your request.",
+      "submit": "Send request",
+      "success": "Request sent. We will contact you shortly."
     },
     "map": {
-      "label": "Localização",
-      "title": "Visitar a sede da ACCSTAGE",
+      "label": "Location",
+      "title": "Visit ACCSTAGE headquarters",
       "address": "R. António Luis Gomes 120, 4430-195 Vila Nova de Gaia",
-      "iframe_title": "Mapa da sede da ACCSTAGE em Vila Nova de Gaia"
+      "iframe_title": "Map of ACCSTAGE headquarters in Vila Nova de Gaia"
     }
   },
   "projects": {
     "archive": {
-      "label": "Arquivo de projetos",
+      "label": "Project archive",
       "title": "Projects",
-      "lead": "Arquivo com %d intervenções selecionadas, com linguagem minimalista, rigor técnico e foco na permanência."
+      "lead": "Archive of %d selected interventions shaped by minimalist language, technical rigour and a long-term perspective."
     },
     "not_found": {
-      "label": "Arquivo ACCSTAGE",
-      "title": "Projeto não encontrado",
-      "body": "O projeto solicitado não existe no arquivo atual. Consulte a seleção completa de projetos.",
-      "cta": "Ver todos os projetos"
+      "label": "ACCSTAGE archive",
+      "title": "Project not found",
+      "body": "The requested project does not exist in the current archive. Browse the full project selection.",
+      "cta": "View all projects"
     },
     "items": {
-      "aria_view_detail": "Ver detalhe de %s",
-      "image_placeholder": "Imagem principal",
-      "view_project": "Ver projeto"
+      "aria_view_detail": "View details for %s",
+      "image_placeholder": "Main image",
+      "view_project": "View project"
     },
     "detail": {
-      "label": "Projeto",
-      "hero_placeholder": "Placeholder pronto para imagem principal.",
-      "location_label": "Localização",
-      "year_label": "Ano",
-      "gallery_placeholder": "Galeria em atualização",
-      "contact_label": "Contacto",
-      "cta_button": "Falar com a equipa"
+      "label": "Project",
+      "hero_placeholder": "Main hero image coming soon.",
+      "location_label": "Location",
+      "year_label": "Year",
+      "gallery_placeholder": "Gallery being updated",
+      "contact_label": "Contact",
+      "cta_button": "Talk to the team"
     },
     "data": {
       "2urba": {
         "title": "2URBA",
-        "location": "",
-        "year": "",
-        "description_1": "Projeto transversal de duas moradias geminadas para loteamento na cidade de Guimarães. É um projeto dotado de traços minimalistas e modernos, conjugando de uma forma harmoniosa os materiais e o espaço.",
-        "description_2": "Estas moradias incluem três níveis: rés-do-chão com áreas de lazer, cozinha, lavandaria, instalações sanitárias e sala; o 1º andar com três quartos; cave com garagem para dois veículos por unidade habitacional.",
-        "cta": "Pretende desenvolver um projeto residencial com esta linguagem?",
+        "location": "Guimarães, Portugal",
+        "year": "Project",
+        "description_1": "Cross-cutting project for two semi-detached homes in a development area in Guimarães, defined by modern minimalist lines and balanced material composition.",
+        "description_2": "The homes are organised over three levels: ground floor with social areas and support spaces, first floor with three bedrooms, and basement garage for two vehicles per unit.",
+        "cta": "Planning a residential project in this language?",
         "list_tag": "Residential"
       },
       "ribeira_verde": {
-        "title": "Projeto Ribeira Verde",
+        "title": "Ribeira Verde",
         "location": "Guimarães, Portugal",
-        "year": "",
-        "description_1": "O edifício Ribeira Verde pretende introduzir na cidade uma forte relação entre construção e natureza. Elementos naturais como a água, as árvores e outros tipos de vegetação, sobressaem no edificado proposto, aumentando a biodiversidade e os níveis de oxigénio do local.",
-        "description_2": "A valorização da ribeira de couros, que atualmente denota uma presença discreta e sem grande relação com as atividades sociais, representa uma clara mais valia. Este projeto congrega alguns interesses municipais que potencializarão a ligação do parque verde da cidade ao centro histórico.",
-        "description_3": "Com 33 apartamentos, de áreas amplas e confortáveis e acabamento superiores, este edifício aporta qualidade de vida aos seus utilizadores. Dotado de muitas áreas verdes e equipamentos de lazer, o edifício Ribeira Verde oferece uma resposta ecológica à (pouca) oferta existente no mercado imobiliário da cidade de Guimarães.",
-        "cta": "Vamos conversar sobre um projeto urbano com impacto positivo?",
-        "list_tag": "Habitação multifamiliar"
+        "year": "Project",
+        "description_1": "Ribeira Verde strengthens the relationship between construction and nature by integrating water, trees and vegetation into the building concept.",
+        "description_2": "The project enhances the Ribeira de Couros corridor and helps connect the city’s green park to the historic centre.",
+        "description_3": "With 33 apartments, generous areas and high-quality finishes, it delivers comfort, biodiversity and a clear ecological response in Guimarães’ housing market.",
+        "cta": "Let’s discuss an urban project with positive impact.",
+        "list_tag": "Multi-family housing"
       },
       "camport": {
-        "title": "Projeto Fábrica Camport",
+        "title": "Camport Factory",
         "location": "Guimarães, Portugal",
-        "year": "",
-        "description_1": "O design concilia a funcionalidade à organização e aos pressupostos de uma empresa com marca reconhecida na indústria do calçado. A pureza e força do betão jogam constantemente com o alumínio branco e as suas diversas transparências e texturas.",
-        "description_2": "A introdução da luz, interior e exterior, constitui um elemento importante no desenvolvimento da proposta. À noite, todas as fachadas assumem novas formas e dinâmicas. A complexidade da geometria presente no alçado principal foi desenvolvida através de um componente básico, o qual possui uma estreita relação com a empresa: a palmilha, que representa conforto.",
-        "cta": "Procura uma abordagem arquitetónica para um espaço industrial?",
+        "year": "Project",
+        "description_1": "The design aligns functionality and organisational logic for a recognised footwear brand, combining concrete strength with white aluminium and controlled transparency.",
+        "description_2": "Light, both interior and exterior, structures the proposal. The main façade geometry derives from a core element connected to the company’s identity: the insole.",
+        "cta": "Looking for an architectural approach to an industrial facility?",
         "list_tag": "Industrial"
       },
       "quinta_peixoto": {
         "title": "Quinta do Peixoto",
         "location": "Mascotelos, Guimarães",
-        "year": "Projeto 2019",
-        "description_1": "As residências da Quinta do Peixoto situam-se em Mascotelos, Guimarães. Este projeto inclui 13 lotes habitacionais, 78 residências e inúmeros espaços verdes. O ambiente é uma preocupação especial, uma vez que a biodiversidade e a sustentabilidade são duas das prioridades atuais.",
-        "description_2": "A classe energética A, as centrais elétricas, o conforto térmico e a existência de painéis solares não passam despercebidos. Mais uma vez, o minimalismo de todos os elementos é evidente.",
-        "cta": "Quer planear um conjunto habitacional com foco em sustentabilidade?",
-        "list_tag": "Masterplan residencial"
+        "year": "Project 2019",
+        "description_1": "Residential development in Mascotelos with 13 plots, 78 units and extensive green areas, designed with sustainability and biodiversity as central values.",
+        "description_2": "Energy class A, thermal comfort, electric systems and solar panels reinforce a minimalist architectural language with long-term performance.",
+        "cta": "Planning a housing complex focused on sustainability?",
+        "list_tag": "Residential masterplan"
       },
       "canaima": {
-        "title": "Projeto Casa Canaima",
-        "location": "Nules, Espanha",
-        "year": "Construção concluída no início de 2008",
-        "description_1": "Localizada na cidade de Nules, em Espanha, a Residencial Canaima aportou a possibilidade de incrementar qualidade de vida, conforto e tranquilidade a uma cidade com grande relação com a indústria cerâmica. No fundo propusemo-nos promover e construir este complexo habitacional por forma que a classe média tivesse acesso a novos e elevados padrões de qualidade de construção.",
-        "description_2": "Trata-se de um condomínio fechado, com um total de 26 vivendas unifamiliares em banda, divididos em duas frentes construídas. A implantação dos edifícios permitiu a criação de um pátio interior comum para reforçar as relações e a segurança de todas as famílias que ali habitam, bem como a criação de um espaço de sombra, ideal para convívio e sensação térmica agradável em pleno mediterrâneo.",
-        "description_3": "No que se refere às vivendas propriamente ditas, a moradia tipo integra 3 níveis, o Rés-do-chão com as áreas de lazer, cozinha, instalação sanitária e pátio exterior privado; o 1º andar com dois quartos com casa de banho integrada; e um 2º andar com outros dois quartos. Importa referir a existência de um 4º nível, a cave, sendo esta de caracter coletivo, contém garagens individuais, garantindo o estacionamento de dois veículos por unidade habitacional.",
-        "description_4": "A construção foi concluída no início de 2008. Tratou-se de um projeto bem sucedido, o qual mantém nos dias de hoje as suas qualidades bem vivas, desde logo pelo bom estado do empreendimento.",
-        "cta": "Procura desenvolver um conjunto habitacional com elegância e forte sentido de comunidade?",
+        "title": "Casa Canaima",
+        "location": "Nules, Spain",
+        "year": "Completed in early 2008",
+        "description_1": "In Nules, this residential development raised standards of comfort and construction quality in a city closely linked to the ceramics industry.",
+        "description_2": "The gated complex includes 26 terraced single-family homes arranged in two fronts around a shared interior courtyard for security, social use and thermal comfort.",
+        "description_3": "Each dwelling is organised across four levels, including private outdoor space and collective basement parking with two spaces per unit.",
+        "description_4": "Completed in early 2008, the project remains highly consistent in performance and built quality.",
+        "cta": "Looking to develop housing with elegance and a strong sense of community?",
         "list_tag": "Residential"
       },
       "teixeira": {
         "title": "Casa Teixeira",
-        "location": "",
-        "year": "Projeto 2009 · Construção 2010",
-        "description_1": "Construção de lote unifamiliar.",
-        "description_2": "O desenho enquadra-se nos valores herdados da modernidade, assentando na simplicidade formal, por meio de formas cruas e brutas, e no respeito entre os diversos materiais.",
-        "description_3": "A nível arquitetónico o projeto reflete um jogo constante entre uma volumetria fechada e compacta na sua aparência exterior, e um interior bastante aberto e iluminado. Para isso serve-se de pequenos pátios no interior imediato da sua volumetria, contendo vãos abertos de diferentes tamanhos na fachada exterior.",
-        "description_4": "Desta forma encurtou-se a visibilidade desde o exterior para o interior do lote, conferindo maior privacidade aos seus compartimentos.",
-        "cta": "Pretende uma moradia contemporânea com privacidade, luz e rigor material?",
-        "list_tag": "Habitação unifamiliar"
+        "location": "Portugal",
+        "year": "Project 2009 · Construction 2010",
+        "description_1": "Single-family house construction.",
+        "description_2": "The design draws on modernist values through formal clarity, raw geometries and precise dialogue between materials.",
+        "description_3": "A compact exterior volume contrasts with an open, light-filled interior articulated through patios and controlled openings.",
+        "description_4": "This strategy reinforces privacy while preserving spatial quality and daylight.",
+        "cta": "Seeking a contemporary home with privacy, light and material rigour?",
+        "list_tag": "Single-family housing"
       },
       "lousada": {
         "title": "Lousada Padel Park",
-        "location": "Lousada",
-        "year": "Projeto 2018",
-        "description_1": "Pavilhão desportivo de padel.",
-        "description_2": "Integrando o Complexo Desportivo de Lousada, o objetivo passava por adicionar, às valências existentes do espaço, uma nova componente desportiva, a qual tem um número cada vez maior de praticantes.",
-        "description_3": "A proposta acrescenta uma nova massa construída com forte impacto visual. Desta forma, o conceito desenvolvido passou por tentar conferir o máximo de leveza ao novo edifício. Para isso, através da diferença de cotas entre os pavimentos, a fachada Este, aquela que tem mais força visual, perde altura e, ao mesmo tempo, a inclusão de fachadas falsas com árvores no seu interior permite desconstruir o pavilhão e relacioná-lo com a natureza.",
-        "description_4": "A constante interação entre o edificado e a vegetação é um dos fatores diferenciais que o projeto apresenta. Mesmo no interior do pavilhão pretendeu-se reforçar essa relação por forma a que o pavilhão, apesar de totalmente coberto, tenha uma forte ligação ao espaço exterior.",
-        "cta": "Quer desenvolver um equipamento desportivo com identidade arquitetónica forte?",
-        "list_tag": "Equipamento desportivo"
+        "location": "Lousada, Portugal",
+        "year": "Project 2018",
+        "description_1": "Padel sports pavilion.",
+        "description_2": "Integrated into the Lousada Sports Complex, the project introduces a fast-growing sport programme into the existing infrastructure.",
+        "description_3": "The concept delivers a strong yet lightweight visual presence, using level differences and planted false façades to connect architecture with nature.",
+        "description_4": "The continuous dialogue between built form and vegetation defines the project’s identity, both outside and inside the pavilion.",
+        "cta": "Planning a sports facility with strong architectural identity?",
+        "list_tag": "Sports facility"
       },
       "sort": {
-        "title": "Clínica Sort",
-        "location": "",
-        "year": "Projeto 2019",
-        "description_1": "Edifício de Serviços de Segurança e Saúde no Trabalho.",
-        "description_2": "Este projeto refere-se a uma obra de reestruturação e restauração de interiores de um espaço anteriormente utilizado como estabelecimento comercial. Dotada de linhas dinâmicas e elegantes, a clínica SORT está agora estruturada de forma muito eficiente e, apesar do minimalismo dos elementos, alguns detalhes realçam a harmonia entre todos os espaços.",
-        "cta": "Procura transformar um espaço de serviços com eficiência e elegância contemporânea?",
-        "list_tag": "Serviços e saúde"
+        "title": "Sort Clinic",
+        "location": "Portugal",
+        "year": "Project 2019",
+        "description_1": "Occupational safety and health services building.",
+        "description_2": "This interior restructuring and rehabilitation project transforms a former commercial unit into an efficient clinic with elegant, dynamic lines and coherent minimal detailing.",
+        "cta": "Looking to transform a service space with efficiency and contemporary elegance?",
+        "list_tag": "Services and healthcare"
       },
       "m73": {
         "title": "M73 Apartments",
-        "location": "Felgueiras",
-        "year": "Projeto 2018",
-        "description_1": "Edifício de habitação coletiva.",
-        "description_2": "Como objetivo propôs-se que o centro da cidade de Felgueiras oferecesse um edifício de habitação coletiva com altos padrões de elegância, conforto e design. O projeto apresenta um edifício rico em texturas, no qual a boa exposição solar e a privacidade dos espaços interiores estão fortemente ligados.",
-        "cta": "Pretende desenvolver habitação coletiva com conforto, elegância e forte presença urbana?",
-        "list_tag": "Habitação coletiva"
+        "location": "Felgueiras, Portugal",
+        "year": "Project 2018",
+        "description_1": "Collective housing building.",
+        "description_2": "Conceived for Felgueiras city centre, the project offers collective housing with high standards of design, comfort and urban presence, balancing texture, sunlight and privacy.",
+        "cta": "Developing collective housing with comfort, elegance and strong urban presence?",
+        "list_tag": "Collective housing"
       }
     }
   },
   "footer": {
     "brand": {
       "name": "ACCSTAGE Lda.",
-      "description": "Arquitetura e construção premium com direção precisa, materialidade rigorosa e visão de longo prazo.",
-      "cta": "Agendar contacto"
+      "description": "Premium architecture and construction with precise direction, disciplined materiality and long-term vision.",
+      "cta": "Schedule contact"
     },
     "nav": {
-      "aria_label": "Navegação de rodapé",
-      "title": "Navegação",
+      "aria_label": "Footer navigation",
+      "title": "Navigation",
       "home": "Home",
-      "projects": "Projetos",
-      "about": "Sobre nós",
-      "contact": "Contacto"
+      "projects": "Projects",
+      "about": "About",
+      "contact": "Contact"
     },
     "contact": {
       "office_label": "Head Office",
@@ -319,7 +319,7 @@
       "phone": "Business Contact: +351 255 913 065"
     },
     "social": {
-      "title": "Redes sociais"
+      "title": "Social networks"
     },
     "rights": "All rights reserved."
   }
