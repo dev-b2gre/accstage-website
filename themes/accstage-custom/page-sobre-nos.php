@@ -50,6 +50,4 @@ get_header();
     </div>
 </section>
 
-<?php get_template_part('template-parts/about', 'team'); ?>
-
 <?php get_footer();
