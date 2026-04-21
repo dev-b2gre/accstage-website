@@ -924,7 +924,7 @@ img {
 .acc-about-pillars__media {
   margin: 0;
   width: 100%;
-  max-width: 320px;
+  max-width: 352px;
   aspect-ratio: 4 / 5;
   min-height: 0;
   justify-self: start;
@@ -1221,7 +1221,7 @@ img {
   }
 
   .acc-about-pillars__media {
-    max-width: 320px;
+    max-width: 352px;
     min-height: 0;
   }
 
