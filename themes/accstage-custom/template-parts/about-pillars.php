@@ -23,13 +23,30 @@ $pilares = [
         'descricao' => __('A precisão milimétrica é o alicerce silencioso de cada espaço que desenhamos.', 'accstage-custom'),
     ],
 ];
+
+$pilares_image_relative_path = '/assets/images/about/pilares.jpg';
+$pilares_image_exists = file_exists(get_theme_file_path($pilares_image_relative_path));
 ?>
 <section class="acc-section acc-about-pillars" aria-labelledby="acc-about-pillars-title">
     <div class="acc-wrap">
         <div class="acc-about-pillars__grid">
-            <div>
+            <div class="acc-about-pillars__intro">
                 <h2 id="acc-about-pillars-title" class="acc-title-lg"><?php esc_html_e('Os nossos pilares', 'accstage-custom'); ?></h2>
+
+                <figure class="acc-about-pillars__media<?php echo $pilares_image_exists ? '' : ' is-placeholder'; ?>">
+                    <?php if ($pilares_image_exists) : ?>
+                        <img
+                            src="<?php echo esc_url(get_theme_file_uri($pilares_image_relative_path)); ?>"
+                            alt="<?php esc_attr_e('Composição arquitetónica em preto e branco', 'accstage-custom'); ?>"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    <?php else : ?>
+                        <div class="acc-about-pillars__media-fallback" aria-hidden="true"></div>
+                    <?php endif; ?>
+                </figure>
             </div>
+
             <div class="acc-about-pillars__items">
                 <?php foreach ($pilares as $pilar) : ?>
                     <article class="acc-about-pillars__item">
