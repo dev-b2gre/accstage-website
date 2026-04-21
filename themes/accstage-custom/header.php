@@ -35,7 +35,7 @@
             <a href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Contacto', 'accstage-custom'); ?></a>
         </nav>
 
-        <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Iniciar comissão', 'accstage-custom'); ?></a>
+        <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Fale Connosco', 'accstage-custom'); ?></a>
     </div>
 </header>
 <main class="acc-main">
