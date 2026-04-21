@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "locale": "pt_PT",
+    "name": "Português"
+  },
+  "home": {
+    "hero": {
+      "title": "Monólitos habitáveis para um tempo duradouro."
+    }
+  },
+  "navigation": {
+    "projects": "Projetos",
+    "services": "Serviços",
+    "about": "Sobre nós",
+    "contact": "Contacto",
+    "cta": "Fale Connosco"
+  }
+}

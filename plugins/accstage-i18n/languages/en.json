@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "locale": "en_GB",
+    "name": "English"
+  },
+  "home": {
+    "hero": {
+      "title": "Habitable monoliths for enduring living."
+    }
+  },
+  "navigation": {
+    "projects": "Projects",
+    "services": "Services",
+    "about": "About us",
+    "contact": "Contact",
+    "cta": "Talk to us"
+  }
+}
