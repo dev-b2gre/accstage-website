@@ -29,13 +29,18 @@
         </a>
 
         <nav class="acc-menu" aria-label="<?php esc_attr_e('Navegação principal', 'accstage-custom'); ?>">
-            <a href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Projetos', 'accstage-custom'); ?></a>
-            <a href="<?php echo esc_url(home_url('/servicos/')); ?>"><?php esc_html_e('Serviços', 'accstage-custom'); ?></a>
-            <a href="<?php echo esc_url(home_url('/sobre-nos/')); ?>"><?php esc_html_e('Sobre nós', 'accstage-custom'); ?></a>
-            <a href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Contacto', 'accstage-custom'); ?></a>
+            <a href="<?php echo esc_url(function_exists('accstage_i18n_url') ? accstage_i18n_url('/projetos/') : home_url('/projetos/')); ?>"><?php echo esc_html(function_exists('accstage_translate') ? accstage_translate('navigation.projects', __('Projetos', 'accstage-custom')) : __('Projetos', 'accstage-custom')); ?></a>
+            <a href="<?php echo esc_url(function_exists('accstage_i18n_url') ? accstage_i18n_url('/servicos/') : home_url('/servicos/')); ?>"><?php echo esc_html(function_exists('accstage_translate') ? accstage_translate('navigation.services', __('Serviços', 'accstage-custom')) : __('Serviços', 'accstage-custom')); ?></a>
+            <a href="<?php echo esc_url(function_exists('accstage_i18n_url') ? accstage_i18n_url('/sobre-nos/') : home_url('/sobre-nos/')); ?>"><?php echo esc_html(function_exists('accstage_translate') ? accstage_translate('navigation.about', __('Sobre nós', 'accstage-custom')) : __('Sobre nós', 'accstage-custom')); ?></a>
+            <a href="<?php echo esc_url(function_exists('accstage_i18n_url') ? accstage_i18n_url('/contacto/') : home_url('/contacto/')); ?>"><?php echo esc_html(function_exists('accstage_translate') ? accstage_translate('navigation.contact', __('Contacto', 'accstage-custom')) : __('Contacto', 'accstage-custom')); ?></a>
         </nav>
 
-        <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Fale Connosco', 'accstage-custom'); ?></a>
+        <div class="acc-header-actions">
+            <?php if (function_exists('accstage_language_switcher')) : ?>
+                <?php echo wp_kses_post(accstage_language_switcher()); ?>
+            <?php endif; ?>
+            <a class="acc-button" href="<?php echo esc_url(function_exists('accstage_i18n_url') ? accstage_i18n_url('/contacto/') : home_url('/contacto/')); ?>"><?php echo esc_html(function_exists('accstage_translate') ? accstage_translate('navigation.cta', __('Fale Connosco', 'accstage-custom')) : __('Fale Connosco', 'accstage-custom')); ?></a>
+        </div>
     </div>
 </header>
 <main class="acc-main">

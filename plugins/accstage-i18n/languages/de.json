@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "locale": "de_DE",
+    "name": "Deutsch"
+  },
+  "home": {
+    "hero": {
+      "title": "Bewohnbare Monolithen für ein dauerhaftes Leben."
+    }
+  },
+  "navigation": {
+    "projects": "Projekte",
+    "services": "Leistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "cta": "Kontaktieren Sie uns"
+  }
+}
