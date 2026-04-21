@@ -916,14 +916,19 @@ img {
 
 .acc-about-pillars__intro {
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-content: start;
   gap: clamp(1.2rem, 2vw, 1.8rem);
 }
 
 .acc-about-pillars__media {
   margin: 0;
   width: 100%;
-  min-height: clamp(340px, 42vw, 520px);
+  max-width: 320px;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  justify-self: start;
+  align-self: start;
   border: 1px solid #343434;
   overflow: hidden;
   background: #111;
@@ -1216,7 +1221,8 @@ img {
   }
 
   .acc-about-pillars__media {
-    min-height: clamp(260px, 62vw, 360px);
+    max-width: 320px;
+    min-height: 0;
   }
 
   .acc-about-pillars__items {
