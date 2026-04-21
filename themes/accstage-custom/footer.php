@@ -10,32 +10,32 @@
     <div class="acc-wrap">
         <div class="acc-site-footer__top">
             <div class="acc-site-footer__brand">
-                <p class="acc-label"><?php esc_html_e('ACCSTAGE Lda.', 'accstage-custom'); ?></p>
-                <h2 class="acc-title-md"><?php esc_html_e('Arquitetura e construção premium com direção precisa, materialidade rigorosa e visão de longo prazo.', 'accstage-custom'); ?></h2>
-                <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Agendar contacto', 'accstage-custom'); ?></a>
+                <p class="acc-label"><?php echo esc_html(accstage_translate('footer.brand.name', 'ACCSTAGE Lda.')); ?></p>
+                <h2 class="acc-title-md"><?php echo esc_html(accstage_translate('footer.brand.description', 'Arquitetura e construção premium com direção precisa, materialidade rigorosa e visão de longo prazo.')); ?></h2>
+                <a class="acc-button" href="<?php echo esc_url(accstage_i18n_url('/contacto/')); ?>"><?php echo esc_html(accstage_translate('footer.brand.cta', 'Agendar contacto')); ?></a>
             </div>
 
-            <nav class="acc-site-footer__nav" aria-label="<?php esc_attr_e('Navegação de rodapé', 'accstage-custom'); ?>">
-                <p class="acc-label"><?php esc_html_e('Navegação', 'accstage-custom'); ?></p>
-                <p><a href="<?php echo esc_url(home_url('/')); ?>"><?php esc_html_e('Início', 'accstage-custom'); ?></a></p>
-                <p><a href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Projetos', 'accstage-custom'); ?></a></p>
-                <p><a href="<?php echo esc_url(home_url('/sobre-nos/')); ?>"><?php esc_html_e('Sobre nós', 'accstage-custom'); ?></a></p>
-                <p><a href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Contacto', 'accstage-custom'); ?></a></p>
+            <nav class="acc-site-footer__nav" aria-label="<?php echo esc_attr(accstage_translate('footer.nav.aria_label', 'Navegação de rodapé')); ?>">
+                <p class="acc-label"><?php echo esc_html(accstage_translate('footer.nav.title', 'Navegação')); ?></p>
+                <p><a href="<?php echo esc_url(accstage_i18n_url('/')); ?>"><?php echo esc_html(accstage_translate('footer.nav.home', 'Início')); ?></a></p>
+                <p><a href="<?php echo esc_url(accstage_i18n_url('/projetos/')); ?>"><?php echo esc_html(accstage_translate('footer.nav.projects', 'Projetos')); ?></a></p>
+                <p><a href="<?php echo esc_url(accstage_i18n_url('/sobre-nos/')); ?>"><?php echo esc_html(accstage_translate('footer.nav.about', 'Sobre nós')); ?></a></p>
+                <p><a href="<?php echo esc_url(accstage_i18n_url('/contacto/')); ?>"><?php echo esc_html(accstage_translate('footer.nav.contact', 'Contacto')); ?></a></p>
             </nav>
         </div>
 
         <div class="acc-site-footer__meta">
             <div class="acc-site-footer__contact">
-                <p class="acc-label"><?php esc_html_e('Head Office', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('R. António Luis Gomes 120', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('4430-195 Vila Nova de Gaia', 'accstage-custom'); ?></p>
-                <p><?php esc_html_e('Portugal', 'accstage-custom'); ?></p>
-                <p><a href="tel:+351255913065"><?php esc_html_e('Business Contact: +351 255 913 065', 'accstage-custom'); ?></a></p>
+                <p class="acc-label"><?php echo esc_html(accstage_translate('footer.contact.office_label', 'Head Office')); ?></p>
+                <p><?php echo esc_html(accstage_translate('footer.contact.address_line_1', 'R. António Luis Gomes 120')); ?></p>
+                <p><?php echo esc_html(accstage_translate('footer.contact.address_line_2', '4430-195 Vila Nova de Gaia')); ?></p>
+                <p><?php echo esc_html(accstage_translate('footer.contact.country', 'Portugal')); ?></p>
+                <p><a href="tel:+351255913065"><?php echo esc_html(accstage_translate('footer.contact.phone', 'Business Contact: +351 255 913 065')); ?></a></p>
                 <p><a href="mailto:info@accstage.com">info@accstage.com</a></p>
             </div>
 
             <div class="acc-site-footer__social">
-                <p class="acc-label"><?php esc_html_e('Redes sociais', 'accstage-custom'); ?></p>
+                <p class="acc-label"><?php echo esc_html(accstage_translate('footer.social.title', 'Redes sociais')); ?></p>
                 <ul class="acc-site-footer__social-list">
                     <?php foreach (accstage_custom_social_links() as $social) : ?>
                         <?php if (! empty($social['url'])) : ?>
@@ -48,7 +48,7 @@
             </div>
         </div>
 
-        <small>© <?php echo esc_html(date_i18n('Y')); ?> ACCSTAGE Lda. <?php esc_html_e('Todos os direitos reservados.', 'accstage-custom'); ?></small>
+        <small>© <?php echo esc_html(date_i18n('Y')); ?> ACCSTAGE Lda. <?php echo esc_html(accstage_translate('footer.rights', 'Todos os direitos reservados.')); ?></small>
     </div>
 </footer>
 <?php wp_footer(); ?>

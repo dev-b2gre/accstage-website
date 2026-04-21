@@ -24,10 +24,10 @@ $project_description = isset($project['description']) && is_array($project['desc
 ?>
 <section class="acc-project-detail-hero<?php echo $hero_image !== '' ? ' has-image' : ' is-placeholder'; ?>"<?php echo $hero_image !== '' ? ' style="background-image: linear-gradient(to top, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.22)), url(\'' . esc_url($hero_image) . '\');"' : ''; ?>>
     <div class="acc-wrap acc-project-detail-hero__inner">
-        <p class="acc-label"><?php esc_html_e('Projeto', 'accstage-custom'); ?></p>
+        <p class="acc-label"><?php echo esc_html(accstage_translate('projects.detail.label', 'Projeto')); ?></p>
         <h1 class="acc-title-xl"><?php echo esc_html($project['title']); ?></h1>
         <?php if ($hero_image === '') : ?>
-            <p class="acc-lead"><?php esc_html_e('Placeholder pronto para imagem principal.', 'accstage-custom'); ?></p>
+            <p class="acc-lead"><?php echo esc_html(accstage_translate('projects.detail.hero_placeholder', 'Placeholder pronto para imagem principal.')); ?></p>
         <?php endif; ?>
     </div>
 </section>
@@ -36,10 +36,10 @@ $project_description = isset($project['description']) && is_array($project['desc
     <div class="acc-wrap">
         <ul class="acc-project-detail-meta__list">
             <?php if (! empty($project['location'])) : ?>
-                <li><span class="acc-label"><?php esc_html_e('Localização', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['location']); ?></strong></li>
+                <li><span class="acc-label"><?php echo esc_html(accstage_translate('projects.detail.location_label', 'Localização')); ?></span><strong><?php echo esc_html($project['location']); ?></strong></li>
             <?php endif; ?>
             <?php if (! empty($project['year'])) : ?>
-                <li><span class="acc-label"><?php esc_html_e('Ano', 'accstage-custom'); ?></span><strong><?php echo esc_html($project['year']); ?></strong></li>
+                <li><span class="acc-label"><?php echo esc_html(accstage_translate('projects.detail.year_label', 'Ano')); ?></span><strong><?php echo esc_html($project['year']); ?></strong></li>
             <?php endif; ?>
         </ul>
     </div>
@@ -76,7 +76,7 @@ $project_description = isset($project['description']) && is_array($project['desc
         <?php else : ?>
             <figure class="acc-project-detail-gallery__item acc-project-detail-gallery__item--wide">
                 <span class="acc-project-placeholder" aria-hidden="true">
-                    <span class="acc-project-placeholder__label"><?php esc_html_e('Galeria em atualização', 'accstage-custom'); ?></span>
+                    <span class="acc-project-placeholder__label"><?php echo esc_html(accstage_translate('projects.detail.gallery_placeholder', 'Galeria em atualização')); ?></span>
                     <span class="acc-project-placeholder__title"><?php echo esc_html($project['title']); ?></span>
                 </span>
             </figure>
@@ -86,8 +86,8 @@ $project_description = isset($project['description']) && is_array($project['desc
 
 <section class="acc-section acc-project-detail-cta">
     <div class="acc-wrap">
-        <p class="acc-label"><?php esc_html_e('Contacto', 'accstage-custom'); ?></p>
+        <p class="acc-label"><?php echo esc_html(accstage_translate('projects.detail.contact_label', 'Contacto')); ?></p>
         <h2 class="acc-title-lg"><?php echo esc_html($project['cta_title']); ?></h2>
-        <a class="acc-button" href="<?php echo esc_url(home_url('/contacto/')); ?>"><?php esc_html_e('Falar com a equipa', 'accstage-custom'); ?></a>
+        <a class="acc-button" href="<?php echo esc_url(accstage_i18n_url('/contacto/')); ?>"><?php echo esc_html(accstage_translate('projects.detail.cta_button', 'Falar com a equipa')); ?></a>
     </div>
 </section>

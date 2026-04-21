@@ -9,10 +9,10 @@ $hero_image = 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-zoLVvOBsu6z
 ?>
 <section class="acc-hero" style="background-image: url('<?php echo esc_url($hero_image); ?>');">
     <div class="acc-hero__inner">
-        <h1 class="acc-title-xl"><?php esc_html_e('Projetamos permanência. Construímos com precisão.', 'accstage-custom'); ?></h1>
+        <h1 class="acc-title-xl"><?php echo esc_html(accstage_translate('home.hero.title', 'Projetamos permanência. Construímos com precisão.')); ?></h1>
         <div>
-            <p class="acc-lead"><?php esc_html_e('Da arquitetura à construção, desenvolvemos espaços com rigor técnico, linguagem contemporânea e atenção absoluta ao detalhe.', 'accstage-custom'); ?></p>
-            <p><a class="acc-button acc-button--hero-discover" href="<?php echo esc_url(home_url('/projetos/')); ?>"><?php esc_html_e('Descobrir arquivo', 'accstage-custom'); ?></a></p>
+            <p class="acc-lead"><?php echo esc_html(accstage_translate('home.hero.lead', 'Da arquitetura à construção, desenvolvemos espaços com rigor técnico, linguagem contemporânea e atenção absoluta ao detalhe.')); ?></p>
+            <p><a class="acc-button acc-button--hero-discover" href="<?php echo esc_url(accstage_i18n_url('/projetos/')); ?>"><?php echo esc_html(accstage_translate('home.hero.cta', 'Descobrir arquivo')); ?></a></p>
         </div>
     </div>
 </section>
