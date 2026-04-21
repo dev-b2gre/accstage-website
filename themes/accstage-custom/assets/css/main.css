@@ -922,8 +922,10 @@ img {
 
 .acc-about-pillars__media {
   margin: 0;
-  width: 100%;
-  min-height: clamp(340px, 42vw, 520px);
+  width: min(100%, clamp(280px, 35vw, 500px));
+  min-height: clamp(280px, 34vw, 430px);
+  justify-self: start;
+  align-self: start;
   border: 1px solid #343434;
   overflow: hidden;
   background: #111;
@@ -1216,7 +1218,8 @@ img {
   }
 
   .acc-about-pillars__media {
-    min-height: clamp(260px, 62vw, 360px);
+    width: min(100%, 430px);
+    min-height: clamp(230px, 60vw, 320px);
   }
 
   .acc-about-pillars__items {
