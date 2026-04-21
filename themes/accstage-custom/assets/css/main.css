@@ -985,15 +985,30 @@ img {
 
 .acc-about-facts {
   padding-top: clamp(3rem, 7vw, 5rem);
+  padding-bottom: clamp(2rem, 4vw, 3.2rem);
+}
+
+.acc-about-facts .acc-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .acc-about-facts__list {
+  width: min(100%, 980px);
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 2rem;
+  gap: clamp(1.4rem, 2.6vw, 2.4rem);
+}
+
+.acc-about-facts__list li {
+  text-align: center;
 }
 
 .acc-about-facts__list li p {
   margin-bottom: 0;
+}
+
+.page-template-page-sobre-nos .acc-site-footer {
+  margin-top: clamp(1.75rem, 3vw, 2.75rem);
 }
 
 .acc-about-team {
